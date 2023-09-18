@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './components/header.jsx';
+import Header from './components/Header.jsx';
+import Home from './pages/Home.jsx';
+import Product from './pages/product.jsx';
 import Footer from './components/Footer.jsx';
 import GlobalStyles from './styled/GlobalStyles.js';
-import Home from './pages/Home.jsx';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" index element={<Home />} />
+        <Route path="/product" index element={<Product />} />
       </Routes>
       <Footer />
     </BrowserRouter>

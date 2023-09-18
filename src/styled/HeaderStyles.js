@@ -1,42 +1,71 @@
 import styled from 'styled-components'
 
+const headerHeight = "74px"; // header 높이
+
 export const HeaderContainer = styled.div`
     width: 100%;
-    border: 1px solid black;
     position:fixed;
     background-color: #fff;
     top: 0;
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid #ccc;
+`
+export const HeaderLogoContainer = styled.div`
+    width: 250px;
+    height: ${headerHeight};
+    position: relative;
+    img{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 `
 export const MainMenu = styled.div`
     display: flex;
     width: 100%;
     > ul{
         display: flex;
+        li:nth-child(-n+4){
+            :hover{ font-weight: bold; }
+        }
         > li{
-            padding: 25px;
-            font-size:20px;
+            margin: 25px;
             position: relative;
             ul{
                 width: 100%;
                 position: absolute;
-                top: 100%; /* 부모 li 아래에 위치하도록 설정 */
-                left: 50%;
-                transform: translate(-30%, 0);
+                top:10%;
+                left: 0;
+                white-space: nowrap;
                 li{
-                    padding: 25px 0 25px 0;
-                    font-size:16px;
-                    text-align:left;
-                    cursor: pointer;
+                    margin: 25px 0 25px 0;
+                    font-size:14px;
+                    text-align:left; 
+                    color:#9c9c9c;                               
                 }
-            }
-        }
-        a{
-            li{
-                padding: 25px;
-                font-size:20px;
+                li:hover{ 
+                    font-weight: bold; 
+                    color:black;
+                }  
             }
         }
     }
-    
-    
+`
+export const UserMenu = styled.div`
+    white-space: nowrap;
+    position: relative;
+    height: ${headerHeight};
+    ul{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-10%, -50%);
+        display: flex;
+        li{
+            margin:0 10px 0 10px;
+            font-size:14px;
+        }
+    }
 `
