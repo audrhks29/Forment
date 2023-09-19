@@ -7,5 +7,5 @@ const useNavSubMenuState = (set) => ({
     toggleSubMenu2: () => set((state) => ({ subMenu2: !state.subMenu2 })),
 });
 
-const useStore = create(devtools(useNavSubMenuState))
-export default useStore;
+const useNavStateStore = create(devtools(useNavSubMenuState))
+export default useNavStateStore;

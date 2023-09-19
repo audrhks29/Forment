@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeaderContainer, HeaderLogoContainer, MainMenu, UserMenu } from '../styled/HeaderStyles';
-import useStore from '../store/nav-state'
+import useNavStateStore from '../store/nav-state'
 const Header = () => {
-    const { toggleSubMenu1, toggleSubMenu2, subMenu1, subMenu2 } = useStore(state => state)
+    const { toggleSubMenu1, toggleSubMenu2, subMenu1, subMenu2 } = useNavStateStore(state => state)
     return (
         <HeaderContainer style={{ height: subMenu1 || subMenu2 ? "250px" : "auto" }}>
             <MainMenu>
