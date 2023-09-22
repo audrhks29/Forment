@@ -1,9 +1,9 @@
 import React, { memo } from 'react';
+import { ProductItemContainer } from '../styled/ProductStyles';
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 import { BsCart, BsFillCartFill } from 'react-icons/bs';
 import useProductStore from '../store/product';
-import { ProductItemContainer } from '../styled/ProductStyles';
-const ProductAndFragrance = memo(() => {
+const ProductItems = memo(() => {
     const { filteredProductData } = useProductStore(state => state);
     return (
         <ProductItemContainer>
@@ -35,4 +35,4 @@ const ProductAndFragrance = memo(() => {
     );
 });
 
-export default ProductAndFragrance;
+export default ProductItems;
