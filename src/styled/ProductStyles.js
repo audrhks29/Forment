@@ -2,10 +2,8 @@ import styled from 'styled-components'
 import { settingInner } from './CommonStyles'
 
 export const ProductContainer = styled.div`
-    margin-top:74px;
     .inner{
         ${settingInner}
-        box-sizing: border-box;
     }
     .productLength{
         padding:10px;
@@ -14,7 +12,6 @@ export const ProductContainer = styled.div`
 `
 export const CategoryContainer = styled.div`
     ul{
-        /* border:1px solid red; */
         padding:30px 0;
         display: flex;
         li{
@@ -22,15 +19,13 @@ export const CategoryContainer = styled.div`
             font-size:14px;
             cursor: pointer;
         }
-        .on{
-                border-bottom:1px solid black;
-            }
+        .on {border-bottom:1px solid black; }   
     }
 `
 export const ProductItemContainer = styled.div`
     display:flex;
     flex-wrap:wrap;
-    div{
+    .itemBox{
         margin:0 10px 20px 0;
         div:nth-child(1){
             margin:0;
@@ -44,18 +39,18 @@ export const ProductItemContainer = styled.div`
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                max-width: 130%; /* 이미지의 최대 너비 설정 */
-                max-height: auto; /* 이미지의 최대 높이 설정 */
+                max-width: 130%; 
+                max-height: auto; 
             }
         }
         ul{
             border-bottom:1px solid #cdcdcd;
-            li{ padding: 2px 5px; }
-            li:nth-child(1){
+            li { padding: 2px 5px; }
+            li:nth-child(2){ font-weight:bold; }
+            li:nth-child(3){
                 font-size:13px;
                 color:#9c9c9c;
             }
-            li:nth-child(2){ font-weight:bold; }
             span{
                 text-decoration: line-through;
                 color:red;
@@ -64,19 +59,27 @@ export const ProductItemContainer = styled.div`
             }
         }
     }
-    div:nth-child(5n){ margin-right:0; }
+    .itemBox:nth-child(5n){ margin-right:0; }
+`
+export const ReviewContainer = styled.div`
+    margin :0;
+    display :flex;
+    justify-content:space-between;
+    height :33px;
+    padding: 2px 5px;
+    span {
+        font-size:13px;
+        color:#9c9c9c;
+        margin-top:auto;
+    }
+    div{ 
+        margin:0;
+        i{ 
+            font-size:25px; 
+            margin:auto 0 0 10px;
+            color:#9c9c9c;
+            cursor: pointer;
+        }
+    }
 `
 
-// export const CategoryContainer = styled.div`
-//     ul{
-//         border:1px solid red;
-//         padding:30px 0;
-//         display: flex;
-//         li{
-//             border-radius:20px;
-//             padding:10px;
-//             margin-left:20px;
-//             border:1px solid black;
-//         }
-//     }
-// `

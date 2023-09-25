@@ -28,7 +28,7 @@ export const MainMenu = styled.div`
     width: 100%;
     > ul{
         display: flex;
-        li:nth-child(-n+4){
+        li:nth-child(-n+3){
             :hover{ font-weight: bold; }
         }
         > li{

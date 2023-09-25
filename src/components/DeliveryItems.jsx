@@ -1,15 +1,17 @@
 import React, { memo } from 'react';
-import { ProductItemContainer, ReviewContainer } from '../styled/ProductStyles';
+import { ReviewContainer } from '../styled/ProductStyles';
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 import { BsCart, BsFillCartFill } from 'react-icons/bs';
-import useProductStore from '../store/product-store';
-const ProductItems = memo(() => {
-    const { filteredProductData } = useProductStore(state => state);
+import { DeliveryItemContainer } from '../styled/DeliveryStyles';
+import useDeliveryStore from '../store/delivery-store';
+const DeliveryItems = memo(() => {
+    const { deliveryData } = useDeliveryStore(state => state);
+    console.log(deliveryData);
     return (
-        <ProductItemContainer>
+        <DeliveryItemContainer>
             {
-                filteredProductData.map((item) => {
-                    const { titleImage, productName, price, salePrice, fragranceInfo } = item
+                deliveryData.map((item) => {
+                    const { titleImage, productName, price, salePrice, tag } = item
                     return (
                         <div key={item.id} className='itemBox'>
                             <div>
@@ -21,7 +23,7 @@ const ProductItems = memo(() => {
                                     <strong>{salePrice.toLocaleString()}원</strong>
                                     <span>{price.toLocaleString()}원</span>
                                 </li>
-                                <li>{fragranceInfo}</li>
+                                <li>{tag}</li>
                             </ul>
                             <ReviewContainer>
                                 <span>( 리뷰 215개 )</span>
@@ -37,8 +39,8 @@ const ProductItems = memo(() => {
                     )
                 })
             }
-        </ProductItemContainer>
+        </DeliveryItemContainer>
     );
 });
 
-export default ProductItems;
+export default DeliveryItems;

@@ -10,10 +10,10 @@ const GlobalStyles = createGlobalStyle`
     }
     *{
         box-sizing: border-box;
-        font-size:16px;
     }
     body{
       line-height: 1.5;
+      font-size:16px;
     }
     input, textarea { 
       -moz-user-select: auto;

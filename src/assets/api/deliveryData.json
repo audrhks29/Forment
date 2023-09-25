@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "productName": "[정기배송] 올인원 퍼퓸 샤워",
+        "price": 35000,
+        "salePrice": 19000,
+        "tag": "올인원 퍼퓸 샤워의 7가지 향",
+        "titleDesc": "올인원 퍼퓸 샤워의 7가지 향",
+        "desc": "아쿠아리치 함유로 촉촉하고 풍성한 거품이 피부를 부드럽게 세정하여 매끄러운 피부를 만들고, 내츄럴 프로텍터 특허 성분의 깊은 보습감은 씻고난 후의 건조 스트레스를 막아줍니다.\n끌어안고 싶은 포근한 향의 코튼 허그 퍼퓸 바디워시는 오롯이 즐기는 휴식의 가치를 더욱 풍성하게 채우며, 샤워 후에도 오래도록 지속되는 향기의 여운을 남깁니다.",
+        "titleImage": "../public/images/delivery/allInOnePurfumeShower/allInOnePurfumeShowerTitleImage.png"
+    },
+    {
+        "id": 2,
+        "productName": "[정기배송] 시그니처 올인원 에센스 모이스처 플러스",
+        "price": 40000,
+        "salePrice": 28000,
+        "tag": "모공 타이트닝 | 수분충전 | 대용량",
+        "titleDesc": "에센스 모이스처 대용량",
+        "desc": "",
+        "titleImage": "../public/images/delivery/signatureAllInOneEssenceMoisturePlus/signatureAllInOneEssenceMoisturePlusTitleImage.png"
+    },
+    {
+        "id": 3,
+        "productName": "[정기배송] 시그니처 올인원 에센스 세트",
+        "price": 76000,
+        "salePrice": 53200,
+        "tag": "화이트닝 | 수분충전 | 올인원",
+        "titleDesc": "피부 좋은 남자의 피부 비결",
+        "desc": "",
+        "titleImage": "../public/images/delivery/signatureAllInOneEssenceSet/signatureAllInOneEssenceSetTitleImage.png"
+    },
+    {
+        "id": 4,
+        "productName": "[정기배송] 시그니처 퍼퓸 섬유유연제 2개",
+        "price": 39000,
+        "salePrice": 19000,
+        "tag": "시그니처 퍼퓸 섬유유연제의 2개의 향",
+        "titleDesc": "시그니처 퍼퓸 섬유유연제의 2개의 향",
+        "desc": "향수를 입은 듯 끌어안고 싶은 포근한 향기,\n시그니처 퍼퓸 섬유 유연제는 향수를 그대로 담은 듯한 끌어안고 싶은 포근한 향기와 최대 12주까지 지속되는 발향을 담은 프리미엄 섬유 유연제 입니다.\n\n미세 플라스틱까지 생각한 퓨어워터 사용으로 세탁 후 느껴지는 부드러운 촉감과 향수를 입은 듯 은은하게 오래가는 포근함을 느껴보세요",
+        "titleImage": "../public/images/delivery/signaturePerfumeFabricSoftener/signaturePerfumeFabricSoftenerTitleImage.png"
+    },
+    {
+        "id": 5,
+        "productName": "[정기배송] 퍼퓸 차량용방향제 리필",
+        "price": 20000,
+        "salePrice": 12000,
+        "tag": "차량용방향제의 3가지 향",
+        "titleDesc": "차량용방향제의 3가지 향",
+        "desc": "차에 타자마자 매력UP!\n\n포맨트 퍼퓸 차량용방향제 리필이 정기배송됩니다.\n포맨트의 향기를 정기배송을 통해 더욱 쉽고 편리하게 이용해보세요\n\n3가지 시그니처 향으로 사랑과 설렘의 여정이 함께하는 공간에서 '당신이 가장 빛나는 순간'을 선사합니다.\n\nFor the best moment in the car.",
+        "titleImage": "../public/images/delivery/capsulesDiffuser/capsulesDiffuserTitleImage.png"
+    },
+    {
+        "id": 6,
+        "productName": "[정기배송] 올라운드 퍼퓸 디퓨저 리필",
+        "price": 30000,
+        "salePrice": 15000,
+        "tag": "올라운드 퍼퓸 디퓨저의 3가지의 향",
+        "titleDesc": "올라운드 퍼퓸 디퓨저의 3가지의 향",
+        "desc": "당신의 모든 공간을 은은하고 향기롭게 / 리필",
+        "titleImage": "../public/images/delivery/allRoundPerfumeDiffuserRefill/allRoundPerfumeDiffuserRefillTitleImage.png"
+    },
+    {
+        "id": 7,
+        "productName": "[정기배송] 퍼퓸 핸드크림 코튼 메모리",
+        "price": 24000,
+        "salePrice": 19000,
+        "tag": "달콤한 복숭아ㅣ히아신스ㅣ머스크",
+        "titleDesc": "",
+        "desc": "바르는 순간, 색다른 플로럴 향기의 여운을 남기는 코튼 메모리 퍼퓸 핸드크림은 호호바오일,\n비타민 E를 함유해 잦은 세정으로 무너진 손을 더욱 생기있게 케어합니다.\n또한 손톱 구성 성분과 유사한 케라틴 성분이 함유되어있어 지쳐있는 손과 큐티클에 풍부한 영양감을 선사합니다.\n플로럴 무드 속 살결 같은 파우더리함이 더해진 편안한 향으로 작은 힐링의 시간을 가져보세요.",
+        "titleImage": "../public/images/delivery/perfumeHandCream/perfumeHandCreamTitleImage.png"
+    }
+]

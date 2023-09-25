@@ -3,21 +3,21 @@ import { Link } from 'react-router-dom';
 import { HeaderContainer, HeaderLogoContainer, MainMenu, UserMenu } from '../styled/HeaderStyles';
 import useNavStateStore from '../store/nav-state'
 const Header = () => {
-    const { toggleSubMenu1, toggleSubMenu2, subMenu1, subMenu2 } = useNavStateStore(state => state)
+    const { activeSubMenu, csCenterSubMenu } = useNavStateStore(state => state)
+    const { toggleActiveSubMenu, toggleCsCenterSubMenu } = useNavStateStore(state => state)
     return (
-        <HeaderContainer style={{ height: subMenu1 || subMenu2 ? "250px" : "auto" }}>
+        <HeaderContainer style={{ height: activeSubMenu || csCenterSubMenu ? "250px" : "auto" }}>
             <MainMenu>
                 <HeaderLogoContainer>
                     <Link to="/"><img src="../public/images/logo_header_main.svg" alt="" /></Link>
                 </HeaderLogoContainer>
                 <ul>
-                    {/* <li><Link to="/present">선물제안</Link></li> */}
                     <li><Link to="/product">전 제품 보기</Link></li>
                     <li><Link to="/fragrance">프레그런스</Link></li>
                     <li><Link to="/delivery">정기배송</Link></li>
-                    <li onMouseEnter={toggleSubMenu1} onMouseLeave={toggleSubMenu1}>활동
+                    <li onMouseEnter={toggleActiveSubMenu} onMouseLeave={toggleActiveSubMenu}>활동
                         {
-                            subMenu1
+                            activeSubMenu
                             &&
                             <ul>
                                 <li><Link to="/brand">브랜드</Link></li>
@@ -26,9 +26,9 @@ const Header = () => {
                             </ul>
                         }
                     </li>
-                    <li onMouseEnter={toggleSubMenu2} onMouseLeave={toggleSubMenu2}>C/S 센터
+                    <li onMouseEnter={toggleCsCenterSubMenu} onMouseLeave={toggleCsCenterSubMenu}>C/S 센터
                         {
-                            subMenu2
+                            csCenterSubMenu
                             &&
                             <ul>
                                 <li><Link to="/notice">공지사항</Link></li>

@@ -1,5 +1,5 @@
 import React, { memo, useEffect } from 'react';
-import useProductStore from '../store/product';
+import useProductStore from '../store/product-store';
 import { CategoryContainer, ProductContainer } from '../styled/ProductStyles';
 import CategoryMenu from '../components/CategoryMenu';
 import ProductItems from './ProductItems';
