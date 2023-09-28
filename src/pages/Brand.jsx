@@ -11,6 +11,7 @@ const Brand = memo(() => {
     return (
         <BrandItemContainer>
             <div className="inner">
+                <h3>Brand</h3>
                 <BrandItem>
                     {
                         brandData.map((item) => {

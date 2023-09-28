@@ -1,6 +1,6 @@
 import React, { memo, useEffect } from 'react';
 import useProductStore from '../store/product-store';
-import { CategoryContainer, ProductContainer } from '../styled/ProductStyles';
+import { ProductContainer } from '../styled/ProductStyles';
 import CategoryMenu from '../components/CategoryMenu';
 import ProductItems from './ProductItems';
 const AllProductAndFragrance = memo(() => {
@@ -17,11 +17,7 @@ const AllProductAndFragrance = memo(() => {
     return (
         <ProductContainer>
             <div className='inner'>
-                <CategoryContainer>
-                    <ul>
-                        <CategoryMenu />
-                    </ul>
-                </CategoryContainer>
+                <CategoryMenu />
                 <p className='productLength'>총 {filteredProductData.length}개의 상품이 있습니다.</p>
                 <ProductItems />
             </div>

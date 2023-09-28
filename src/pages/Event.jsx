@@ -11,6 +11,7 @@ const Event = memo(() => {
     return (
         <EventItemContainer>
             <div className='inner'>
+                <h3>Event</h3>
                 <ul>
                     {
                         eventData.map(item => {
