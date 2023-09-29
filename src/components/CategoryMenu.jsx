@@ -15,7 +15,7 @@ const CategoryMenu = memo(() => {
             return productCategories;
         } else if (pathname.includes('fragrance')) {
             return fragranceCategories;
-        } else if (pathname.includes('notice')) {
+        } else if (pathname.includes('notice') || pathname.includes('faq')) {
             return noticeCategories;
         }
         return [];

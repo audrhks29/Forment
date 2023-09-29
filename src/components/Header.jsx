@@ -13,7 +13,7 @@ const Header = () => {
                 </HeaderLogoContainer>
                 <ul>
                     <li><Link to="/product">전 제품 보기</Link></li>
-                    <li><Link to="/fragrance">프레그런스</Link></li>
+                    <li><Link to="/fragrance">프래그런스</Link></li>
                     <li><Link to="/delivery">정기배송</Link></li>
                     <li onMouseEnter={toggleActiveSubMenu} onMouseLeave={toggleActiveSubMenu}>활동
                         {

@@ -5,7 +5,9 @@ const Membership = memo(() => {
     return (
         <MembershipItemContainer>
             <div className='inner'>
-                <span>멤버십 페이지입니다.</span>
+                <div className='imgBox'>
+                    <img src="../public/images/membership/membership_01.png" alt="" />
+                </div>
             </div>
         </MembershipItemContainer>
     );

@@ -11,6 +11,7 @@ const Notice = memo(() => {
     useEffect(() => {
         fetchData()
     }, []);
+
     const pagePerItem = 10; // 한 페이지당 표시할 데이터 수
     const pageAmount = Math.ceil(noticeData.length / pagePerItem) // 페이지 수
     const slicedData = noticeData.slice((currentPage - 1) * pagePerItem, currentPage * pagePerItem) // 페이지에 출력되는 데이터
