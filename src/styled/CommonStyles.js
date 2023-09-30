@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const settingInner = {
     width: "1400px",
-    margin: "74px auto",
+    padding: "74px 0",
+    margin: "0 auto",
     h3: {
         fontSize: "18px",
         display: "block",

@@ -1,7 +1,6 @@
 import React, { memo, useEffect } from 'react';
-import { FaqItemContainer } from '../styled/FaqStyles';
 import useFaqStore from '../store/faq-store';
-import { NoticeTable } from '../styled/NoticeStyles';
+import { NoticeItemContainer, NoticeTable } from '../styled/NoticeStyles';
 import CategoryMenu from '../components/CategoryMenu';
 import Pagination from '../components/pagination';
 import usePaginationStore from '../store/pagination-store';
@@ -10,13 +9,14 @@ const Faq = memo(() => {
     const { fetchData } = useFaqStore(state => state);
     const { setData, slicedData, setPagination } = usePaginationStore(state => state);
     useEffect(() => {
-        fetchData().then(() => {
-            setData(faqData)
-            setPagination();
-        })
+        fetchData()
     }, []);
+    useEffect(() => {
+        setData(faqData)
+        setPagination();
+    }, [faqData])
     return (
-        <FaqItemContainer>
+        <NoticeItemContainer>
             <div className='inner'>
                 <CategoryMenu />
                 <NoticeTable>
@@ -56,7 +56,7 @@ const Faq = memo(() => {
                 </NoticeTable>
                 <Pagination />
             </div>
-        </FaqItemContainer>
+        </NoticeItemContainer>
     );
 });
 

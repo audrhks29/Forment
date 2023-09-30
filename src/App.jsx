@@ -11,9 +11,10 @@ import Brand from './pages/Brand.jsx';
 import Event from './pages/Event.jsx';
 import Campaign from './pages/Campaign.jsx';
 import Notice from './pages/Notice.jsx';
-import Qna from './pages/Qna.jsx';
 import Faq from './pages/Faq.jsx';
 import Membership from './pages/Membership.jsx';
+import Login from './pages/Login.jsx';
+import Join from './pages/Join.jsx';
 // page import end
 
 //styled component
@@ -35,9 +36,10 @@ const App = () => {
         <Route path="/event" index element={<Event />} />
         <Route path="/campaign" index element={<Campaign />} />
         <Route path="/notice" index element={<Notice />} />
-        <Route path="/qna" index element={<Qna />} />
         <Route path="/faq" index element={<Faq />} />
         <Route path="/membership" index element={<Membership />} />
+        <Route path="/login" index element={<Login />} />
+        <Route path="/join" index element={<Join />} />
         <Route path="/t" index element={<ContentTest />} />
       </Routes>
       <Footer />

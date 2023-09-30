@@ -32,7 +32,6 @@ const Header = () => {
                             &&
                             <ul>
                                 <li><Link to="/notice">공지사항</Link></li>
-                                <li><Link to="/qna">Q&A</Link></li>
                                 <li><Link to="/faq">자주묻는질문</Link></li>
                                 <li><Link to="/membership">멤버십</Link></li>
                             </ul>
