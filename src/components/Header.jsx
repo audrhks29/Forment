@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeaderContainer, HeaderLogoContainer, MainMenu, UserMenu } from '../styled/HeaderStyles';
 import useNavStateStore from '../store/nav-state'
+import useUserStore from '../store/user-store';
 const Header = () => {
+    const { loginState } = useUserStore(state => state);
     const { activeSubMenu, csCenterSubMenu } = useNavStateStore(state => state)
     const { toggleActiveSubMenu, toggleCsCenterSubMenu } = useNavStateStore(state => state)
     return (
@@ -41,8 +43,8 @@ const Header = () => {
             </MainMenu>
             <UserMenu>
                 <ul>
-                    <li><Link to="/login">로그인</Link></li>
-                    <li><Link to="/join">회원가입</Link></li>
+                    {!loginState && <li><Link to="/login">로그인</Link></li>}
+                    {!loginState && <li><Link to="/join">회원가입</Link></li>}
                     <li><Link to="/order">주문</Link></li>
                     <li><Link to="/basket">장바구니</Link></li>
                     <li><Link to="/mypage">마이페이지</Link></li>

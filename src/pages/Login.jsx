@@ -1,8 +1,29 @@
-import React, { memo } from 'react';
+import React, { memo, useState } from 'react';
 import { LoginContainer } from '../styled/LoginStyles';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import useUserStore from '../store/user-store';
 
 const Login = memo(() => {
+    const navigate = useNavigate();
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const { loginState } = useUserStore(state => state);
+    const { userData } = useUserStore(state => state);
+    const handleLogin = () => {
+
+        const inputUsername = username;
+        const inputPassword = password;
+        const foundUser = userData.find((user) =>
+            user.user_id === inputUsername && user.user_password === inputPassword
+        );
+        if (foundUser) {
+            navigate('/');
+            useUserStore.setState({ loginState: true });
+            console.log(loginState);
+        } else {
+            console.log('로그인 실패');
+        }
+    };
     return (
         <LoginContainer>
             <div class="container" id="container">
@@ -22,10 +43,20 @@ const Login = memo(() => {
                                 <span>애플 로그인</span>
                             </Link>
                         </div>
-                        <input type="id" placeholder="아이디" />
-                        <input type="password" placeholder="비밀번호" />
+                        <input
+                            type="id"
+                            placeholder="아이디"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                        />
+                        <input
+                            type="password"
+                            placeholder="비밀번호"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
                         <a href="#">비밀번호 찾기</a>
-                        <button>로그인</button>
+                        <button onClick={handleLogin}>로그인</button>
                     </form>
                 </div>
                 <div class="overlay-container">

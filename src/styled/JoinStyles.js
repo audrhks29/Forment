@@ -16,7 +16,7 @@ export const JoinContainer = styled.div`
         overflow: hidden;
         width: 580px;
         max-width: 100%;
-        min-height: 1200px;
+        min-height: 1300px;
         .sign-up-container {
             h3{
                 font-size: 18px;
@@ -82,7 +82,7 @@ export const JoinContainer = styled.div`
             width: 400px;
             display: flex;
             flex-wrap:wrap;
-            justify-content:space-bet   ween; 
+            justify-content:space-between; 
             align-items:center;
             border-bottom:1px solid #ccc;
             padding:20px 0;
@@ -98,16 +98,53 @@ export const JoinContainer = styled.div`
                 font-weight:600;
                 width: 100px;
             }
-            .gender_label{
-                width: 400px;
-                /* display:block; */
+            em{
+                font-size:12px;
+                display: block;
+                width: 300px;
+                margin-left:100px;
+                color:red;
             }
-            .w100 {
-                width:100px;
+            .id_input{
+                width: 200px;
+            }
+            .id_confirm{
+                margin-left:10px;
+                width: 90px;
+                padding:12px 0;
+            }
+            .gender_label{
+                width: 70px;
+                padding:15px 0;
+                font-weight:normal;
+            }
+            .w70 {
+                width:70px;
+            }
+        }
+        .join-agreement{
+            text-align:left;
+            width:400px;
+            padding:0 0 20px 0;
+            margin-bottom:20px;
+            input{
+                width:50px;
+            }
+            label{
+                width:300px;
+                text-align:left;
+            }
+            p{
+                font-size:12px;
+                margin-bottom:5px;
+            }
+            p:nth-child(1){
+                font-size:16px;
+                font-weight:bold;
+                margin-bottom:10px; 
             }
         }
     }
-    
     a {
         color: #333;
         font-size: 14px;

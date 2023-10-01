@@ -20,9 +20,10 @@ import Join from './pages/Join.jsx';
 //styled component
 import GlobalStyles from './styled/GlobalStyles.js';
 import ContentTest from './pages/contentTest.jsx';
-
+import useUserStore from './store/user-store.js';
 
 const App = () => {
+  const { loginState } = useUserStore(state => state);
   return (
     <HashRouter>
       <GlobalStyles />
@@ -38,7 +39,9 @@ const App = () => {
         <Route path="/notice" index element={<Notice />} />
         <Route path="/faq" index element={<Faq />} />
         <Route path="/membership" index element={<Membership />} />
-        <Route path="/login" index element={<Login />} />
+        {
+          !loginState && <Route path="/login" index element={<Login />} />
+        }
         <Route path="/join" index element={<Join />} />
         <Route path="/t" index element={<ContentTest />} />
       </Routes>
