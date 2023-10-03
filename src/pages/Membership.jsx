@@ -5,6 +5,7 @@ const Membership = memo(() => {
     return (
         <MembershipItemContainer>
             <div className='inner'>
+                <h3>Membership</h3>
                 <div className='imgBox'>
                     <img src="../public/images/membership/membership_01.png" alt="" />
                 </div>

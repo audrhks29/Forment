@@ -7,28 +7,15 @@ const Login = memo(() => {
     const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const { loginState } = useUserStore(state => state);
-    const { userData } = useUserStore(state => state);
-    const handleLogin = () => {
-
-        const inputUsername = username;
-        const inputPassword = password;
-        const foundUser = userData.find((user) =>
-            user.user_id === inputUsername && user.user_password === inputPassword
-        );
-        if (foundUser) {
-            navigate('/');
-            useUserStore.setState({ loginState: true });
-            console.log(loginState);
-        } else {
-            console.log('로그인 실패');
-        }
+    const { handleLogin } = useUserStore(state => state);
+    const handleLoginClick = () => {
+        handleLogin(username, password, navigate); // navigate 함수를 넘겨줍니다.
     };
     return (
         <LoginContainer>
-            <div class="container" id="container">
-                <div class="sign-in-container">
-                    <form action="#">
+            <div className="container" id="container">
+                <div className="sign-in-container">
+                    <form action="">
                         <div className="social-container">
                             <Link to='' className="kakao">
                                 <img src="../public/images/login/log_sns_kakao.png" alt="" />
@@ -56,12 +43,12 @@ const Login = memo(() => {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                         <a href="#">비밀번호 찾기</a>
-                        <button onClick={handleLogin}>로그인</button>
+                        <button onClick={handleLoginClick}>로그인</button>
                     </form>
                 </div>
-                <div class="overlay-container">
-                    <div class="overlay">
-                        <div class="overlay-panel">
+                <div className="overlay-container">
+                    <div className="overlay">
+                        <div className="overlay-panel">
                             <img src="../public/images/logo_header_main_white.svg" alt="" />
                             <Link to="/join">
                                 <button>

@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from 'react';
+import React, { memo, useEffect, useLayoutEffect } from 'react';
 import useFaqStore from '../store/faq-store';
 import { NoticeItemContainer, NoticeTable } from '../styled/NoticeStyles';
 import CategoryMenu from '../components/CategoryMenu';
@@ -11,13 +11,14 @@ const Faq = memo(() => {
     useEffect(() => {
         fetchData()
     }, []);
-    useEffect(() => {
+    useLayoutEffect(() => {
         setData(faqData)
         setPagination();
     }, [faqData])
     return (
         <NoticeItemContainer>
             <div className='inner'>
+                <h3 style={{ padding: "20px 0 0 0" }}>FAQ</h3>
                 <CategoryMenu />
                 <NoticeTable>
                     <colgroup>

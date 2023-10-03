@@ -1,7 +1,7 @@
 import create from 'zustand';
 import { devtools } from 'zustand/middleware'
 
-const useAppState = (set) => ({
+const useAppState = (set, getState, api) => ({
     userData: [
         {
             id: 1,
@@ -14,8 +14,25 @@ const useAppState = (set) => ({
             user_friend: ""
         }
     ],
-    loginUser: [],
-    loginState: false
+    loginUserData: [],
+    loginState: false,
+    handleLogin: (inputUsername, inputPassword, navigate) => {
+        const state = getState();
+        const foundUser = state.userData.find((user) =>
+            user.user_id === inputUsername && user.user_password === inputPassword
+        );
+        if (foundUser) {
+            navigate('/'); // navigate 함수를 사용합니다.
+            set({ loginUserData: foundUser });
+            set({ loginState: true });
+        } else {
+            alert('아이디와 패스워드를 다시 확인해주세요');
+        }
+    },
+    handleLogout: () => {
+        set({ loginUserData: [] })
+        set({ loginState: false })
+    }
 });
 
 const useUserStore = create(devtools(useAppState))

@@ -67,6 +67,10 @@ export const UserMenu = styled.div`
         li{
             margin:0 10px 0 10px;
             font-size:14px;
+            cursor: pointer;
+            strong{
+                font-weight:bold;
+            }
         }
     }
 `

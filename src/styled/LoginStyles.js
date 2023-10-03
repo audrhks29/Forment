@@ -116,7 +116,7 @@ export const LoginContainer = styled.div`
         padding: 12px 45px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        transition: transform 80ms ease -in;
+        transition: transform 80ms ease-in;
     }
     button:active {
         transform: scale(0.95);

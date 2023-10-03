@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
-import Header from './components/Header.jsx';
-import Footer from './components/Footer.jsx';
-// page import start
+// layout
+import Header from './components/layout/Header.jsx';
+import Footer from './components/layout/Footer.jsx';
+
+// page import 
 import Home from './pages/Home.jsx';
 import AllProduct from './pages/AllProduct.jsx';
 import Fragrance from './pages/Fragrance.jsx';
@@ -15,12 +17,14 @@ import Faq from './pages/Faq.jsx';
 import Membership from './pages/Membership.jsx';
 import Login from './pages/Login.jsx';
 import Join from './pages/Join.jsx';
-// page import end
 
 //styled component
 import GlobalStyles from './styled/GlobalStyles.js';
 import ContentTest from './pages/contentTest.jsx';
 import useUserStore from './store/user-store.js';
+import NoneMemberOrder from './pages/NoneMemberOrder.jsx';
+import Basket from './pages/Basket.jsx';
+import MyPage from './pages/Mypage.jsx';
 
 const App = () => {
   const { loginState } = useUserStore(state => state);
@@ -43,7 +47,10 @@ const App = () => {
           !loginState && <Route path="/login" index element={<Login />} />
         }
         <Route path="/join" index element={<Join />} />
-        <Route path="/t" index element={<ContentTest />} />
+        <Route path="/nonememberorder" index element={<NoneMemberOrder />} />
+        <Route path="/basket" index element={<Basket />} />
+        <Route path="/mypage" index element={<MyPage />} />
+        {/* <Route path="/t" index element={<ContentTest />} /> */}
       </Routes>
       <Footer />
     </HashRouter>

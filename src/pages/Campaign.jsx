@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from 'react';
+import React, { memo, useLayoutEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -12,14 +12,13 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 const Campaign = memo(() => {
     const { campaignData } = useCampaignStore(state => state);
     const { fetchData } = useCampaignStore(state => state);
-    useEffect(() => {
+    useLayoutEffect(() => {
         fetchData()
     }, []);
-    console.log(campaignData);
     return (
         <CampaignItemContainer>
             <div className='inner'>
-                <h3>Campaign</h3>
+                <h3>CAMPAIGN</h3>
                 <Swiper
                     effect={'coverflow'}
                     grabCursor={true}

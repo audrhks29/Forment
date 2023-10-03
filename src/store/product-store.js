@@ -7,7 +7,7 @@ const useAppState = (set) => ({
     filteredProductData: [],
     fetchData: async () => {
         try {
-            const response = await axios.get('https://gist.githubusercontent.com/audrhks29/64aa8b5dfcbeb875d59fcb45add63ea9/raw/65d2155daff1a9d06b9be3583b853cabbacccded/productData.json');
+            const response = await axios.get('https://gist.githubusercontent.com/audrhks29/64aa8b5dfcbeb875d59fcb45add63ea9/raw/3d18752e67ad20a7282cfed321f6ef1968ca3c2d/productData.json');
             set({ productData: response.data });
         } catch (error) {
             console.error('Error fetching data:', error);

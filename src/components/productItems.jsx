@@ -1,15 +1,44 @@
-import React, { memo } from 'react';
+import React, { memo, useEffect, useMemo } from 'react';
+
 import { ProductItemContainer, ReviewContainer } from '../styled/ProductStyles';
-import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
-import { BsCart, BsFillCartFill } from 'react-icons/bs';
+
 import useProductStore from '../store/product-store';
+import useBasketStore from '../store/basket-store';
+import useUserStore from '../store/user-store';
+
+import { AiOutlineHeart } from 'react-icons/ai';
+import { BsCart, BsFillCartFill } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
+
 const ProductItems = memo(() => {
     const { filteredProductData } = useProductStore(state => state);
+    const { basketData } = useBasketStore(state => state);
+    const { loginState } = useUserStore(state => state);
+    const { handleAddBasket, handleRemoveBasket } = useBasketStore(state => state);
+    const navigate = useNavigate()
+    const iconStatus = useMemo(() => {
+        if (loginState) {
+            return filteredProductData.map((item) => {
+                return basketData.some((basketItem) => basketItem.id === item.id);
+            });
+        }
+        return [];
+    }, [basketData, filteredProductData, loginState]);
+    const handleIconClick = (item, isItemInBasket) => {
+        if (loginState) {
+            if (isItemInBasket) handleRemoveBasket(item.id);
+            else handleAddBasket(item);
+        } else {
+            alert('로그인이 필요한 서비스입니다.');
+            navigate('/login');
+        }
+    };
     return (
         <ProductItemContainer>
             {
-                filteredProductData.map((item) => {
+                filteredProductData.map((item, index) => {
                     const { titleImage, productName, price, salePrice, fragranceInfo } = item
+                    const isItemInBasket = iconStatus[index];
                     return (
                         <div key={item.id} className='itemBox'>
                             <div>
@@ -28,11 +57,14 @@ const ProductItems = memo(() => {
                                 <div>
                                     <i><AiOutlineHeart /></i>
                                     {/* <AiFillHeart /> */}
-                                    <i><BsCart /></i>
-                                    {/* <BsFillCartFill /> */}
+                                    {
+                                        <i onClick={() => handleIconClick(item, isItemInBasket)}>
+                                            {
+                                                isItemInBasket ? <BsFillCartFill /> : <BsCart />}
+                                        </i>
+                                    }
                                 </div>
                             </ReviewContainer>
-
                         </div>
                     )
                 })

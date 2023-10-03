@@ -14,6 +14,7 @@ export const CategoryContainer = styled.div`
     ul{
         padding:30px 0;
         display: flex;
+        
         li{
             margin-left:20px;
             font-size:14px;
@@ -26,14 +27,14 @@ export const ProductItemContainer = styled.div`
     display:flex;
     flex-wrap:wrap;
     .itemBox{
-        margin:0 10px 20px 0;
+        margin:0 20px 20px 0;
         div:nth-child(1){
             margin:0;
             display:block;
             position:relative;
             overflow: hidden;
-            width:272px;
-            height: 320px;
+            width:335px;
+            height: 400px;
             img{
                 position: absolute;
                 top: 50%;
@@ -45,7 +46,11 @@ export const ProductItemContainer = styled.div`
         }
         ul{
             border-bottom:1px solid #cdcdcd;
-            li { padding: 2px 5px; }
+            padding: 5px 0;
+            li { 
+                padding:3px 0;
+                overflow: hidden;
+            }
             li:nth-child(2){ font-weight:bold; }
             li:nth-child(3){
                 font-size:13px;
@@ -59,7 +64,7 @@ export const ProductItemContainer = styled.div`
             }
         }
     }
-    .itemBox:nth-child(5n){ margin-right:0; }
+    .itemBox:nth-child(4n){ margin-right:0; }
 `
 export const ReviewContainer = styled.div`
     margin :0;
