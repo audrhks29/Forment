@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 // layout
 import Header from './components/layout/Header.jsx';
@@ -28,6 +28,11 @@ import MyPage from './pages/Mypage.jsx';
 
 const App = () => {
   const { loginState } = useUserStore(state => state);
+  const { initializeLoginState } = useUserStore();
+
+  useEffect(() => {
+    initializeLoginState();
+  }, []);
   return (
     <HashRouter>
       <GlobalStyles />

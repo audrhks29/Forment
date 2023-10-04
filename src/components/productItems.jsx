@@ -16,7 +16,7 @@ const ProductItems = memo(() => {
     const { loginState } = useUserStore(state => state);
     const { handleAddBasket, handleRemoveBasket } = useBasketStore(state => state);
     const navigate = useNavigate()
-    const iconStatus = useMemo(() => {
+    const BasketIconStatus = useMemo(() => {
         if (loginState) {
             return filteredProductData.map((item) => {
                 return basketData.some((basketItem) => basketItem.id === item.id);
@@ -38,7 +38,7 @@ const ProductItems = memo(() => {
             {
                 filteredProductData.map((item, index) => {
                     const { titleImage, productName, price, salePrice, fragranceInfo } = item
-                    const isItemInBasket = iconStatus[index];
+                    const isItemInBasket = BasketIconStatus[index];
                     return (
                         <div key={item.id} className='itemBox'>
                             <div>
@@ -48,7 +48,7 @@ const ProductItems = memo(() => {
                                 <li>{productName}</li>
                                 <li>
                                     <strong>{salePrice.toLocaleString()}원</strong>
-                                    <span>{price.toLocaleString()}원</span>
+                                    <span className='color_red'>{price.toLocaleString()}원</span>
                                 </li>
                                 <li>{fragranceInfo}</li>
                             </ul>

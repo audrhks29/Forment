@@ -7,7 +7,10 @@ const useAppState = (set) => ({
     fetchData: async () => {
         try {
             const response = await axios.get('https://gist.githubusercontent.com/audrhks29/30351509c570ca1b6abd18b39d59bd52/raw/33c3115b1d8a44bc70251d121e4c9b04134a590c/brandData.json');
-            set({ brandData: response.data });
+            const sortedData = response.data.sort((a, b) => {
+                return b.id - a.id;
+            });
+            set({ brandData: sortedData });
         } catch (error) {
             console.error('Error fetching data:', error);
         }

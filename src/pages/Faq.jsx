@@ -8,7 +8,7 @@ const Faq = memo(() => {
     const { faqData } = useFaqStore(state => state);
     const { fetchData } = useFaqStore(state => state);
     const { setData, slicedData, setPagination } = usePaginationStore(state => state);
-    useEffect(() => {
+    useLayoutEffect(() => {
         fetchData()
     }, []);
     useLayoutEffect(() => {

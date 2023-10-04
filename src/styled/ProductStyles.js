@@ -56,7 +56,7 @@ export const ProductItemContainer = styled.div`
                 font-size:13px;
                 color:#9c9c9c;
             }
-            span{
+            .color_red{
                 text-decoration: line-through;
                 color:red;
                 font-size:13px;
