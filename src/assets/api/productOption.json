@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "productCode": 1,
+    "productName": "시그니처 퍼퓸 코튼 썩세스",
+    "productSelect": "코튼 썩쎄스 단품",
+    "price": 49000,
+    "productOption": "코튼 썩쎄스"
+  },
+  {
+    "id": 2,
+    "productCode": 1,
+    "productName": "시그니처 퍼퓸 코튼 썩세스",
+    "productSelect": "코튼 썩쎄스 세트",
+    "price": 69000,
+    "productOption": "(30%) 퍼퓸+퍼퓸로션(+20,000원)"
+  },
+  {
+    "id": 3,
+    "productCode": 1,
+    "productName": "시그니처 퍼퓸 코튼 썩세스",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 85900,
+    "productOption": "(26%) 코튼썩세스+코튼허그(+36,900원)"
+  },
+  {
+    "id": 4,
+    "productCode": 1,
+    "productName": "시그니처 퍼퓸 코튼 썩세스",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 85900,
+    "productOption": "코튼썩세스+코튼키스(+36,900원)"
+  },
+  {
+    "id": 5,
+    "productCode": 2,
+    "productName": "시그니처 퍼퓸 피그 누아",
+    "productSelect": "시그니처 퍼퓸 피그누아",
+    "price": 49000,
+    "productOption": "퍼퓸 1개 (+코튼메모리 미니어처 증정)"
+  },
+  {
+    "id": 6,
+    "productCode": 3,
+    "productName": "시그니처 퍼퓸 상탈 레인",
+    "productSelect": "향수 단품",
+    "price": 49000,
+    "productOption": "상탈레인 1개"
+  },
+  {
+    "id": 7,
+    "productCode": 3,
+    "productName": "시그니처 퍼퓸 상탈 레인",
+    "productSelect": "[EVENT] 레이어링 세트",
+    "price": 98000,
+    "productOption": "상탈레인+피그누아 (+상탈레인 9ml/스톤디퓨저 증정)(+49,000원"
+  },
+  {
+    "id": 8,
+    "productCode": 3,
+    "productName": "시그니처 퍼퓸 상탈 레인",
+    "productSelect": "[EVENT] 레이어링 세트",
+    "price": 98000,
+    "productOption": "상탈레인+바질테라스 (+상탈레인 9ml/스톤디퓨저 증정)"
+  },
+  {
+    "id": 9,
+    "productCode": 3,
+    "productName": "시그니처 퍼퓸 상탈 레인",
+    "productSelect": "[EVENT] 퍼퓸샤워 세트",
+    "price": 68000,
+    "productOption": "상탈레인+바질테라스 퍼퓸샤워 (+스톤디퓨저 증정)"
+  },
+  {
+    "id": 10,
+    "productCode": 4,
+    "productName": "시그니처 퍼퓸 바질 테라스",
+    "productSelect": "향수 단품",
+    "price": 49000,
+    "productOption": "바질테라스 1개"
+  },
+  {
+    "id": 11,
+    "productCode": 4,
+    "productName": "시그니처 퍼퓸 바질 테라스",
+    "productSelect": "[EVENT] 레이어링 세트",
+    "price": 98000,
+    "productOption": "바질테라스+피그누아 (+상탈레인 9ml/스톤디퓨저 증정)(+49,000원)"
+  },
+  {
+    "id": 12,
+    "productCode": 4,
+    "productName": "시그니처 퍼퓸 바질 테라스",
+    "productSelect": "[EVENT] 레이어링 세트",
+    "price": 98000,
+    "productOption": "바질테라스+상탈레인(+상탈레인 9ml/스톤디퓨저 증정)(+49,000원)"
+  },
+  {
+    "id": 13,
+    "productCode": 4,
+    "productName": "시그니처 퍼퓸 바질 테라스",
+    "productSelect": "[EVENT] 퍼퓸샤워 세트",
+    "price": 68000,
+    "productOption": "바질테라스 퍼퓸+퍼퓸샤워 (+스톤디퓨저 증정)(+19,000원)"
+  },
+  {
+    "id": 14,
+    "productCode": 5,
+    "productName": "퍼퓸 샤워 바질 테라스",
+    "productSelect": "퍼퓸샤워 바질테라스",
+    "price": 24000,
+    "productOption": "퍼퓸샤워 1개"
+  },
+  {
+    "id": 15,
+    "productCode": 5,
+    "productName": "퍼퓸 샤워 바질 테라스",
+    "productSelect": "퍼퓸샤워 바질테라스",
+    "price": 45000,
+    "productOption": "퍼퓸샤워 바질테라스/퍼퓸샤워 2개(+21,000원)"
+  },
+  {
+    "id": 16,
+    "productCode": 5,
+    "productName": "퍼퓸 샤워 바질 테라스",
+    "productSelect": "퍼퓸샤워 바질테라스",
+    "price": 68000,
+    "productOption": "퍼퓸 샤워 + 퍼퓸_바질테라스(+스톤디퓨저 증정)(+44,000원)"
+  },
+  {
+    "id": 17,
+    "productCode": 6,
+    "productName": "시그니처 퍼퓸 코튼허그",
+    "productSelect": "향수 단품",
+    "price": 49000,
+    "productOption": "코튼허그 1개"
+  },
+  {
+    "id": 18,
+    "productCode": 6,
+    "productName": "시그니처 퍼퓸 코튼허그",
+    "productSelect": "코튼허그 세트",
+    "price": 65000,
+    "productOption": "(25%) 퍼퓸+핸드크림(+16,000원)"
+  },
+  {
+    "id": 19,
+    "productCode": 6,
+    "productName": "시그니처 퍼퓸 코튼허그",
+    "productSelect": "코튼허그 세트",
+    "price": 69000,
+    "productOption": "(30%) 퍼퓸+퍼퓸샤워(+20,000원)"
+  },
+  {
+    "id": 20,
+    "productCode": 6,
+    "productName": "시그니처 퍼퓸 코튼허그",
+    "productSelect": "코튼허그 세트",
+    "price": 69000,
+    "productOption": "(30%) 퍼퓸+퍼퓸로션(+20,000원)"
+  },
+  {
+    "id": 21,
+    "productCode": 6,
+    "productName": "시그니처 퍼퓸 코튼허그",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 86000,
+    "productOption": "(23%) 코튼허그+코튼키스(+37,000원)"
+  },
+  {
+    "id": 22,
+    "productCode": 6,
+    "productName": "시그니처 퍼퓸 코튼허그",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 95500,
+    "productOption": "(23%) 코튼허그+코튼메모리(+46,500원)"
+  },
+  {
+    "id": 23,
+    "productCode": 6,
+    "productName": "시그니처 퍼퓸 코튼허그",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 95500,
+    "productOption": "(23%) 코튼허그+코튼디어나잇(+46,500원)"
+  },
+  {
+    "id": 24,
+    "productCode": 6,
+    "productName": "시그니처 퍼퓸 코튼허그",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 95500,
+    "productOption": "(23%) 코튼허그+코튼브리즈(+46,500원)"
+  },
+  {
+    "id": 25,
+    "productCode": 6,
+    "productName": "시그니처 퍼퓸 코튼허그",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 95500,
+    "productOption": "(23%) 코튼허그+코튼딜라잇부케(+46,500원)"
+  },
+  {
+    "id": 26,
+    "productCode": 6,
+    "productName": "시그니처 퍼퓸 코튼허그",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 88500,
+    "productOption": "(26%) 코튼허그+코튼썩세스(+39,500원)"
+  },
+  {
+    "id": 27,
+    "productCode": 7,
+    "productName": "시그니처 퍼퓸 코튼브리즈",
+    "productSelect": "향수 단품",
+    "price": 49000,
+    "productOption": "코튼브리즈 1개"
+  },
+  {
+    "id": 28,
+    "productCode": 7,
+    "productName": "시그니처 퍼퓸 코튼브리즈",
+    "productSelect": "코튼브리즈 세트",
+    "price": 69000,
+    "productOption": "(29%) 향수+퍼퓸샤워(+20,000원)"
+  },
+  {
+    "id": 29,
+    "productCode": 7,
+    "productName": "시그니처 퍼퓸 코튼브리즈",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 85900,
+    "productOption": "(23%) 코튼브리즈+코튼허그(+36,900원)"
+  },
+  {
+    "id": 30,
+    "productCode": 7,
+    "productName": "시그니처 퍼퓸 코튼브리즈",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 95900,
+    "productOption": "(23%) 코튼브리즈+코튼메모리(+46,900원)"
+  },
+  {
+    "id": 31,
+    "productCode": 7,
+    "productName": "시그니처 퍼퓸 코튼브리즈",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 95900,
+    "productOption": "(23%) 코튼브리즈+코튼딜라잇부케(+46,900원)"
+  },
+  {
+    "id": 32,
+    "productCode": 7,
+    "productName": "시그니처 퍼퓸 코튼브리즈",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 99000,
+    "productOption": "(30%) 코튼브리즈+코튼썩세스(+50,000원)"
+  },
+  {
+    "id": 33,
+    "productCode": 8,
+    "productName": "시그니처 퍼퓸 코튼메모리",
+    "productSelect": "단품",
+    "price": 49000,
+    "productOption": "코튼메모리 1개"
+  },
+  {
+    "id": 34,
+    "productCode": 8,
+    "productName": "시그니처 퍼퓸 코튼메모리",
+    "productSelect": "코튼메모리 세트",
+    "price": 65000,
+    "productOption": "(24%) 퍼퓸+핸드크림(+16,000원)"
+  },
+  {
+    "id": 35,
+    "productCode": 8,
+    "productName": "시그니처 퍼퓸 코튼메모리",
+    "productSelect": "코튼메모리 세트",
+    "price": 69000,
+    "productOption": "(29%) 퍼퓸+퍼퓸샤워(+20,000원)"
+  },
+  {
+    "id": 36,
+    "productCode": 8,
+    "productName": "시그니처 퍼퓸 코튼메모리",
+    "productSelect": "코튼메모리 세트",
+    "price": 69000,
+    "productOption": "(29%) 퍼퓸+퍼퓸로션(+20,000원)"
+  },
+  {
+    "id": 37,
+    "productCode": 8,
+    "productName": "시그니처 퍼퓸 코튼메모리",
+    "productSelect": "코튼메모리 세트",
+    "price": 89000,
+    "productOption": "(33%) 퍼퓸+퍼퓸샤워+퍼퓸로션(+40,000원)"
+  },
+  {
+    "id": 38,
+    "productCode": 8,
+    "productName": "시그니처 퍼퓸 코튼메모리",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 85900,
+    "productOption": "(23%) 코튼메모리+코튼허그(+36,900원)"
+  },
+  {
+    "id": 39,
+    "productCode": 8,
+    "productName": "시그니처 퍼퓸 코튼메모리",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 95900,
+    "productOption": "(23%) 코튼메모리+코튼브리즈(+46,900원)"
+  },
+  {
+    "id": 40,
+    "productCode": 8,
+    "productName": "시그니처 퍼퓸 코튼메모리",
+    "productSelect": "[레이어링추천] 향수 세트",
+    "price": 95900,
+    "productOption": "(23%) 코튼메모리+코튼딜라잇부케(+46,900원)"
+  }
+]

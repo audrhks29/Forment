@@ -8,7 +8,7 @@ import useUserStore from '../store/user-store';
 
 import { AiOutlineHeart } from 'react-icons/ai';
 import { BsCart, BsFillCartFill } from 'react-icons/bs';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const ProductItems = memo(() => {
     const { filteredProductData } = useProductStore(state => state);
@@ -42,7 +42,7 @@ const ProductItems = memo(() => {
                     return (
                         <div key={item.id} className='itemBox'>
                             <div>
-                                <img src={titleImage} alt="" />
+                                <Link to={`/product/${item.id}`}><img src={titleImage} alt="" /></Link>
                             </div>
                             <ul>
                                 <li>{productName}</li>

@@ -88,3 +88,59 @@ export const ReviewContainer = styled.div`
     }
 `
 
+export const ProductDetailContainer = styled.div`
+    .inner{
+        ${settingInner}
+    }
+    .product_itemBox{
+        padding:74px 0 0 0;
+        width:100%;
+        display: flex;
+        justify-content:space-between;
+        .product_imgBox{
+            img{
+                width: 550px;
+            }
+        }
+        .product_descBox{
+            width:780px;
+            .product_price, .benefits_info, .fragranceNote, .fragranceInfo, .desc{
+                padding:10px 0;
+            }
+            .benefits_info, .fragranceNote{
+                width:100%;
+                border-bottom:1px solid #ccc;
+                font-size:14px;
+                td{
+                    height:25px;
+                }
+                th{
+                    width:100px;
+                    color:#9c9c9c;
+                    text-align:left;
+                }
+            }
+            .desc{
+                dd{
+                    margin-bottom:1.5rem;
+                }
+            }
+        }
+    }
+    strong{
+        font-size:18px;
+        font-weight:700;
+    }
+    .style-line-through{
+        text-decoration: line-through;
+        font-size:14px;
+        color:#9c9c9c;
+    }
+    .fragranceInfo{
+        font-size:13px;
+    }
+    .desc{
+        font-size:14px;
+        color:#9c9c9c;
+    }
+`

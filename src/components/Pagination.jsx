@@ -2,7 +2,7 @@ import React, { memo, useEffect } from 'react';
 import { PaginationContainer } from '../styled/paginationStyles';
 import { TfiAngleDoubleLeft, TfiAngleDoubleRight, TfiAngleLeft, TfiAngleRight } from 'react-icons/tfi';
 import useFaqStore from '../store/faq-store';
-import usePaginationStore from '../store/pagination-store';
+import usePaginationStore from '../store/Pagination-store';
 
 const Pagination = memo(() => {
     const { faqData } = useFaqStore(state => state);

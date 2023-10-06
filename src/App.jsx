@@ -25,6 +25,7 @@ import useUserStore from './store/user-store.js';
 import NoneMemberOrder from './pages/NoneMemberOrder.jsx';
 import Basket from './pages/Basket.jsx';
 import MyPage from './pages/Mypage.jsx';
+import ProductDetail from './pages/ProductDetail.jsx';
 
 const App = () => {
   const { loginState } = useUserStore(state => state);
@@ -39,22 +40,23 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" index element={<Home />} />
-        <Route path="/product" index element={<AllProduct />} />
-        <Route path="/fragrance" index element={<Fragrance />} />
-        <Route path="/delivery" index element={<Delivery />} />
-        <Route path="/brand" index element={<Brand />} />
-        <Route path="/event" index element={<Event />} />
-        <Route path="/campaign" index element={<Campaign />} />
-        <Route path="/notice" index element={<Notice />} />
-        <Route path="/faq" index element={<Faq />} />
-        <Route path="/membership" index element={<Membership />} />
+        <Route path="/product" element={<AllProduct />} />
+        <Route path="/product/:productID" element={<ProductDetail />} />
+        <Route path="/fragrance" element={<Fragrance />} />
+        <Route path="/delivery" element={<Delivery />} />
+        <Route path="/brand" element={<Brand />} />
+        <Route path="/event" element={<Event />} />
+        <Route path="/campaign" element={<Campaign />} />
+        <Route path="/notice" element={<Notice />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/membership" element={<Membership />} />
         {
-          !loginState && <Route path="/login" index element={<Login />} />
+          !loginState && <Route path="/login" element={<Login />} />
         }
-        <Route path="/join" index element={<Join />} />
-        <Route path="/nonememberorder" index element={<NoneMemberOrder />} />
-        <Route path="/basket" index element={<Basket />} />
-        <Route path="/mypage" index element={<MyPage />} />
+        <Route path="/join" element={<Join />} />
+        <Route path="/nonememberorder" element={<NoneMemberOrder />} />
+        <Route path="/basket" element={<Basket />} />
+        <Route path="/mypage" element={<MyPage />} />
         {/* <Route path="/t" index element={<ContentTest />} /> */}
       </Routes>
       <Footer />
