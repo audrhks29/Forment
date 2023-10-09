@@ -40,13 +40,14 @@ const useAppState = (set, getState, api) => ({
             alert('아이디와 패스워드를 다시 확인해주세요');
         }
     },
-    handleLogout: () => {
+    handleLogout: (navigate) => {
         const logoutConfirm = confirm("로그아웃 하시겠습니까?")
         if (logoutConfirm) {
             set({ loginUserData: [], loginState: false })
             localStorage.setItem('loginState', JSON.stringify(false));
             localStorage.setItem('loginUserData', JSON.stringify([]));
             alert("로그아웃에 성공하였습니다.")
+            navigate('/');
         }
     }
 });

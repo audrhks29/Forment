@@ -1,16 +1,18 @@
-import React, { memo, useLayoutEffect, useState } from 'react';
+import React, { memo, useEffect, useLayoutEffect, useState } from 'react';
 
 import { useParams } from 'react-router-dom';
 
 import useProductStore from './../store/product-store';
 import useProductDetailStore from './../store/productDetail-store';
+import useBasketStore from '../store/basket-store';
+import useUserStore from '../store/user-store';
 
 import { ProductDetailContainer } from '../styled/ProductStyles';
-import useBasketStore from '../store/basket-store';
+
 import { AiOutlineHeart } from 'react-icons/ai';
 
-
 const ProductDetail = memo(() => {
+  const { loginState } = useUserStore(state => state);
   const { productID } = useParams();
   const { productData } = useProductStore(state => state)
   const { basketData } = useBasketStore(state => state)
@@ -27,21 +29,21 @@ const ProductDetail = memo(() => {
   const [toggleInfo, setToggleInfo] = useState(1); // product_info 버튼 toggle
   const [selectedItems, setSelectedItems] = useState([]); // 선택된 아이템
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     fetchData()
   }, []);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (productOptionData[parseId - 1]) {
       setOptionBox(productOptionData[parseId - 1]);
       setSetBox(productSetData.filter(item => item.productCode == optionBox.productCode));
       setDetailImage(productDetailImageData[parseId - 1])
     }
-  }, [productOptionData, productSetData, parseId]);
+  }, [productOptionData, optionBox, productSetData, parseId]);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setFilteredSetBox(setBox.filter(item => item.productSelect === selectedOption))
-  }, [selectedOption]);
+  }, [productData, optionBox, setBox, selectedOption]);
 
   const handleToggleInfo = (num) => {
     setToggleInfo(num)
@@ -252,7 +254,7 @@ const ProductDetail = memo(() => {
                   {/* <AiFillHeart /> */}
                 </button>
                 <button
-                  onClick={() => selectedItems.forEach(item => handleAddBasket(item))}>
+                  onClick={() => selectedItems.forEach(item => handleAddBasket(item, loginState))}>
                   장바구니에 담기
                 </button>
                 <button>구매하기</button>

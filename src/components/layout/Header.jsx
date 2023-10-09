@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import useUserStore from '../../store/user-store';
 import useNavStateStore from './../../store/nav-state';
@@ -8,10 +8,14 @@ import useNavStateStore from './../../store/nav-state';
 import { HeaderContainer, HeaderLogoContainer, MainMenu, UserMenu } from './../../styled/HeaderStyles';
 
 const Header = () => {
+    const navigate = useNavigate();
     const { loginState, loginUserData } = useUserStore(state => state);
     const { handleLogout } = useUserStore(state => state);
     const { activeSubMenu, csCenterSubMenu } = useNavStateStore(state => state)
     const { toggleActiveSubMenu, toggleCsCenterSubMenu } = useNavStateStore(state => state)
+    const handleLogoutClick = () => {
+        handleLogout(navigate);
+    };
     return (
         <HeaderContainer style={{ height: activeSubMenu || csCenterSubMenu ? "250px" : "auto" }}>
             <MainMenu>
@@ -52,7 +56,7 @@ const Header = () => {
                         loginState && loginUserData &&
                         <li><strong>{loginUserData.user_name}</strong>님 환영합니다</li>
                     }
-                    {loginState && <li onClick={handleLogout}>로그아웃</li>}
+                    {loginState && <li onClick={handleLogoutClick}>로그아웃</li>}
                     {!loginState && <li><Link to="/login">로그인</Link></li>}
                     {!loginState && <li><Link to="/join">회원가입</Link></li>}
                     {!loginState && <li><Link to="/nonememberorder">비회원주문</Link></li>}

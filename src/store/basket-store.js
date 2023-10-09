@@ -3,19 +3,24 @@ import { devtools } from 'zustand/middleware'
 
 const useAppState = (set, getState) => ({
   basketData: [],
-  handleAddBasket: (item) => {
-    const state = getState();
-    const basketData = state.basketData
-    const isItemInBasket = basketData.some((basketItem) => basketItem.productOption === item.productOption);
-    if (!isItemInBasket) {
-      const confirmData = confirm("장바구니에 담으시겠습니까?")
-      if (confirmData) {
-        set((state) => ({
-          basketData: [...state.basketData, item], // 이전 아이템들과 함께 새 아이템을 추가합니다.
-        }));
+  handleAddBasket: (item, loginState) => {
+    if (loginState) {
+      const state = getState();
+      const basketData = state.basketData
+      const isItemInBasket = basketData.some((basketItem) => basketItem.productOption === item.productOption);
+      if (!isItemInBasket) {
+        const confirmData = confirm("장바구니에 담으시겠습니까?")
+        if (confirmData) {
+          set((state) => ({
+            basketData: [...state.basketData, item], // 이전 아이템들과 함께 새 아이템을 추가합니다.
+          }));
+        }
+      } else {
+        alert("장바구니에 있는 상품입니다.")
       }
-    } else {
-      alert("장바구니에 있는 상품입니다.")
+    }
+    else {
+      alert("로그인이 필요한 서비스입니다.")
     }
 
   },

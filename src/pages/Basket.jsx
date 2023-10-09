@@ -28,7 +28,7 @@ const Basket = memo(() => {
   }, [])
 
   useEffect(() => {
-    setSum(basketData.reduce((acc, item) => acc + item.salePrice, 0))
+    setSum(basketData.reduce((acc, item) => acc + item.price, 0))
     sum > 49999 || sum == 0 ? setDeliveryFee(0) : setDeliveryFee(3000)
   }, [basketData])
 
