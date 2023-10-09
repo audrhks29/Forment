@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "productCode": 1,
+    "infoImage1": "../public/images/product/purfumes/success/success_01.jpg",
+    "infoImage2": "../public/images/product/purfumes/success/success_02.jpg",
+    "infoImage3": "../public/images/product/purfumes/success/success_03.jpg",
+    "infoImage4": null,
+    "infoImage5": "../public/images/product/purfumes/success/success_05.jpg",
+    "infoImage6": "../public/images/product/purfumes/success/success_06.jpg",
+    "infoImage7": "../public/images/product/purfumes/success/success_07.jpg",
+    "infoImage8": "../public/images/product/purfumes/success/success_08.jpg",
+    "infoImage9": "../public/images/product/purfumes/success/success_09.jpg",
+    "infoImage10": "../public/images/product/purfumes/success/success_10.jpg",
+    "infoImage11": "../public/images/product/purfumes/success/success_11.jpg",
+    "infoImage12": null,
+    "infoImage13": "../public/images/product/purfumes/success/success_13.jpg",
+    "infoImage14": null,
+    "infoImage15": null,
+    "infoImage16": null,
+    "infoImage17": null
+  }
+]

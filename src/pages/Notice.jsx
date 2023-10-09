@@ -3,7 +3,7 @@ import { NoticeItemContainer, NoticeTable } from '../styled/NoticeStyles';
 import useNoticeStore from '../store/notice-store';
 import CategoryMenu from '../components/CategoryMenu';
 import Pagination from '../components/pagination';
-import usePaginationStore from '../store/pagination-store';
+import usePaginationStore from './../store/pagination-store';
 const Notice = memo(() => {
     const { noticeData } = useNoticeStore(state => state);
     const { fetchData } = useNoticeStore(state => state);

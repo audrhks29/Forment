@@ -19,6 +19,7 @@ const Basket = memo(() => {
   const navigate = useNavigate()
   // const [orderData, setOrderData] = useState([]);
   console.log(orderData);
+
   useEffect(() => {
     if (!loginState) {
       alert('로그인이 필요한 서비스입니다.');
@@ -34,19 +35,6 @@ const Basket = memo(() => {
   useEffect(() => {
     setTotalCost(sum + deliveryFee)
   }, [sum])
-
-  // const handleCheckboxClick = (item) => {
-  //   // 이미 선택된 상품인지 확인
-  //   const selected = orderData.includes(item);
-
-  //   if (selected) {
-  //     // 이미 선택된 경우, 해당 아이템을 배열에서 제거
-  //     setOrderData(orderData.filter(item => item !== item));
-  //   } else {
-  //     // 선택되지 않은 경우, 해당 아이템을 배열에 추가
-  //     setOrderData([...orderData, item]);
-  //   }
-  // };
 
   return (
     <BasketContainer>
@@ -66,7 +54,7 @@ const Basket = memo(() => {
           }
           {
             basketData && basketData.map(item => {
-              const { id, productName, price, salePrice, category1, category2, fragranceInfo, desc, titleImage } = item;
+              const { id, productName, price, titleImage, productSelect, productOption } = item;
               return (
                 <div className="item_box" key={id}>
                   <input
@@ -78,10 +66,12 @@ const Basket = memo(() => {
                   <div className='product_info'>
                     <p>품명 : {productName}</p>
                     <p>
-                      <span>가격 : {salePrice.toLocaleString()}원</span>
-                      <span className="color_red deco_line-through">{price.toLocaleString()}원</span>
+                      <span>가격 : {price.toLocaleString()}원</span>
                     </p>
-                    <p>[옵션: (사전예약) 시그니처 퍼퓸 피그누아/퍼퓸 1개 (+코튼메모리 미니어처 증정)]</p>
+                    <p>
+                      <strong>{productName}</strong>
+                      <span>{productSelect}/{productOption}</span>
+                    </p>
                   </div>
                   <div className='btn_wrap'>
                     <button>옵션 수정하기</button>

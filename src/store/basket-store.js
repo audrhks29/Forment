@@ -6,7 +6,7 @@ const useAppState = (set, getState) => ({
   handleAddBasket: (item) => {
     const state = getState();
     const basketData = state.basketData
-    const isItemInBasket = basketData.some((basketItem) => basketItem.id === item.id);
+    const isItemInBasket = basketData.some((basketItem) => basketItem.productOption === item.productOption);
     if (!isItemInBasket) {
       const confirmData = confirm("장바구니에 담으시겠습니까?")
       if (confirmData) {
@@ -17,6 +17,7 @@ const useAppState = (set, getState) => ({
     } else {
       alert("장바구니에 있는 상품입니다.")
     }
+
   },
   handleRemoveBasket: (productId) => {
     const confirmData = confirm("장바구니에서 삭제하시겠습니까?")

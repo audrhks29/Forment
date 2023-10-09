@@ -12,33 +12,21 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const ProductItems = memo(() => {
     const { filteredProductData } = useProductStore(state => state);
-    const { basketData } = useBasketStore(state => state);
-    const { loginState } = useUserStore(state => state);
-    const { handleAddBasket, handleRemoveBasket } = useBasketStore(state => state);
-    const navigate = useNavigate()
-    const BasketIconStatus = useMemo(() => {
-        if (loginState) {
-            return filteredProductData.map((item) => {
-                return basketData.some((basketItem) => basketItem.id === item.id);
-            });
-        }
-        return [];
-    }, [basketData, filteredProductData, loginState]);
-    const handleIconClick = (item, isItemInBasket) => {
-        if (loginState) {
-            if (isItemInBasket) handleRemoveBasket(item.id);
-            else handleAddBasket(item);
-        } else {
-            alert('로그인이 필요한 서비스입니다.');
-            navigate('/login');
-        }
-    };
+    // 하트로 교체
+    // const handleIconClick = (item, isItemInBasket) => {
+    //     if (loginState) {
+    //         if (isItemInBasket) handleRemoveBasket(item.id);
+    //         else handleAddBasket(item);
+    //     } else {
+    //         alert('로그인이 필요한 서비스입니다.');
+    //         navigate('/login');
+    //     }
+    // };
     return (
         <ProductItemContainer>
             {
                 filteredProductData.map((item, index) => {
-                    const { titleImage, productName, price, salePrice, fragranceInfo } = item
-                    const isItemInBasket = BasketIconStatus[index];
+                    const { titleImage, productName, price, salePrice, fragranceInfo } = item;
                     return (
                         <div key={item.id} className='itemBox'>
                             <div>
@@ -57,12 +45,6 @@ const ProductItems = memo(() => {
                                 <div>
                                     <i><AiOutlineHeart /></i>
                                     {/* <AiFillHeart /> */}
-                                    {
-                                        <i onClick={() => handleIconClick(item, isItemInBasket)}>
-                                            {
-                                                isItemInBasket ? <BsFillCartFill /> : <BsCart />}
-                                        </i>
-                                    }
                                 </div>
                             </ReviewContainer>
                         </div>
