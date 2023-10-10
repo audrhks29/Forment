@@ -9,7 +9,7 @@ const Login = memo(() => {
     const [password, setPassword] = useState('');
     const { handleLogin } = useUserStore(state => state);
     const handleLoginClick = () => {
-        handleLogin(username, password, navigate); // navigate 함수를 넘겨줍니다.
+        handleLogin(username, password, navigate);
     };
     return (
         <LoginContainer>

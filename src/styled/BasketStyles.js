@@ -1,82 +1,141 @@
 import styled from 'styled-components'
 import { settingInner } from './CommonStyles'
 export const BasketContainer = styled.div`
+    background: #f6f5f7;
     .inner{
         ${settingInner} 
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        h3{
+            display:block;
+            width:100%;
+        }
     }
-    button {
-        display: block;
-        border-radius: 20px;
-        background-color: #030303;
-        color: #FFFFFF;
-        font-size: 12px;
-        font-weight: bold;
-        width: 300px;
-        height: 40px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        transition: transform 80ms ease-in; 
-        margin:auto;
+    .checkBox_container{
+        border-bottom: 1px solid #000;
+        padding-bottom:10px;
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+        .selectAll_checkBox{
+            label{
+                font-size:14px;
+                margin-left:5px;
+            }
+        }
+        button{
+            width:100px;
+            height:30px;
+            background-color: #000;
+            color: #fff;
+        }
     }
-    button:active {
-        transform: scale(0.95);
-        background-color:rgba(0, 0, 0, 0.22)
-    }
-    .color_red{
-        color:red;
-        font-size:14px;
-        margin-left:10px;
-    }
-    .deco_line-through{
-        text-decoration: line-through;
-    }
-`
-export const BasketTopContainer = styled.div`
-    width:100%;
 `
 
-export const BasketMiddleContainer = styled.div`
-    width:100%;
-    min-height:189px;
-    border-top:2px solid #000;
-    border-bottom:2px solid #000;
-    padding:40px 0;
+export const BasketLeftContainer = styled.div`
+    background-color:white;
+    width:70%;
+    min-height:164px;
+    padding:20px;
     .item_box{
+        width: 100%;
         display: flex;
-        margin-bottom:40px;
-        img{
-            margin-left:20px;
-            width:150px;
-        }
+        justify-content:space-between;
+        border-bottom: 1px solid #ccc;
         .product_info{
-            width:100%;
-            padding:20px;
-            align-self: center;
-            :nth-child(3){
-                color:#9c9c9c;
+            width:65%;
+            padding:20px 0;
+            display: flex;
+            align-items:center;
+            img{
+                margin-left:20px;
+                height:120px;
+            }
+            .product_info_content{
+
+                margin-left:20px;
+                :nth-child(2){
+                    color:#9c9c9c;
+                    font-size:13px;
+                }
             }
         }
-        .btn_wrap{
-            align-self: center;
+        .product_info_amount{
+            display:flex;
+            align-items:center;
             button{
-                width:200px;  
+                width:25px;
+                height:25px;
+                border:1px solid #000;
+            }
+            input{
+                width:60px;
+                height:25px;
+                color:#000;
+                border:1px solid #000;
             }
         }
+        .product_info_price{
+            align-self: center;
+            font-weight:600;
+        }
+        .closeBox{
+            padding-top:20px;
+            cursor: pointer;
+        }
+        
     }
     .item_box:last-child{
         margin:0;
+        border:none;
     }
     
 `
-export const BasketBottomContainer = styled.div`
-    width:100%;
-    display:flex;
-    flex-direction:row;
-    padding:40px 200px ;
-    justify-content:space-around;
-    text-align:center;
-    p{
-        align-self:center;
+export const BasketRightContainer = styled.div`
+    background-color:white;
+    width:27%;
+    height:200px;
+    h4{
+        font-weight:700;
+        padding:20px 20px;
+        font-size:18px;
+    }
+    .orderBox{
+        
+        padding:0 20px;
+    }
+    table{
+        width:100%;
+        font-weight:600;
+        tr{
+            height:40px;
+            th{
+                width:200px;
+                text-align:left;
+                vertical-align: middle;
+                color:#9c9c9c;
+            }
+            td{
+                text-align:right;
+                vertical-align: middle;
+            }
+        }
+        tr:last-child{
+            border-top:1px solid #000;
+            font-size:18px;
+            th{
+                color:black;
+            }
+        }
+    }
+    button{
+        margin-top:30px;
+        width:100%;
+        background-color: #000;
+        color:white;
+        height:60px;
+        font-weight:600;
     }
 `
 

@@ -3,7 +3,7 @@ import { devtools } from 'zustand/middleware'
 
 const useAppState = (set, getState) => ({
   basketData: [],
-  handleAddBasket: (item, loginState) => {
+  handleAddBasket: (item, loginState, navigate) => {
     if (loginState) {
       const state = getState();
       const basketData = state.basketData
@@ -21,6 +21,7 @@ const useAppState = (set, getState) => ({
     }
     else {
       alert("로그인이 필요한 서비스입니다.")
+      navigate('/login')
     }
 
   },
@@ -31,6 +32,9 @@ const useAppState = (set, getState) => ({
         basketData: state.basketData.filter((item) => item.id !== productId),
       }));
     }
+  },
+  updateBasketData: (updatedBasketData) => {
+    set({ basketData: updatedBasketData });
   },
 });
 

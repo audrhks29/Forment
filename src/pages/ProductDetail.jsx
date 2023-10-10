@@ -1,6 +1,6 @@
 import React, { memo, useEffect, useLayoutEffect, useState } from 'react';
 
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 import useProductStore from './../store/product-store';
 import useProductDetailStore from './../store/productDetail-store';
@@ -12,6 +12,7 @@ import { ProductDetailContainer } from '../styled/ProductStyles';
 import { AiOutlineHeart } from 'react-icons/ai';
 
 const ProductDetail = memo(() => {
+  const navigate = useNavigate()
   const { loginState } = useUserStore(state => state);
   const { productID } = useParams();
   const { productData } = useProductStore(state => state)
@@ -61,6 +62,7 @@ const ProductDetail = memo(() => {
         amount: 1,
         id: selectedId,
         price: filteredSelectedItem.price,
+        checked: false
       };
       setSelectedItems([...selectedItems, itemWithAmount]);
     } else {
@@ -89,12 +91,11 @@ const ProductDetail = memo(() => {
   const totalAmount = selectedItems.reduce((accumulator, item) => {
     return accumulator + item.amount;
   }, 0);
-
   // console.log(data);
   // console.log(optionBox);
   // console.log(setBox);
   // console.log(selectedItems);
-  console.log(basketData);
+  // console.log(basketData);
   const { productName, price, salePrice, fragranceInfo, desc, titleImage } = data
   return (
     <ProductDetailContainer>
@@ -254,7 +255,17 @@ const ProductDetail = memo(() => {
                   {/* <AiFillHeart /> */}
                 </button>
                 <button
-                  onClick={() => selectedItems.forEach(item => handleAddBasket(item, loginState))}>
+                  onClick={() => {
+                    if (selectedItems.length === 0) {
+                      alert('상품을 선택해주세요');
+                      return;
+                    }
+                    else {
+                      selectedItems.forEach(item => handleAddBasket(item, loginState, navigate))
+                    }
+                  }
+
+                  }>
                   장바구니에 담기
                 </button>
                 <button>구매하기</button>
