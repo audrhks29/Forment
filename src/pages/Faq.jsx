@@ -4,6 +4,7 @@ import { NoticeItemContainer, NoticeTable } from '../styled/NoticeStyles';
 import CategoryMenu from '../components/CategoryMenu';
 import Pagination from '../components/pagination';
 import usePaginationStore from '../store/pagination-store';
+import { Link } from 'react-router-dom';
 const Faq = memo(() => {
     const { faqData } = useFaqStore(state => state);
     const { fetchData } = useFaqStore(state => state);
@@ -44,7 +45,7 @@ const Faq = memo(() => {
                                 return (
                                     <tr key={id}>
                                         <td>{id}</td>
-                                        <td>{title}</td>
+                                        <td><Link to={`/faq/${item.id}`}>{title}</Link></td>
                                         <td>{author}</td>
                                         <td>{date}</td>
                                         <td>{views}</td>

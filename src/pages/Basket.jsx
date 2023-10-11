@@ -131,8 +131,11 @@ const Basket = memo(() => {
             </div>
           </div>
           {
-            !basketData &&
-            <span>장바구니가 비어있습니다.</span>
+            basketData.length == 0 &&
+            <div className="item_box_none">
+              <p>장바구니가 비어있습니다</p>
+            </div>
+
           }
           {
             basketData && basketData.map((item, index) => {

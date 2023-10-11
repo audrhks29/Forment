@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes, useLocation } from 'react-router-dom';
 // layout
 import Header from './components/layout/Header.jsx';
 import Footer from './components/layout/Footer.jsx';
@@ -26,6 +26,16 @@ import NoneMemberOrder from './pages/NoneMemberOrder.jsx';
 import Basket from './pages/Basket.jsx';
 import MyPage from './pages/Mypage.jsx';
 import ProductDetail from './pages/ProductDetail.jsx';
+import NoticeDetail from './pages/NoticeDetail.jsx';
+import FaqDetail from './pages/FaqDetail.jsx';
+
+const ScrollToTop = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  return null;
+};
 
 const App = () => {
   const { loginState } = useUserStore(state => state);
@@ -34,10 +44,12 @@ const App = () => {
   useEffect(() => {
     initializeLoginState();
   }, []);
+
   return (
     <HashRouter>
       <GlobalStyles />
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" index element={<Home />} />
         <Route path="/product" element={<AllProduct />} />
@@ -48,7 +60,9 @@ const App = () => {
         <Route path="/event" element={<Event />} />
         <Route path="/campaign" element={<Campaign />} />
         <Route path="/notice" element={<Notice />} />
+        <Route path="/notice/:noticeID" element={<NoticeDetail />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/faq/:faqID" element={<FaqDetail />} />
         <Route path="/membership" element={<Membership />} />
         {
           !loginState && <Route path="/login" element={<Login />} />

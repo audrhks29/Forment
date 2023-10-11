@@ -30,8 +30,6 @@ const DeliveryItems = memo(() => {
                                 <div>
                                     <i><AiOutlineHeart /></i>
                                     {/* <AiFillHeart /> */}
-                                    <i><BsCart /></i>
-                                    {/* <BsFillCartFill /> */}
                                 </div>
                             </ReviewContainer>
 

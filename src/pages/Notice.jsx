@@ -1,20 +1,29 @@
 import React, { memo, useEffect, useLayoutEffect, useState } from 'react';
-import { NoticeItemContainer, NoticeTable } from '../styled/NoticeStyles';
+
+import { Link } from 'react-router-dom';
+
+import usePaginationStore from './../store/pagination-store';
 import useNoticeStore from '../store/notice-store';
+
+import { NoticeItemContainer, NoticeTable } from '../styled/NoticeStyles';
+
 import CategoryMenu from '../components/CategoryMenu';
 import Pagination from '../components/pagination';
-import usePaginationStore from './../store/pagination-store';
+
 const Notice = memo(() => {
     const { noticeData } = useNoticeStore(state => state);
     const { fetchData } = useNoticeStore(state => state);
     const { setData, slicedData, setPagination } = usePaginationStore(state => state);
+
     useEffect(() => {
         fetchData()
     }, []);
+
     useLayoutEffect(() => {
         setData(noticeData)
         setPagination();
     }, [noticeData])
+
     return (
         <NoticeItemContainer>
             <div className='inner'>
@@ -42,7 +51,7 @@ const Notice = memo(() => {
                                 return (
                                     <tr key={id}>
                                         <td>{id}</td>
-                                        <td>{title}</td>
+                                        <td><Link to={`/notice/${item.id}`}>{title}</Link></td>
                                         <td>{author}</td>
                                         <td>{views}</td>
                                     </tr>
@@ -53,15 +62,6 @@ const Notice = memo(() => {
                     </tbody>
                 </NoticeTable>
                 <Pagination />
-
-                {/* {
-                    noticeData.map(item => {
-                        const { content } = item;
-                        return (
-                            <div dangerouslySetInnerHTML={{ __html: content }}></div>
-                        )
-                    })
-                } */}
             </div>
         </NoticeItemContainer>
     );

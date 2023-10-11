@@ -36,8 +36,13 @@ export const BasketContainer = styled.div`
 export const BasketLeftContainer = styled.div`
     background-color:white;
     width:70%;
-    min-height:164px;
     padding:20px;
+    .item_box_none{
+        width:100%;
+        height:200px;
+        text-align:center;
+        line-height:200px;
+    }
     .item_box{
         width: 100%;
         display: flex;

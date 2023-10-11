@@ -13,10 +13,9 @@ import { AiOutlineHeart } from 'react-icons/ai';
 
 const ProductDetail = memo(() => {
   const navigate = useNavigate()
-  const { loginState } = useUserStore(state => state);
   const { productID } = useParams();
+  const { loginState } = useUserStore(state => state);
   const { productData } = useProductStore(state => state)
-  const { basketData } = useBasketStore(state => state)
   const { handleAddBasket } = useBasketStore(state => state)
   const { productOptionData, productSetData, productDetailImageData } = useProductDetailStore(state => state)
   const { fetchData } = useProductDetailStore(state => state);
