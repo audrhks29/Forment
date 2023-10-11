@@ -95,8 +95,8 @@ export const BasketLeftContainer = styled.div`
         margin:0;
         border:none;
     }
-    
 `
+
 export const BasketRightContainer = styled.div`
     background-color:white;
     width:27%;

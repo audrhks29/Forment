@@ -1,7 +1,7 @@
 import create from 'zustand';
 import { devtools } from 'zustand/middleware'
 
-const useAppState = (set, getState, api) => ({
+const useAppState = (set, getState) => ({
     userData: [
         {
             id: 1,
@@ -11,7 +11,8 @@ const useAppState = (set, getState, api) => ({
             user_email: "audrhks29@gmail.com",
             user_birthday: "1998년11월29일",
             user_gender: "male",
-            user_friend: ""
+            user_friend: "",
+            grade: "웰컴"
         }
     ],
     loginUserData: [],
