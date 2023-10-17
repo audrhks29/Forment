@@ -1,14 +1,24 @@
-import React, { memo, useEffect } from 'react';
-import { MyPageBottomContainer, MyPageContainer, MyPageTopContainer } from '../styled/MyPageStyles';
+import React, { memo, useEffect, useLayoutEffect, useState } from 'react';
+import { Background, MyPageBottomContainer, MyPageContainer, MyPageTopContainer } from '../styled/MyPageStyles';
+
 import useUserStore from '../store/user-store';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import useOrderStore from '../store/order_store';
+import useMyPageStore from '../store/myPage-store';
+
+import Menu from '../components/myPage/Menu';
+import OrderHistory from '../components/myPage/OrderHistory';
+import ExchangeHistory from '../components/myPage/ExchangeHistory';
+import Popup from '../components/myPage/Popup';
 
 const MyPage = memo(() => {
   const { loginState, loginUserData } = useUserStore(state => state);
-  const { handleMoveLoginPage } = useUserStore(state => state);
+  const { orderData } = useOrderStore(state => state);
+  const { onList, popupState } = useMyPageStore(state => state);
+  const { handlePopupState } = useMyPageStore(state => state);
   const navigate = useNavigate()
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!loginState) {
       alert('로그인이 필요한 서비스입니다.');
       navigate('/login');
@@ -52,41 +62,21 @@ const MyPage = memo(() => {
           </div>
         </MyPageTopContainer>
         <MyPageBottomContainer>
-          <div className='menu_bar'>
-            <div className='menu1'>
-              <p>나의 쇼핑 정보</p>
-              <ul>
-                <li>취소/교환/반품 내역</li>
-                <li>배송지 수정</li>
-              </ul>
-            </div>
-            <div className='menu2'>
-              <p>나의 쇼핑 활동</p>
-              <ul>
-                <li>회원정보 수정</li>
-                <li>리뷰관리</li>
-              </ul>
-            </div>
-          </div>
-          <div className='order_history'>
-            <table>
-              <thead>
-                <tr>
-                  <th>주문일자</th>
-                  <th>상품정보</th>
-                  <th>수량</th>
-                  <th>주문번호</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-
-              </tbody>
-            </table>
-          </div>
+          <Menu />
+          {onList == 1 && <OrderHistory />}
+          {onList == 2 && <ExchangeHistory />}
         </MyPageBottomContainer>
-      </div>
-    </MyPageContainer>
+        {
+          popupState && <Popup />
+        }
+      </div >
+      {
+        popupState &&
+        <Background>
+
+        </Background>
+      }
+    </MyPageContainer >
   );
 });
 

@@ -10,14 +10,16 @@ import useUserStore from '../store/user-store';
 import { ProductDetailContainer } from '../styled/ProductStyles';
 
 import { AiOutlineHeart } from 'react-icons/ai';
+import useOrderStore from '../store/order_store';
 
 const ProductDetail = memo(() => {
   const navigate = useNavigate()
   const { productID } = useParams();
-  const { loginState } = useUserStore(state => state);
+  const { loginState, userData } = useUserStore(state => state);
   const { productData } = useProductStore(state => state)
-  const { handleAddBasket } = useBasketStore(state => state)
   const { productOptionData, productSetData, productDetailImageData } = useProductDetailStore(state => state)
+  const { handleOrder } = useOrderStore(state => state)
+  const { handleAddBasket } = useBasketStore(state => state)
   const { fetchData } = useProductDetailStore(state => state);
   const parseId = parseInt(productID, 10)
   const [data, setData] = useState(productData[parseId - 1]);
@@ -28,6 +30,7 @@ const ProductDetail = memo(() => {
   const [selectedOption, setSelectedOption] = useState("*");
   const [toggleInfo, setToggleInfo] = useState(1); // product_info 버튼 toggle
   const [selectedItems, setSelectedItems] = useState([]); // 선택된 아이템
+  const [orderItems, setOrderItems] = useState([]);
 
   useEffect(() => {
     fetchData()
@@ -68,6 +71,8 @@ const ProductDetail = memo(() => {
       alert("이미 추가된 항목입니다");
     }
   };
+
+
   const handleIncreaseAmount = (index) => {
     const updatedItems = [...selectedItems];
     const updatedAmount = updatedItems[index].amount + 1;
@@ -267,7 +272,11 @@ const ProductDetail = memo(() => {
                   }>
                   장바구니에 담기
                 </button>
-                <button>구매하기</button>
+                <button
+                  onClick={() => handleOrder(selectedItems, userData)}
+                >
+                  구매하기
+                </button>
               </div>
             </div>
           </div>
