@@ -9,8 +9,9 @@ const useAppState = (set, getState) => ({
             user_id: "user",
             user_password: "1234",
             user_email: "audrhks29@gmail.com",
-            user_birthday: "1998년11월29일",
+            user_birthday: "1998-11-29",
             user_gender: "male",
+            user_tel: "01088256093",
             user_friend: "",
             grade: "웰컴"
         }
@@ -49,6 +50,35 @@ const useAppState = (set, getState) => ({
             localStorage.setItem('loginUserData', JSON.stringify([]));
             alert("로그아웃에 성공하였습니다.")
             navigate('/');
+        }
+    },
+    handleEditUserInfo: (userPassword, userEmail, userBirthday) => {
+        const editConfirm = confirm("회원정보를 변경하시겠습니까?")
+        if (editConfirm) {
+            set((state) => {
+                const updateUserData = state.userData.map(item => {
+                    if (item.id == state.loginUserData.id) {
+                        return {
+                            ...item,
+                            user_password: userPassword,
+                            user_email: userEmail,
+                            user_birthday: userBirthday,
+                        };
+                    }
+                    return item;
+                })
+
+                return {
+                    ...state,
+                    loginUserData: {
+                        ...state.loginUserData,
+                        user_password: userPassword,
+                        user_email: userEmail,
+                        user_birthday: userBirthday,
+                    },
+                    userData: updateUserData
+                }
+            });
         }
     }
 });

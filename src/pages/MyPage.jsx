@@ -10,13 +10,22 @@ import Menu from '../components/myPage/Menu';
 import OrderHistory from '../components/myPage/OrderHistory';
 import ExchangeHistory from '../components/myPage/ExchangeHistory';
 import Popup from '../components/myPage/Popup';
+import EditUserInfo from '../components/myPage/EditUserInfo';
 
 const MyPage = memo(() => {
   const { loginState, loginUserData } = useUserStore(state => state);
   const { orderData } = useOrderStore(state => state);
   const { onList, popupState } = useMyPageStore(state => state);
-  const { handlePopupState } = useMyPageStore(state => state);
-  const navigate = useNavigate()
+  const { handleChangeList } = useMyPageStore(state => state);
+  const [orderAndDeliveryAmount, setOrderAndDeliveryAmount] = useState(0)
+  const navigate = useNavigate();
+
+  useLayoutEffect(() => {
+    const filteredAmount = orderData.filter(item => item.state === "배송준비" || item.state === "배송중")
+    if (orderData.length > 0) {
+      setOrderAndDeliveryAmount(filteredAmount.length)
+    }
+  }, [orderData])
 
   useLayoutEffect(() => {
     if (!loginState) {
@@ -36,11 +45,11 @@ const MyPage = memo(() => {
               <span>다음 등급인 <strong>패밀리</strong>까지 구매금액 <strong>30,000원</strong> 남았습니다.</span>
             </div>
             <div className='userInfo_right'>
-              <ul className='infoBox'>
-                <li>
+              <ul>
+                <li onClick={() => handleChangeList(1)}>
                   <img src="../public/images/icon/myPage/myPage_icon1.png" alt="" />
                   <p>주문 & 배송</p>
-                  <p>0개</p>
+                  <p>{orderAndDeliveryAmount}개</p>
                 </li>
                 <li>
                   <img src="../public/images/icon/myPage/myPage_icon2.png" alt="" />
@@ -65,6 +74,7 @@ const MyPage = memo(() => {
           <Menu />
           {onList == 1 && <OrderHistory />}
           {onList == 2 && <ExchangeHistory />}
+          {onList == 3 && <EditUserInfo />}
         </MyPageBottomContainer>
         {
           popupState && <Popup />

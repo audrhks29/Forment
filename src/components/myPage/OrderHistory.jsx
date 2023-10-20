@@ -4,7 +4,7 @@ import useMyPageStore from '../../store/myPage-store';
 
 const OrderHistory = memo(() => {
   const { orderData } = useOrderStore(state => state);
-  const { popupState, handlePopupState } = useMyPageStore(state => state);
+  const { handlePopupState } = useMyPageStore(state => state);
   const formatOrderTime = (orderTime) => {
     const date = new Date(orderTime);
     const year = date.getFullYear();
@@ -38,7 +38,7 @@ const OrderHistory = memo(() => {
           {
             orderData &&
             orderData.map((item, index) => {
-              const { amount, productName, productOption, orderTime, price, orderNumber } = item;
+              const { amount, productName, productOption, orderTime, price, orderNumber, state } = item;
               return (
                 <tr key={index}>
                   <td>
@@ -51,7 +51,7 @@ const OrderHistory = memo(() => {
                   </td>
                   <td>{productName}/{productOption}</td>
                   <td>{amount}</td>
-                  <td>{orderNumber}</td>
+                  <td>{orderNumber}<br />{state}</td>
                   <td>{price.toLocaleString()}원</td>
                 </tr>
               )

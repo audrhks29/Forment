@@ -1,6 +1,7 @@
 import React, { memo, useEffect } from 'react';
 import { EventItemContainer } from '../styled/EventStyles';
 import useEventStore from '../store/event-store';
+import { Link } from 'react-router-dom';
 
 const Event = memo(() => {
     const { eventData } = useEventStore(state => state);
@@ -15,11 +16,11 @@ const Event = memo(() => {
                 <ul>
                     {
                         eventData.map(item => {
-                            const { id, imageUrl } = item;
+                            const { id, imageUrl, link } = item;
                             return (
                                 <li key={id}>
                                     <a href="#">
-                                        <img src={imageUrl} alt="" />
+                                        <Link to={link}><img src={imageUrl} alt="" /></Link>
                                     </a>
                                 </li>
                             )

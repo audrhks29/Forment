@@ -37,6 +37,7 @@ export const MyPageTopContainer = styled.div`
                 li{
                     width:120px;
                     text-align:center;
+                    cursor: pointer;
                 }
             }
         }
@@ -59,31 +60,18 @@ export const MyPageBottomContainer = styled.div`
             width:250px;
             border-bottom:1px solid #ccc;
             padding:20px 0;
-            p{
-                margin-bottom:20px;
-            }
+            p{ margin-bottom:20px; }
             li{
                 padding:10px 0;
                 cursor: pointer;
             }
-            li.on{
-                font-weight:600;
-            }
+            li.on{ font-weight:600; }
         }
-        .menu1{
-            padding-top:0px;
-        }
-        .menu2{
-            border:none;
-        }
+        .menu1{ padding-top:0px; }
+        .menu2{ border:none; }
     }
     .history{ 
         width: 1000px;
-        .title{
-            padding-bottom:10px;
-            font-weight:600;
-            border-bottom: 1px solid #000;
-        } 
         table{
             width: 100%;
             font-size:14px;
@@ -118,6 +106,11 @@ export const MyPageBottomContainer = styled.div`
             }
         }
     }
+    .title{
+        padding-bottom:10px;
+        font-weight:600;
+        border-bottom: 1px solid #000;
+    } 
 `
 
 export const PopupContainer = styled.div`
@@ -137,7 +130,6 @@ export const PopupContainer = styled.div`
         position:absolute;
         top:3%;
         right:3%;
-
     }
     p{
         margin-top:10px;
@@ -215,8 +207,8 @@ export const PopupContainer = styled.div`
         border: solid 2px #1E90FF;
         border-radius: 5px;
         font-size: 16px;
-        overflow: auto; /* 스크롤바가 필요한 경우 자동으로 표시 */
-        overflow-wrap: break-word; /* 긴 단어 또는 URL이 textarea 내에서 줄 바꿈 */
+        overflow: auto;
+        overflow-wrap: break-word;
         resize: both;
     }
     .btn_wrap{
@@ -225,7 +217,6 @@ export const PopupContainer = styled.div`
         line-height: 40px;
         background-color: black;
         text-align:center;
-        border:1px solid black;
         margin-top:20px;
         margin-left:auto;
         button{
@@ -236,6 +227,55 @@ export const PopupContainer = styled.div`
     }
 `
 
+export const EditUserInfoContainer = styled.div`
+    width: 1000px;
+    .title{
+        padding-bottom:10px;
+        font-weight:600;
+        border-bottom: 1px solid #000;
+    } 
+    table{
+        font-size:14px;
+        width: 1000px;
+        border-bottom: 1px solid #000;
+        tbody{
+            tr{
+                height:40px; 
+                border-bottom: 1px solid #ededed;
+                th{
+                    vertical-align:middle;
+                    
+                    background-color:#cecece;
+                }
+                td{
+                    vertical-align:middle;
+                    padding:0 10px;
+                    input{
+                        height:30px;
+                        width:200px;
+                    }
+                }
+            }
+            tr:last-child{
+                border:none;
+            }
+        }
+    }
+    .btn_wrap{
+        button{
+            cursor: pointer;
+            display:block;
+            background-color:black;
+            width:120px;
+            height:40px;
+            color:#fff;
+            margin-left:auto;
+            margin-top:20px;
+        }
+    }
+    
+`
+
 export const Background = styled.div`
     background-color: rgba(0,0,0,0.7);
     width:100%;
@@ -244,3 +284,4 @@ export const Background = styled.div`
     z-index:100;
     height: ${document.documentElement.scrollHeight}px; /* 동적으로 높이 설정 */
 `
+

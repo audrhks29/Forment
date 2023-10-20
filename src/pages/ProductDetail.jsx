@@ -15,7 +15,7 @@ import useOrderStore from '../store/order_store';
 const ProductDetail = memo(() => {
   const navigate = useNavigate()
   const { productID } = useParams();
-  const { loginState, userData } = useUserStore(state => state);
+  const { loginState, loginUserData } = useUserStore(state => state);
   const { productData } = useProductStore(state => state)
   const { productOptionData, productSetData, productDetailImageData } = useProductDetailStore(state => state)
   const { handleOrder } = useOrderStore(state => state)
@@ -30,7 +30,6 @@ const ProductDetail = memo(() => {
   const [selectedOption, setSelectedOption] = useState("*");
   const [toggleInfo, setToggleInfo] = useState(1); // product_info 버튼 toggle
   const [selectedItems, setSelectedItems] = useState([]); // 선택된 아이템
-  const [orderItems, setOrderItems] = useState([]);
 
   useEffect(() => {
     fetchData()
@@ -72,7 +71,6 @@ const ProductDetail = memo(() => {
     }
   };
 
-
   const handleIncreaseAmount = (index) => {
     const updatedItems = [...selectedItems];
     const updatedAmount = updatedItems[index].amount + 1;
@@ -89,18 +87,16 @@ const ProductDetail = memo(() => {
       setSelectedItems(updatedItems);
     }
   };
+
   const totalPrice = selectedItems.reduce((accumulator, item) => {
     return accumulator + item.price * item.amount;
   }, 0);
+
   const totalAmount = selectedItems.reduce((accumulator, item) => {
     return accumulator + item.amount;
   }, 0);
-  // console.log(data);
-  // console.log(optionBox);
-  // console.log(setBox);
-  // console.log(selectedItems);
-  // console.log(basketData);
-  const { productName, price, salePrice, fragranceInfo, desc, titleImage } = data
+
+  const { productName, price, salePrice, fragranceInfo, desc, titleImage, fragranceTop, fragranceMid, fragranceBase } = data
   return (
     <ProductDetailContainer>
       <div className='inner'>
@@ -138,24 +134,28 @@ const ProductDetail = memo(() => {
                 </tbody>
               </table>
             </p>
-            <p className='fragranceNote'>
-              <table>
-                <tbody>
-                  <tr>
-                    <th>TOP</th>
-                    <td>자몽 | 베르가못 | 만다린</td>
-                  </tr>
-                  <tr>
-                    <th>MID</th>
-                    <td>진저 | 네롤리</td>
-                  </tr>
-                  <tr>
-                    <th>BASE</th>
-                    <td>샌달우드 | 패출리 | 코튼 머스크</td>
-                  </tr>
-                </tbody>
-              </table>
-            </p>
+
+            {
+              fragranceTop &&
+              <p className='fragranceNote'>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>TOP</th>
+                      <td>{fragranceTop}</td>
+                    </tr>
+                    <tr>
+                      <th>MID</th>
+                      <td>{fragranceMid}</td>
+                    </tr>
+                    <tr>
+                      <th>BASE</th>
+                      <td>{fragranceBase}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
+            }
             <p className='fragranceInfo'>{fragranceInfo}</p>
             <ul className='desc'>
               {
@@ -273,7 +273,7 @@ const ProductDetail = memo(() => {
                   장바구니에 담기
                 </button>
                 <button
-                  onClick={() => handleOrder(selectedItems, userData)}
+                  onClick={() => handleOrder(selectedItems, loginUserData)}
                 >
                   구매하기
                 </button>

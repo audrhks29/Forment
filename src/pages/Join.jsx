@@ -32,6 +32,18 @@ const Join = memo(() => {
     const handleSubmit = (e) => {
 
     }
+    const [birth, setBirth] = useState()
+    const handleConsolBirth = (e) => {
+        const inputValue = e.target.value
+        setBirth(inputValue)
+    }
+    const [tel, setTel] = useState()
+    const handleConsolTel = (e) => {
+        const inputValue = e.target.value
+        setTel(inputValue)
+    }
+    console.log(tel);
+    console.log(typeof (tel));
     return (
         <JoinContainer>
             <div className="container" id="container">
@@ -69,9 +81,14 @@ const Join = memo(() => {
                             <label>이메일</label>
                             <input type="email" id="user_email" name="user_email" placeholder="이메일" required autoComplete="off" />
                             <label>연락처</label>
-                            <input type="tel" id="user_phone" name="user_phone" placeholder="연락처" required />
+                            <input type="tel"
+                                value={tel}
+                                onChange={handleConsolTel}
+                                id="user_phone" name="user_phone" placeholder="연락처" required />
                             <label>생년월일</label>
-                            <input type="date" id="user_birthday" name="user_birthday" required />
+                            <input type="date" id="user_birthday" name="user_birthday" required
+                                value={birth}
+                                onChange={handleConsolBirth} />
                         </div>
                         <h4>선택사항</h4>
                         <div className='join-info'>

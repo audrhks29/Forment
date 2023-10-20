@@ -4,6 +4,7 @@ import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 import { BsCart, BsFillCartFill } from 'react-icons/bs';
 import { DeliveryItemContainer } from '../styled/DeliveryStyles';
 import useDeliveryStore from '../store/delivery-store';
+import { Link } from 'react-router-dom';
 const DeliveryItems = memo(() => {
     const { deliveryData } = useDeliveryStore(state => state);
     console.log(deliveryData);
@@ -11,11 +12,11 @@ const DeliveryItems = memo(() => {
         <DeliveryItemContainer>
             {
                 deliveryData.map((item) => {
-                    const { titleImage, productName, price, salePrice, tag } = item
+                    const { titleImage, productName, price, salePrice, tag, link } = item
                     return (
                         <div key={item.id} className='itemBox'>
                             <div>
-                                <img src={titleImage} alt="" />
+                                <Link to={link}><img src={titleImage} alt="" /></Link>
                             </div>
                             <ul>
                                 <li>{productName}</li>

@@ -26,7 +26,7 @@ const ProductItems = memo(() => {
         <ProductItemContainer>
             {
                 filteredProductData.map((item, index) => {
-                    const { titleImage, productName, price, salePrice, fragranceInfo } = item;
+                    const { titleImage, productName, price, salePrice, fragranceInfo, review } = item;
                     return (
                         <div key={item.id} className='itemBox'>
                             <div>
@@ -41,7 +41,7 @@ const ProductItems = memo(() => {
                                 <li>{fragranceInfo}</li>
                             </ul>
                             <ReviewContainer>
-                                <span>( 리뷰 215개 )</span>
+                                <span>( 리뷰 {review.toLocaleString()}개 )</span>
                                 <div>
                                     <i><AiOutlineHeart /></i>
                                     {/* <AiFillHeart /> */}
