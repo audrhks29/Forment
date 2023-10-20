@@ -295,11 +295,13 @@ const ProductDetail = memo(() => {
             </button>
           </div>
           {
-            toggleInfo === 1 &&
-            Object.keys(detailImage).map((key, index) => {
-              return (
-                <img src={detailImage[key]} alt="" key={index} />
-              );
+            toggleInfo === 1 && detailImage && Object.keys(detailImage).map((key, index) => {
+              if (detailImage[key] !== null) {
+                return (
+                  <img src={detailImage[key]} alt="" key={index} />
+                );
+              }
+              return null; // null을 반환하여 해당 이미지를 건너뜁니다.
             })
           }
 
