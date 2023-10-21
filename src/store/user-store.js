@@ -18,12 +18,18 @@ const useAppState = (set, getState) => ({
     ],
     loginUserData: [],
     loginState: false,
-    initializeLoginState: () => {
-        const storedLoginData = localStorage.getItem('loginUserData');
-        const storedLoginState = localStorage.getItem('loginState');
-        if (storedLoginData && storedLoginState) {
-            set({ loginState: JSON.parse(storedLoginState) });
-            set({ loginUserData: JSON.parse(storedLoginData) });
+    initializeLoginState: async () => {
+        try {
+            const storedLoginData = localStorage.getItem('loginUserData');
+            const storedLoginState = localStorage.getItem('loginState');
+            if (storedLoginData && storedLoginState) {
+                set({ loginState: JSON.parse(storedLoginState) });
+                set({ loginUserData: JSON.parse(storedLoginData) });
+                console.log(getState().loginState);
+            }
+        }
+        catch (error) {
+            console.error('Error fetching data:', error);
         }
     },
     handleLogin: (inputUsername, inputPassword, navigate) => {

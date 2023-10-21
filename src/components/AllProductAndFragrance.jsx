@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useLayoutEffect } from 'react';
+import React, { memo, useLayoutEffect } from 'react';
 import useProductStore from '../store/product-store';
 import { ProductContainer } from '../styled/ProductStyles';
 import CategoryMenu from '../components/CategoryMenu';
@@ -6,14 +6,17 @@ import ProductItems from './productItems';
 const AllProductAndFragrance = memo(() => {
     const { productData, selectedCategory, filteredProductData } = useProductStore(state => state);
     const { fetchData, setInitialCategory, setCategoryAndFilteredData } = useProductStore(state => state);
+
     useLayoutEffect(() => {
         fetchData().then(() => {
             setInitialCategory();
         })
     }, []);
+
     useLayoutEffect(() => {
         setCategoryAndFilteredData(selectedCategory, productData)
     }, [selectedCategory, productData])
+
     return (
         <ProductContainer>
             <div className='inner'>

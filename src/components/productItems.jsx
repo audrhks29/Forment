@@ -1,14 +1,12 @@
-import React, { memo, useEffect, useMemo } from 'react';
+import React, { memo } from 'react';
 
 import { ProductItemContainer, ReviewContainer } from '../styled/ProductStyles';
 
 import useProductStore from '../store/product-store';
-import useBasketStore from '../store/basket-store';
-import useUserStore from '../store/user-store';
 
 import { AiOutlineHeart } from 'react-icons/ai';
-import { BsCart, BsFillCartFill } from 'react-icons/bs';
-import { Link, useNavigate } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
 
 const ProductItems = memo(() => {
     const { filteredProductData } = useProductStore(state => state);

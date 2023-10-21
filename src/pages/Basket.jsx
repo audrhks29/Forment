@@ -4,30 +4,31 @@ import { useNavigate } from 'react-router-dom';
 
 import useUserStore from '../store/user-store';
 import useBasketStore from '../store/basket-store';
-import useOrderStore from '../store/order_store';
 
 import { BasketContainer, BasketLeftContainer, BasketRightContainer } from './../styled/BasketStyles';
 
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Basket = memo(() => {
-  const { loginState } = useUserStore(state => state);
+  const { initializeLoginState } = useUserStore(state => state);
   const { basketData } = useBasketStore(state => state);
   const { updateBasketData } = useBasketStore(state => state);
-  // const { orderData } = useOrderStore(state => state);
   const [sum, setSum] = useState(0);
   const [deliveryFee, setDeliveryFee] = useState(0);
   const [totalCost, setTotalCost] = useState(0);
   const [checkBoxSelectAll, setCheckBoxSelectAll] = useState(false);
   const [checkedBasketData, setCheckBoxCheckBox] = useState([]);
   const navigate = useNavigate()
-  // const [orderData, setOrderData] = useState([]);
+
   useEffect(() => {
-    if (!loginState) {
-      alert('로그인이 필요한 서비스입니다.');
-      navigate('/login');
-    }
-  }, [])
+    initializeLoginState().then(() => {
+      const { loginState } = useUserStore.getState();
+      if (!loginState) {
+        alert('로그인이 필요한 서비스입니다.');
+        navigate('/login');
+      }
+    })
+  }, []);
 
   useEffect(() => {
     const updatedBasketData = basketData.filter(item => item.checked === true);

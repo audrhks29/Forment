@@ -7,7 +7,7 @@ import useDeliveryStore from '../store/delivery-store';
 import { Link } from 'react-router-dom';
 const DeliveryItems = memo(() => {
     const { deliveryData } = useDeliveryStore(state => state);
-    console.log(deliveryData);
+
     return (
         <DeliveryItemContainer>
             {

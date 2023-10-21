@@ -27,8 +27,7 @@ const Notice = memo(() => {
     return (
         <NoticeItemContainer>
             <div className='inner'>
-                <h3 style={{ padding: "20px 0 0 0" }}>NOTICE</h3>
-                <CategoryMenu />
+                <h3>NOTICE</h3>
                 <NoticeTable>
                     <colgroup>
                         <col width="80px" />

@@ -13,7 +13,8 @@ import Popup from '../components/myPage/Popup';
 import EditUserInfo from '../components/myPage/EditUserInfo';
 
 const MyPage = memo(() => {
-  const { loginState, loginUserData } = useUserStore(state => state);
+  const { loginUserData } = useUserStore(state => state);
+  const { initializeLoginState } = useUserStore(state => state);
   const { orderData } = useOrderStore(state => state);
   const { onList, popupState } = useMyPageStore(state => state);
   const { handleChangeList } = useMyPageStore(state => state);
@@ -27,12 +28,16 @@ const MyPage = memo(() => {
     }
   }, [orderData])
 
-  useLayoutEffect(() => {
-    if (!loginState) {
-      alert('로그인이 필요한 서비스입니다.');
-      navigate('/login');
-    }
-  }, [])
+  useEffect(() => {
+    initializeLoginState().then(() => {
+      const { loginState } = useUserStore.getState();
+      if (!loginState) {
+        alert('로그인이 필요한 서비스입니다.');
+        navigate('/login');
+      }
+    })
+  }, []);
+
   return (
     <MyPageContainer>
       <div className='inner'>

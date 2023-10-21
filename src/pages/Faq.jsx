@@ -1,26 +1,32 @@
-import React, { memo, useEffect, useLayoutEffect } from 'react';
-import useFaqStore from '../store/faq-store';
+import React, { memo, useLayoutEffect } from 'react';
+
 import { NoticeItemContainer, NoticeTable } from '../styled/NoticeStyles';
-import CategoryMenu from '../components/CategoryMenu';
+
 import Pagination from '../components/pagination';
+
+import useFaqStore from '../store/faq-store';
 import usePaginationStore from '../store/pagination-store';
+
 import { Link } from 'react-router-dom';
+
 const Faq = memo(() => {
     const { faqData } = useFaqStore(state => state);
     const { fetchData } = useFaqStore(state => state);
+
     const { setData, slicedData, setPagination } = usePaginationStore(state => state);
     useLayoutEffect(() => {
         fetchData()
     }, []);
+
     useLayoutEffect(() => {
         setData(faqData)
         setPagination();
     }, [faqData])
+
     return (
         <NoticeItemContainer>
             <div className='inner'>
-                <h3 style={{ padding: "20px 0 0 0" }}>FAQ</h3>
-                <CategoryMenu />
+                <h3>FAQ</h3>
                 <NoticeTable>
                     <colgroup>
                         <col width="80px" />

@@ -13,17 +13,35 @@ const useAppState = (set) => ({
             console.error('Error fetching data:', error);
         }
     },
-    productCategories: ['전체', '퍼퓸', '바디&헤어', '핸드&립', '라이프스타일', '남성케어'],
-    fragranceCategories: ['전체', '내추럴', '허그', '키스', '썩세스', '메모리', '브리즈', '디어나잇', '딜라잇부케', '벨벳허그'],
+    productCategories: [
+        { id: 1, label: '전체', image: "../public/images/category/allProduct/cate_all.png" },
+        { id: 2, label: '퍼퓸', image: "../public/images/category/allProduct/perfume.png" },
+        { id: 3, label: '바디&헤어', image: "../public/images/category/allProduct/hair.png" },
+        { id: 4, label: '핸드&립', image: "../public/images/category/allProduct/lip.png" },
+        { id: 5, label: '라이프스타일', image: "../public/images/category/allProduct/lifestyle.png" },
+        { id: 6, label: '남성케어', image: "../public/images/category/allProduct/men.png" }
+    ],
+    fragranceCategories: [
+        { id: 1, label: '전체', image: "../public/images/category/fragrance/frag_all.png" },
+        { id: 2, label: '내추럴', image: "../public/images/category/fragrance/natural.png" },
+        { id: 3, label: '허그', image: "../public/images/category/fragrance/hug.png" },
+        { id: 4, label: '키스', image: "../public/images/category/fragrance/kiss.png" },
+        { id: 5, label: '썩세스', image: "../public/images/category/fragrance/success.png" },
+        { id: 6, label: '메모리', image: "../public/images/category/fragrance/memory.png" },
+        { id: 7, label: '브리즈', image: "../public/images/category/fragrance/breeze.png" },
+        { id: 8, label: '디어나잇', image: "../public/images/category/fragrance/dearnight.png" },
+        { id: 9, label: '딜라잇부케', image: "../public/images/category/fragrance/delightbouquet.png" },
+        { id: 10, label: '벨벳허그', image: "../public/images/category/fragrance/velvethug.png" }
+    ],
     selectedCategory: "전체",
     setInitialCategory: () => set({ selectedCategory: "전체" }),
-    setCategoryAndFilteredData: (selectedCategory, productData) => {
-        set({ selectedCategory: selectedCategory })
-        if (selectedCategory === "전체") {
+    setCategoryAndFilteredData: (label, productData) => {
+        set({ selectedCategory: label })
+        if (label === "전체") {
             set({ filteredProductData: productData })
         }
         else {
-            const filteredData = productData.filter((item) => item.category1 === selectedCategory || item.category2 === selectedCategory);
+            const filteredData = productData.filter((item) => item.category1 === label || item.category2 === label);
             set({ filteredProductData: filteredData });
         }
     },

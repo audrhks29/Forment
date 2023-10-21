@@ -1,13 +1,15 @@
-import React, { memo, useEffect } from 'react';
+import React, { memo, useLayoutEffect } from 'react';
 import { DeliveryContainer, LeftContent, RightContent, TxtWrap } from '../styled/DeliveryStyles';
 import DeliveryItems from '../components/DeliveryItems';
 import useDeliveryStore from '../store/delivery-store';
 
 const Delivery = memo(() => {
     const { fetchData } = useDeliveryStore(state => state);
-    useEffect(() => {
+
+    useLayoutEffect(() => {
         fetchData()
     }, []);
+
     return (
         <DeliveryContainer>
             <div className="inner">
