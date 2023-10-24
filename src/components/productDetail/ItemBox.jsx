@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import useProductDetailStore from '../../store/productDetail-store';
 import { AiOutlineHeart } from 'react-icons/ai';
 import TextBox from './itemBox/textBox';
@@ -10,14 +10,22 @@ import SelectedSet from './itemBox/SelectedSet';
 
 const ItemBox = memo(() => {
   const { paramsData, selectedItems } = useProductDetailStore(state => state)
+  const [totalPrice, setTotalPrice] = useState(0)
+  const [totalAmount, setTotalAmount] = useState(0)
 
-  const totalPrice = selectedItems.reduce((accumulator, item) => {
-    return accumulator + item.price * item.amount;
-  }, 0);
+  useEffect(() => {
+    const aa = selectedItems.reduce((accumulator, item) => {
+      return accumulator + item.price * item.amount;
+    }, 0);
+    setTotalPrice(aa)
+  }, [selectedItems])
 
-  const totalAmount = selectedItems.reduce((accumulator, item) => {
-    return accumulator + item.amount;
-  }, 0);
+  useEffect(() => {
+    const aa = selectedItems.reduce((accumulator, item) => {
+      return accumulator + item.amount;
+    }, 0);
+    setTotalAmount(aa)
+  }, [selectedItems])
 
   return (
     <div className='product_itemBox'>

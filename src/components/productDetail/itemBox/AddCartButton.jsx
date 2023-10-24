@@ -17,11 +17,18 @@ const AddCartButton = memo(() => {
           alert('상품을 선택해주세요');
           return;
         }
-        else {
-          selectedItems.forEach(item => handleAddBasket(item, loginState, navigate))
+        else if (selectedItems.length > 0) {
+          const confirmData = confirm("장바구니에 담으시겠습니까?")
+          if (confirmData) {
+            selectedItems.forEach(item => handleAddBasket(item, loginState, navigate))
+          }
+          else {
+            alert('취소되었습니다.')
+          }
         }
       }
-      }>
+      }
+    >
       장바구니에 담기
     </button>
   );

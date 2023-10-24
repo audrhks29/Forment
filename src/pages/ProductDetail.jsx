@@ -1,4 +1,4 @@
-import React, { memo, useLayoutEffect, useState } from 'react';
+import React, { memo, useEffect, useLayoutEffect, useState } from 'react';
 
 import { useParams } from 'react-router-dom';
 
@@ -12,25 +12,32 @@ import InfoBox from '../components/productDetail/InfoBox';
 
 const ProductDetail = memo(() => {
   const { productID } = useParams();
-  const parseId = parseInt(productID, 10)
   const { productData } = useProductStore(state => state)
-  const { paramsOptionData, paramsSetData, selectedOption } = useProductDetailStore(state => state)
+  const { fetchData } = useProductStore(state => state);
+  const { paramsData, paramsOptionData, paramsSetData, selectedOption } = useProductDetailStore(state => state)
   const { settingParamsData, settingParamsOptionData, settingParamsSetData, settingParamsDetailImageData, initialSelectedItems, settingSetBoxForSelectedOptions } = useProductDetailStore(state => state)
-  const { fetchData } = useProductDetailStore(state => state);
+  const { fetchDetailData } = useProductDetailStore(state => state);
+  const [parseId, setParseID] = useState(parseInt(productID, 10));
+  localStorage.setItem('parseId', parseId.toString());
+
 
   useLayoutEffect(() => {
-    initialSelectedItems()
+    const storedParseID = localStorage.getItem('parseId');
+    if (storedParseID) {
+      setParseID(storedParseID)
+    }
+    fetchData().then(() => {
+      fetchDetailData().then(() => {
+        settingParamsOptionData(parseId);
+        settingParamsDetailImageData(parseId);
+      });
+    });
   }, [parseId])
 
-  useLayoutEffect(() => {
-    fetchData().then(() => {
-      settingParamsData(productData, parseId)
-      settingParamsOptionData(parseId)
-      settingParamsDetailImageData(parseId)
-    })
-  }, [parseId]);
-  const { paramsData } = useProductDetailStore(state => state)
-  console.log(paramsData);
+  useEffect(() => {
+    settingParamsData(productData, parseId)
+  }, [productData])
+
   useLayoutEffect(() => {
     settingParamsSetData()
   }, [paramsOptionData])
@@ -42,8 +49,8 @@ const ProductDetail = memo(() => {
   return (
     <ProductDetailContainer>
       <div className='inner'>
-        {/* <ItemBox />
-        <InfoBox /> */}
+        {paramsData && parseId && < ItemBox />}
+        <InfoBox />
       </div>
     </ProductDetailContainer >
   );
