@@ -8,10 +8,12 @@ const Pagination = memo(() => {
     const { faqData } = useFaqStore(state => state);
     const { slicedData, pageAmount, currentPage, totalPage } = usePaginationStore(state => state)
     const { setData, setPagination, handleMovePage } = usePaginationStore(state => state)
+
     useEffect(() => {
         setData(faqData)
         setPagination();
     }, []);
+
     return (
         <PaginationContainer>
             <li onClick={() => handleMovePage(1)}><TfiAngleDoubleLeft /></li>

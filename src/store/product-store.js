@@ -2,9 +2,10 @@ import create from 'zustand';
 import axios from 'axios';
 import { devtools } from 'zustand/middleware'
 
-const useAppState = (set) => ({
+const useAppState = (set, getState) => ({
     productData: [],
     filteredProductData: [],
+    likedItems: [],
     fetchData: async () => {
         try {
             const response = await axios.get('https://gist.githubusercontent.com/audrhks29/64aa8b5dfcbeb875d59fcb45add63ea9/raw/0a70cf973e3380194fe6dfd264533ab7999adf1a/productData.json');
@@ -45,6 +46,16 @@ const useAppState = (set) => ({
             set({ filteredProductData: filteredData });
         }
     },
+    handleLikeClick: (productId) => {
+        const state = getState();
+        const likedItems = state.likedItems;
+        if (!likedItems.includes(productId)) {
+            set({ likedItems: [...likedItems, productId] });
+        }
+        else {
+            set({ likedItems: likedItems.filter(id => id !== productId) });
+        }
+    }
 });
 
 const useProductStore = create(devtools(useAppState))

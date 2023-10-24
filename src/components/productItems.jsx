@@ -1,34 +1,28 @@
-import React, { memo } from 'react';
+import React, { memo, useState } from 'react';
 
 import { ProductItemContainer, ReviewContainer } from '../styled/ProductStyles';
 
 import useProductStore from '../store/product-store';
 
-import { AiOutlineHeart } from 'react-icons/ai';
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
 import { Link } from 'react-router-dom';
 
 const ProductItems = memo(() => {
-    const { filteredProductData } = useProductStore(state => state);
-    // 하트로 교체
-    // const handleIconClick = (item, isItemInBasket) => {
-    //     if (loginState) {
-    //         if (isItemInBasket) handleRemoveBasket(item.id);
-    //         else handleAddBasket(item);
-    //     } else {
-    //         alert('로그인이 필요한 서비스입니다.');
-    //         navigate('/login');
-    //     }
-    // };
+    const { filteredProductData, likedItems } = useProductStore(state => state);
+    const { handleLikeClick } = useProductStore(state => state);
     return (
         <ProductItemContainer>
             {
                 filteredProductData.map((item, index) => {
                     const { titleImage, productName, price, salePrice, fragranceInfo, review } = item;
+                    const isLiked = likedItems.includes(item.id);
                     return (
                         <div key={item.id} className='itemBox'>
                             <div>
-                                <Link to={`/product/${item.id}`}><img src={titleImage} alt="" /></Link>
+                                <Link to={`/product/${item.id}`}>
+                                    <img src={titleImage} alt="" />
+                                </Link>
                             </div>
                             <ul>
                                 <li>{productName}</li>
@@ -40,9 +34,14 @@ const ProductItems = memo(() => {
                             </ul>
                             <ReviewContainer>
                                 <span>( 리뷰 {review.toLocaleString()}개 )</span>
-                                <div>
-                                    <i><AiOutlineHeart /></i>
-                                    {/* <AiFillHeart /> */}
+                                <div onClick={() => handleLikeClick(item.id)}>
+                                    <i>
+                                        {
+                                            isLiked
+                                                ? <AiFillHeart style={{ color: "red" }} />
+                                                : <AiOutlineHeart />
+                                        }
+                                    </i>
                                 </div>
                             </ReviewContainer>
                         </div>

@@ -155,6 +155,7 @@ export const ProductDetailContainer = styled.div`
                     padding:10px 0;
                     width: 100%;
                     border-bottom:1px solid #ccc;
+                    position:relative;
                     ul{
                         width:600px;
                     }
@@ -180,6 +181,16 @@ export const ProductDetailContainer = styled.div`
                                 }
                             }
                             
+                        }
+                    }
+                    .close_wrap{
+                        position:absolute;
+                        top:50%;
+                        right:0;
+                        transform:translateY(-50%);
+                        cursor:pointer;
+                        i{
+                            font-size:20px;
                         }
                     }
                 }
