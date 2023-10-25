@@ -1,15 +1,18 @@
 import React, { memo, useEffect, useState } from 'react';
 import useProductDetailStore from '../../store/productDetail-store';
-import { AiOutlineHeart } from 'react-icons/ai';
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 import TextBox from './itemBox/textBox';
 import SelectedOption from './itemBox/SelectedOption';
 import SelectedItem from './itemBox/SelectedItem';
 import AddCartButton from './itemBox/AddCartButton';
 import PurchaseButton from './itemBox/PurchaseButton';
 import SelectedSet from './itemBox/SelectedSet';
+import useProductStore from '../../store/product-store';
 
 const ItemBox = memo(() => {
   const { paramsData, selectedItems } = useProductDetailStore(state => state)
+  const { likedItems } = useProductStore(state => state)
+  const { handleLikeClick } = useProductStore(state => state)
   const [totalPrice, setTotalPrice] = useState(0)
   const [totalAmount, setTotalAmount] = useState(0)
 
@@ -26,7 +29,7 @@ const ItemBox = memo(() => {
     }, 0);
     setTotalAmount(aa)
   }, [selectedItems])
-
+  const isLiked = likedItems.includes(paramsData.id);
   return (
     <div className='product_itemBox'>
       <div className='product_imgBox'>
@@ -36,8 +39,8 @@ const ItemBox = memo(() => {
         <TextBox />
         <div className='product_optBox'>
           <SelectedOption />
-          <SelectedSet />{
-            selectedItems.length > 0 && <SelectedItem />}
+          <SelectedSet />
+          {selectedItems.length > 0 && <SelectedItem />}
           {
             selectedItems.length > 0 &&
             <div className='total_priceBox'>
@@ -46,8 +49,15 @@ const ItemBox = memo(() => {
             </div>
           }
           <div className='btn_Wrap'>
-            <button>
-              <i><AiOutlineHeart /></i>
+            <button onClick={() => handleLikeClick(paramsData.id)}>
+              <i>
+                {
+                  isLiked
+                    ? <AiFillHeart style={{ color: "red" }} />
+                    : <AiOutlineHeart />
+                }
+              </i>
+
             </button>
             <AddCartButton />
             <PurchaseButton />

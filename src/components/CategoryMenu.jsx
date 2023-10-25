@@ -5,10 +5,11 @@ import { useLocation } from 'react-router-dom';
 import useProductStore from '../store/product-store';
 
 import { CategoryContainer } from '../styled/CategoryStyles';
+import { useEffect } from 'react';
 
 const CategoryMenu = memo(() => {
     const { productData, productCategories, fragranceCategories, selectedCategory } = useProductStore(state => state);
-    const { setCategoryAndFilteredData } = useProductStore(state => state);
+    const { settingSelectedCategory, handleFiltered } = useProductStore(state => state);
     const location = useLocation();
     const pathname = location.pathname;
 
@@ -20,27 +21,33 @@ const CategoryMenu = memo(() => {
         }
         return [];
     }
-
+    const handle = (label) => {
+        settingSelectedCategory(label)
+        handleFiltered()
+    }
     const categoryArray = getCategoryArray();
     return (
         <CategoryContainer>
             <ul>
                 {
-                    categoryArray.map(item => (
-                        <li
-                            key={item.id}
-                            className={item.label === selectedCategory ? 'on' : ''}
-                            onClick={() => setCategoryAndFilteredData(item.label, productData)}
-                        >
-                            <div className='img_box'>
-                                <img src={item.image} alt="" />
-                            </div>
-                            <span>{item.label}</span>
-                        </li>
-                    ))
+                    categoryArray.map(item => {
+                        const { id, label, image } = item;
+                        return (
+                            <li
+                                key={id}
+                                className={label === selectedCategory ? 'on' : ''}
+                                onClick={() => handle(label)}
+                            >
+                                <div className='img_box'>
+                                    <img src={image} alt="" />
+                                </div>
+                                <span>{label}</span>
+                            </li>
+                        )
+                    })
                 }
             </ul>
-        </CategoryContainer>
+        </CategoryContainer >
     );
 });
 

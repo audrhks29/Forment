@@ -1,11 +1,12 @@
 import React, { memo, useLayoutEffect } from 'react';
 import useProductStore from '../store/product-store';
-import { ProductContainer } from '../styled/ProductStyles';
+import { ProductContainer, SearchContainer } from '../styled/ProductStyles';
 import CategoryMenu from '../components/CategoryMenu';
 import ProductItems from './productItems';
+import { AiOutlineSearch } from 'react-icons/ai';
 const AllProductAndFragrance = memo(() => {
-    const { productData, selectedCategory, filteredProductData } = useProductStore(state => state);
-    const { fetchData, setInitialCategory, setCategoryAndFilteredData } = useProductStore(state => state);
+    const { filteredProductData, searchKeywords } = useProductStore(state => state);
+    const { fetchData, setInitialCategory, settingSearchKeywords, handleFiltered } = useProductStore(state => state);
 
     useLayoutEffect(() => {
         fetchData().then(() => {
@@ -13,15 +14,24 @@ const AllProductAndFragrance = memo(() => {
         })
     }, []);
 
-    useLayoutEffect(() => {
-        setCategoryAndFilteredData(selectedCategory, productData)
-    }, [selectedCategory, productData])
+    const handle = (e) => {
+        settingSearchKeywords(e)
+        handleFiltered()
+    }
 
     return (
         <ProductContainer>
             <div className='inner'>
                 <CategoryMenu />
-                <p className='productLength'>총 {filteredProductData.length}개의 상품이 있습니다.</p>
+                <SearchContainer>
+                    <div className='lengthBox'>총 <strong>{filteredProductData.length}개</strong>의 상품이 있습니다.</div>
+                    <input
+                        type="text"
+                        value={searchKeywords}
+                        onChange={(e) => handle(e)}
+                        placeholder='제품명을 입력하세요'
+                    />
+                </SearchContainer>
                 <ProductItems />
             </div>
         </ProductContainer>

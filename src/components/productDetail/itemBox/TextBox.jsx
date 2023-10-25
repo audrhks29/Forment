@@ -43,24 +43,31 @@ const TextBox = memo(() => {
           </tbody>
         </table>
       </p>
-      <p className='fragranceNote'>
-        <table>
-          <tbody>
-            <tr>
-              <th>TOP</th>
-              <td>{paramsData.fragranceTop}</td>
-            </tr>
-            <tr>
-              <th>MID</th>
-              <td>{paramsData.fragranceMid}</td>
-            </tr>
-            <tr>
-              <th>BASE</th>
-              <td>{paramsData.fragranceBase}</td>
-            </tr>
-          </tbody>
-        </table>
-      </p>
+      <div className='fragranceNote'>
+        {
+          paramsData.fragranceTop &&
+          <table>
+            <tbody>
+              <tr>
+                <th>TOP</th>
+                <td>{paramsData.fragranceTop}</td>
+              </tr>
+              <tr>
+                <th>MID</th>
+                <td>{paramsData.fragranceMid}</td>
+              </tr>
+              <tr>
+                <th>BASE</th>
+                <td>{paramsData.fragranceBase}</td>
+              </tr>
+            </tbody>
+          </table>
+        }
+        {
+          !paramsData.fragranceTop &&
+          <span>상세페이지 참조</span>
+        }
+      </div>
       <p className='fragranceInfo'>{paramsData.fragranceInfo}</p>
       {
         paramsData.desc &&

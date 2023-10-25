@@ -5,12 +5,26 @@ export const ProductContainer = styled.div`
     .inner{
         ${settingInner}
     }
-    .productLength{
-        padding:10px;
-        font-size:14px;
-    }
 `
-
+export const SearchContainer = styled.div`
+    margin: 20px 0;
+    font-size:14px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height:30px;
+    .lengthBox{
+        strong{
+            font-weight:700;
+            text-decoration:underline;
+        }
+    }
+    input{
+        height:30px;
+        width:300px;
+    }
+        
+`
 export const ProductItemContainer = styled.div`
     display:flex;
     flex-wrap:wrap;
@@ -111,6 +125,9 @@ export const ProductDetailContainer = styled.div`
                     width:100px;
                     color:#9c9c9c;
                     text-align:left;
+                }
+                span{
+                    color:#9c9c9c; 
                 }
             }
             .desc{

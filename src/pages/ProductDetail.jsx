@@ -20,17 +20,19 @@ const ProductDetail = memo(() => {
   const [parseId, setParseID] = useState(parseInt(productID, 10));
   localStorage.setItem('parseId', parseId.toString());
 
-
   useLayoutEffect(() => {
+    initialSelectedItems()
     const storedParseID = localStorage.getItem('parseId');
     if (storedParseID) {
       setParseID(storedParseID)
     }
-    fetchData().then(() => {
-      fetchDetailData().then(() => {
-        settingParamsOptionData(parseId);
-        settingParamsDetailImageData(parseId);
-      });
+    if (!productData) {
+      fetchData()
+    }
+    fetchData()
+    fetchDetailData().then(() => {
+      settingParamsOptionData(parseId);
+      settingParamsDetailImageData(parseId);
     });
   }, [parseId])
 

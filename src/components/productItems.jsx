@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react';
+import React, { memo } from 'react';
 
 import { ProductItemContainer, ReviewContainer } from '../styled/ProductStyles';
 
@@ -15,26 +15,30 @@ const ProductItems = memo(() => {
         <ProductItemContainer>
             {
                 filteredProductData.map((item, index) => {
-                    const { titleImage, productName, price, salePrice, fragranceInfo, review } = item;
-                    const isLiked = likedItems.includes(item.id);
+                    const { id, titleImage, productName, price, salePrice, fragranceInfo, review } = item;
+                    const isLiked = likedItems.includes(id);
                     return (
-                        <div key={item.id} className='itemBox'>
+                        <div key={id} className='itemBox'>
                             <div>
-                                <Link to={`/product/${item.id}`}>
+                                <Link to={`/product/${id}`}>
                                     <img src={titleImage} alt="" />
                                 </Link>
                             </div>
                             <ul>
                                 <li>{productName}</li>
                                 <li>
-                                    <strong>{salePrice.toLocaleString()}원</strong>
-                                    <span className='color_red'>{price.toLocaleString()}원</span>
+                                    <strong>
+                                        {salePrice.toLocaleString()}원
+                                    </strong>
+                                    <span className='color_red'>
+                                        {price.toLocaleString()}원
+                                    </span>
                                 </li>
                                 <li>{fragranceInfo}</li>
                             </ul>
                             <ReviewContainer>
-                                <span>( 리뷰 {review.toLocaleString()}개 )</span>
-                                <div onClick={() => handleLikeClick(item.id)}>
+                                <span>(리뷰 {review.toLocaleString()}개)</span>
+                                <div onClick={() => handleLikeClick(id)}>
                                     <i>
                                         {
                                             isLiked
