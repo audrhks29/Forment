@@ -12,7 +12,7 @@
         "fragranceMid": "진저 | 네롤리",
         "fragranceBase": "샌달우드 | 패출리 | 코튼 머스크",
         "desc": "새로운 시대를 여는 성공\n\nMaster Perfumer. Francois Berndt\n\nCotton Success 는 CHANEL 퍼퓸하우스의 마스터 퍼퓨머인 프랑수아 번트(Francois Bernt)가 '성공'을 그려낸 향수 입니다.\n\n생 자몽을 갓 짜낸 듯한 상쾌함과 베르가못의 쌉싸름한 강렬함과 코튼 머스크와 샌달우드의 부드럽고 깊은 잔향이 최면을 거는 듯한 매력적인 향기를 선사합니다.\n자신의 운명을 개척하는 자신감과 성취감을 보여주는 또 다른 명함으로 강인함과 부드러움이 공존하는 성공의 품격을 보여줍니다.",
-        "titleImage": "../public/images/product/purfumes/success/titleImage.png",
+        "titleImage": "/images/product/purfumes/success/titleImage.png",
         "review": 1939
     },
     {
@@ -28,7 +28,7 @@
         "fragranceMid": "무화과 | 사이클라멘 | 로즈",
         "fragranceBase": "무화과 나무 | 시더우드 | 머스크",
         "desc": "탐스럽게 익은 무화과 열매의 달콤함\n\nGlobal Director Perfumer. Christian Provenzano\n\n무화과 잎사귀의 쌉싸름하고 신선한 풀 내음과 진한 붉은 빛깔로 탐스럽게 익어가는 무화과 열매에서 쏟아지듯 흘러나오는 과즙이 달콤한 존재감을 대담하게 뽐내고, 무화과 나무와 시더우드로 포근한 감정을 그리며 찬란하고도 행복한 기억을 만들어줍니다.\n자연으로부터 시작되는 영감을 위한 포맨트 첫번째 컬렉션인\nNatural Collection 은 신선한 영감을 통한 지친하루의 터닝포인트가 됩니다.",
-        "titleImage": "../public/images/product/purfumes/natural/figNoir/titleImage.jpg",
+        "titleImage": "/images/product/purfumes/natural/figNoir/titleImage.jpg",
         "review": 332
     },
     {
@@ -44,7 +44,7 @@
         "fragranceMid": "아이리스 | 바이올렛 | 오키드",
         "fragranceBase": "샌달우드 | 레더 | 머스크 | 앰버",
         "desc": "젖은 대지 위 깊은 나무 내음의 역동적인 고요함\n\nGlobal Director Perfumer. Christian Provenzano\n\n카다멈과 소나무 잎의 섬세하고 정교한 허브 스파이스 노트로 비 온 뒤 축축하게 젖은 숲속의 정적을 깨우며 자연의 생명력을 담은 향기를 발산합니다. 존재감있는 샌달우드의 깊은 내음이 자연이 품은 경이로운 에너지와 함께 영감의 순간을 선물합니다.\n자연으로부터 시작되는 영감을 위한 포맨트 첫번째 컬렉션인\nNatural Collection은 신선한 영감을 통한 지친하루의 터닝포인트가 됩니다.",
-        "titleImage": "../public/images/product/purfumes/natural/santalRain/titleImage.png",
+        "titleImage": "/images/product/purfumes/natural/santalRain/titleImage.png",
         "review": 461
     },
     {
@@ -60,7 +60,7 @@
         "fragranceMid": "바질 | 클로브 | 자스민",
         "fragranceBase": "시더우드 | 베티버 | 앰버 | 머스크",
         "desc": "싱그러운 유자 열매와 생기 넘치는 바질 잎이 주는 경쾌함\n\nGlobal Director Perfumer. Christian Provenzano\n\n영감을 불러일으키는 바질 잎의 싱그러움 뒤로 가볍게 감싸는 머스크의 터치는 기분 좋은 여운을 오래도록 남겨줍니다.\n자연으로부터 시작되는 영감을 위한 포맨트 첫번째 컬렉션인 Natural Collection은 신선한 영감을 통한 지친하루의 터닝포인트가 됩니다.",
-        "titleImage": "../public/images/product/purfumes/natural/basilTerrace/titleImage.jpg",
+        "titleImage": "/images/product/purfumes/natural/basilTerrace/titleImage.jpg",
         "review": 302
     },
     {
@@ -76,7 +76,7 @@
         "fragranceMid": "바질 | 클로브 | 자스민",
         "fragranceBase": "시더우드 | 베티버 | 앰버 | 머스크",
         "desc": "싱그러운 유자 열매와 생기 넘치는 바질 잎이 주는 경쾌함\n\nGlobal Director Perfumer. Christian Provenzano\n\n영감을 불러일으키는 바질 잎의 싱그러움 뒤로 가볍게 감싸는 머스크의 터치는 기분 좋은 여운을 오래도록 남겨줍니다.\n자연으로부터 시작되는 영감을 위한 포맨트 첫번째 컬렉션인 Natural Collection은 신선한 영감을 통한 지친하루의 터닝포인트가 됩니다.",
-        "titleImage": "../public/images/product/shower/natural/basilTerrace/titleImage.jpg",
+        "titleImage": "/images/product/shower/natural/basilTerrace/titleImage.jpg",
         "review": 35
     },
     {
@@ -92,7 +92,7 @@
         "fragranceMid": "장미 | 자스민 | 오렌지꽃",
         "fragranceBase": "패출리 | 시더우드 | 머스크 | 앰버",
         "desc": "안기고 싶은 포근함\n\n공기 중에 퍼지는 뮤게의 깨끗함과 머스크의 부드러움\n\n몸을 따라 흐르는 촉촉한 물기 사이로 피어나는 깨끗한 살냄새,\n허그의 향연,\n사랑하는 사람을 끌어안았을때의 기분좋은 포근함\n깨끗하게 건조된 이불 위의 햇살위로 살결 같은 포근한 향기가 여기저기 내려앉았다. 나는 부드럽게 감싸오는 기분 좋은 포근함을 놓치지 않으려 천천히 눈을 감았다.",
-        "titleImage": "../public/images/product/purfumes/hug/titleImage.jpg",
+        "titleImage": "/images/product/purfumes/hug/titleImage.jpg",
         "review": 6733
     },
     {
@@ -108,7 +108,7 @@
         "fragranceMid": "자스민 | 은방울꽃 | 프리지아 | 가드니아",
         "fragranceBase": "머스크 | 앰버 | 베티버 | 샌달우드",
         "desc": "향기가 실린 바람과 우연의 시작.\n\nGlobal Director Perfumer. Christian Provenzano\n\n코튼브리즈는 Christian Provenzanork가 '산들바람'에 영감을 받아 탄생한 향수입니다.\n\n경쾌한 그린 노트와 달콤한 카시스 노트가 부드러운 코튼향과 어우러져 그늘 밑 기분 좋게 불어오는 산들바람을 연상케 합니다.\n당신이 지나간 자리에 작은 바람이 스쳐왔다.\n반복되는 일상 속에 푸른생기를 가득채워, 일상의 적막함으로부터 나를 숨쉬게 하는 순간이었다.\n잊을 수 없는 그 향기를 나는 최대한 오래도록 기억하기 위해 한참을 그 자리에 서 있었다.",
-        "titleImage": "../public/images/product/purfumes/breeze/titleImage.png",
+        "titleImage": "/images/product/purfumes/breeze/titleImage.png",
         "review": 2502
     },
     {
@@ -124,7 +124,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "코랄빛으로 물드는 설렘의 기억\n\nPerfumer. Jennifer Jambon\n\n코튼메모리는 前 Molton Brown UK 수석 조향사, 現 아르제빌의 조향사인 제니퍼 잼본(Jennifer Jambon)이 '설렜던 순간'에 영감을 받아 탄생한 향수입니다.\n생자몽과 복숭아를 갓 짜낸듯한 향기가 피어오를 때 히아신스의 플로럴 무드 속 우아함 아래, 살결같은 파우더리 함이 더해져 설렘의 기억을 연상케 합니다.",
-        "titleImage": "../public/images/product/purfumes/memory/titleImage.png",
+        "titleImage": "/images/product/purfumes/memory/titleImage.png",
         "review": 7292
     },
     {
@@ -140,7 +140,7 @@
         "fragranceMid": "작약 | 장미 | 자스민",
         "fragranceBase": "벨벳 | 앰버 | 샌달우드 | 머스크 | 바닐라",
         "desc": "우아한 촉감의 정점, 벨벳\n\nGlobal Director Perfumer. Christian Provenzano\n레드 애플의 달콤한 향취 속 작약꽃과 핑크 로즈의 실키하고 크리미한 뉘앙스가 더해진 몽환적인 벨벳의 향.\n무의식 속 이끌린 시선에 남겨진 향,\n이윽고 부드럽게 스며든 심장소리.\n\n벨벳의 우아함과 포근함을 담은 시그니처 퍼퓸 '벨벳 허그'는 무의식 속 이끌림에 관한 이야기입니다.",
-        "titleImage": "../public/images/product/purfumes/velvetHug/titleImage.jpg",
+        "titleImage": "/images/product/purfumes/velvetHug/titleImage.jpg",
         "review": 1369
     },
     {
@@ -156,7 +156,7 @@
         "fragranceMid": "장미 | 아이리스 | 코튼",
         "fragranceBase": "머스크 | 앰버 | 파우더리 | 샌달우드",
         "desc": "새벽녘을 수놓는 밤하늘 아래, 따스한 살결의 온기.\nGlobal Director Perfumer. Christian Provenzano\n\n핑크페퍼의 터치로 시작되는 순수한 로즈의 환기와 스며드는 살결의 따스함이 담긴 섬세하고 센슈얼한 코튼 머스크 향\n\n온 몸을 휘감고 있던 찬바람을 떨치고 포근한 이불 속에 손과 발을 넣으면 전해지는 따스한 떨림.\n살아있다는 행복.\n온기가 가져다주는 포근한 위로.\n차가움 속 더욱 선명해지는 따뜻함의 대비를 통해 서늘함과 따스함이 공존하는 이미지의 중첩을 그려낸 시그니처 퍼퓸은, 환기와 온기를 통해 전하는 '위로'에 관한 이야기입니다.\n\n차가움 : 현재로부터의 환기, 집중의 시간\n따스함 : 살결의 온기",
-        "titleImage": "../public/images/product/purfumes/dearNight/titleImage.png",
+        "titleImage": "/images/product/purfumes/dearNight/titleImage.png",
         "review": 2432
     },
     {
@@ -172,7 +172,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "살결에 머무는 가장 포근한 향기, 포맨트 고체향수\nSIGNITURE SOLID PERFUME\n에탄올 0%로 살에 닿았을 때 가장 포근하고 자연스러운 살냄새를 선사합니다.\n\n편안한 감각을 형성하는 라운드 커브의 유연함이 표현된 솔리드 퍼퓸은 적은 힘으로도 가볍게 눌러 편하게 사용이 가능하며 포터블한 사이즈로 언제 어디서나 기분 좋은 향기를 선사합니다.",
-        "titleImage": "../public/images/product/solidPurfumes/all/titleImage.jpg",
+        "titleImage": "/images/product/solidPurfumes/all/titleImage.jpg",
         "review": 1712
     },
     {
@@ -188,7 +188,7 @@
         "fragranceMid": "장미 | 자스민 | 오렌지꽃",
         "fragranceBase": "패출리 | 시더우드 | 머스크 | 앰버",
         "desc": "아쿠아리치 함유로 촉촉하고 풍성한 거품이 피부를 부드럽게 세정하여 매끄러운 피부를 만들고, 내추럴 프로텍터 특허 성분의 깊은 보습감은 씻고난 후의 건조 스트레스를 막아줍니다.\n끌어안고 싶은 포근한 향의 코튼 허그 퍼퓸 바디워시는 오롯이 즐기는 휴식의 가치를 더욱 풍성하게 채우며, 샤워 후에도 오래도록 지속되는 향기의 여운을 남깁니다.",
-        "titleImage": "../public/images/product/solidPurfumes/hug/titleImage.png",
+        "titleImage": "/images/product/solidPurfumes/hug/titleImage.png",
         "review": 224
     },
     {
@@ -204,7 +204,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "코랄빛으로 물드는 설렘의 기억\nPerfumer. Jennifer Jambon\n살결에 머무는 가장 포근한 향기, 포맨트 고체향수\n에탄올 0%로 살에 닿았을 때 가장 포근하고 자연스러운 살냄새를 선사합니다.\n편안한 감각을 형성하는 라운드 커브의 유연함이 표현된 솔리드 퍼퓸은 적은 힘으로도 가볍게 눌러 편하게 사용이 가능하며 포터블한 사이즈로 언제 어디서나 기분 좋은 향기를 선사합니다.\n",
-        "titleImage": "../public/images/product/solidPurfumes/memory/titleImage.jpg",
+        "titleImage": "/images/product/solidPurfumes/memory/titleImage.jpg",
         "review": 231
     },
     {
@@ -220,7 +220,7 @@
         "fragranceMid": "작약 | 장미 | 자스민",
         "fragranceBase": "벨벳 | 앰버 | 샌달우드 | 머스크 | 바닐라",
         "desc": "우아한 촉감의 정점, 벨벳\nGlobal Director Perfumer. Christian Provenzano\n\n레드 애플의 달콤한 향취 속 작약꽃과 핑크 로즈의 실키하고 크리미한 뉘앙스가 더해진 몽환적인 벨벳의 향.\n살결에 머무는 가장 포근한 향기, 포맨트 고체향수\n\nSIGNITURE SOLID PERFUME\n에탄올 0%로 살에 닿았을 때 가장 포근하고 자연스러운 살냄새를 선사합니다.\n\n편안한 감각을 형성하는 라운드 커브의 유연함이 표현된 솔리드 퍼퓸은\n적은 힘으로도 가볍게 눌러 편하게 사용이 가능하며\n포터블한 사이즈로 언제 어디서나 기분 좋은 향기를 선사합니다.",
-        "titleImage": "../public/images/product/solidPurfumes/velvetHug/titleImage.jpg",
+        "titleImage": "/images/product/solidPurfumes/velvetHug/titleImage.jpg",
         "review": 61
     },
     {
@@ -236,7 +236,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "바르는 순간, 끌어안고 싶은 포근한 향기의 여운을 남기는 코튼 허그 퍼퓸 핸드크림은 잦은 세정으로 무너진 손을 호호바오일, 비타민 E로 더욱 생기있게 케어합니다.\n또한 손톱 구성 성분과 유사한 케라틴 성분이 함유되어있어 지쳐있는 손과 큐티클에 풍부한 영양감을 선사합니다.\n\n부드럽게 감싸오는 기분 좋은 포근함을 담은 코튼 허그의 향으로 작은 힐링의 시간을 가져보세요.",
-        "titleImage": "../public/images/product/handCream/memory/set/titleImage.jpg",
+        "titleImage": "/images/product/handCream/memory/set/titleImage.jpg",
         "review": 6
     },
     {
@@ -252,7 +252,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "[구성] 샤워300ml+샤워볼",
-        "titleImage": "../public/images/product/shower/all/purfumeShowerGiftSet/titleImage.jpg",
+        "titleImage": "/images/product/shower/all/purfumeShowerGiftSet/titleImage.jpg",
         "review": 17
     },
     {
@@ -268,7 +268,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "아쿠아리치 함유로 촉촉하고 풍성한 거품이 피부를 부드럽게 세정하여 매끄러운 피부를 만들고, 내추럴 프로텍터 특허 성분의 깊은 보습감은 씻고난 후의 건조 스트레스를 막아줍니다.\n\n끌어안고 싶은 포근한 향의 코튼 허그 퍼퓸 바디워시는 오롯이 즐기는 휴식의 가치를 더욱 풍성하게 채우며, 샤워 후에도 오래도록 지속되는 향기의 여운을 남깁니다.\n\nBe refreshed with Scent\n향기로 전하는 리프레쉬",
-        "titleImage": "../public/images/product/shower/all/allInOnePurfumeShower/titleImage.png",
+        "titleImage": "/images/product/shower/all/allInOnePurfumeShower/titleImage.png",
         "review": 40455
     },
     {
@@ -284,7 +284,7 @@
         "fragranceMid": "화이트 플로럴 | 코튼",
         "fragranceBase": "머스크 | 우디",
         "desc": "아쿠아리치 함유로 촉촉하고 풍성한 거품이 피부를 부드럽게 세정하여 매끄러운 피부를 만들고, 내추럴 프로텍터 특허 성분의 깊은 보습감은 씻고난 후의 건조 스트레스를 막아줍니다.\n\n가벼운 달달함 속 우디의 진중함, 머스크의 부드러움이 담긴 코튼 키스 퍼퓸 바디워시는 오롯이 즐기는 휴식의 가치를 더욱 풍성하게 채우며, 샤워 후에도 오래도록 지속되는 향기의 여운을 남깁니다.",
-        "titleImage": "../public/images/product/shower/kiss/titleImage.jpg",
+        "titleImage": "/images/product/shower/kiss/titleImage.jpg",
         "review": 4851
     },
     {
@@ -300,7 +300,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "아쿠아리치 함유로 촉촉하고 풍성한 거품이 피부를 부드럽게 세정하여 매끄러운 피부를 만들고, 내추럴 프로텍터 특허 성분의 깊은 보습감은 씻고난 후의 건조 스트레스를 막아줍니다.\n\n히아신스의 플로럴 무드 속 살결 같은 파우더리 함이 더해져 설레는 기억을 연상케 하는 코튼메모리 퍼퓸 바디워시는 오롯이 즐기는 휴식의 가치를 더욱 풍성하게 채우며, 샤워 후에도 오래도록 지속되는 향기의 여운을 남깁니다.",
-        "titleImage": "../public/images/product/shower/memory/titleImage.jpg",
+        "titleImage": "/images/product/shower/memory/titleImage.jpg",
         "review": 1233
     },
     {
@@ -316,7 +316,7 @@
         "fragranceMid": "장미 | 아이리스 | 코튼",
         "fragranceBase": "머스크 | 앰버 | 파우더리 | 샌달우드",
         "desc": "아쿠아리치 함유로 촉촉하고 풍성한 거품이 피부를 부드럽게 세정하여 매끄러운 피부를 만들고, 내추럴 프로텍터 특허 성분의 깊은 보습감은 씻고난 후의 건조 스트레스를 막아줍니다.\n\n새벽녘을 수놓는 밤하늘 아래, 따스한 살결의 온기를 담은 코튼 디어나잇 퍼퓸 바디워시는 오롯이 즐기는 휴식의 가치를 더욱 풍성하게 채우며, 샤워 후에도 오래도록 지속되는 향기의 여운을 남깁니다.",
-        "titleImage": "../public/images/product/shower/dearNight/titleImage.jpg",
+        "titleImage": "/images/product/shower/dearNight/titleImage.jpg",
         "review": 619
     },
     {
@@ -332,7 +332,7 @@
         "fragranceMid": "자스민 | 은방울꽃 | 프리지아 | 가드니아",
         "fragranceBase": "머스크 | 앰버 | 베티버 | 샌달우드",
         "desc": "아쿠아리치 함유로 촉촉하고 풍성한 거품이 피부를 부드럽게 세정하여 매끄러운 피부를 만들고, 내추럴 프로텍터 특허 성분의 깊은 보습감은 씻고난 후의 건조 스트레스를 막아줍니다.\n\n그늘 밑 기분좋게 불어오는 산들바람을 연상케 하는 코튼 브리즈 퍼퓸 바디워시는 오롯이 즐기는 휴식의 가치를 더욱 풍성하게 채우며, 샤워 후에도 오래도록 지속되는 향기의 여운을 남깁니다.",
-        "titleImage": "../public/images/product/shower/breeze/titleImage.jpg",
+        "titleImage": "/images/product/shower/breeze/titleImage.jpg",
         "review": 292
     },
     {
@@ -348,7 +348,7 @@
         "fragranceMid": "진저 | 네롤리",
         "fragranceBase": "샌달우드 | 패출리 | 코튼 머스크",
         "desc": "아쿠아리치 함유로 촉촉하고 풍성한 거품이 피부를 부드럽게 세정하여 매끄러운 피부를 만들고, 내추럴 프로텍터 특허 성분의 깊은 보습감은 씻고난 후의 건조 스트레스를 막아줍니다.\n\n생자몽을 갓 짜낸듯한 상쾌함과 코튼 머스크의 터치가 가미된 샌달우드향의 코튼 썩세스 퍼퓸 바디워시는 오롯이 즐기는 휴식의 가치를 더욱 풍성하게 채우며, 샤워 후에도 오래도록 지속되는 향기의 여운을 남깁니다.",
-        "titleImage": "../public/images/product/shower/success/titleImage.png",
+        "titleImage": "/images/product/shower/success/titleImage.png",
         "review": 71
     },
     {
@@ -364,7 +364,7 @@
         "fragranceMid": "장미 | 자스민 | 오렌지꽃",
         "fragranceBase": "패출리 | 시더우드 | 머스크 | 앰버",
         "desc": "아쿠아리치 함유로 촉촉하고 풍성한 거품이 피부를 부드럽게 세정하여 매끄러운 피부를 만들고, 내추럴 프로텍터 특허 성분의 깊은 보습감은 씻고난 후의 건조 스트레스를 막아줍니다.\n\n끌어안고 싶은 포근한 향의 코튼 허그 퍼퓸 바디워시는 오롯이 즐기는 휴식의 가치를 더욱 풍성하게 채우며, 샤워 후에도 오래도록 지속되는 향기의 여운을 남깁니다.",
-        "titleImage": "../public/images/product/shower/hug/titleImage.png",
+        "titleImage": "/images/product/shower/hug/titleImage.png",
         "review": 6178
     },
     {
@@ -380,7 +380,7 @@
         "fragranceMid": "장미 | 목련 | 뮤게",
         "fragranceBase": "자스민 | 그린 | 머스크",
         "desc": "아쿠아리치 함유로 촉촉하고 풍성한 거품이 피부를 부드럽게 세정하여 매끄러운 피부를 만들고, 내추럴 프로텍터 특허 성분의 깊은 보습감은 씻고난 후의 건조 스트레스를 막아줍니다.\n\n생기 가득한 싱그러운 꽃향기의 코튼 딜라잇부케 퍼퓸 바디워시는 오롯이 즐기는 휴식의 가치를 더욱 풍성하게 채우며, 샤워 후에도 오래도록 지속되는 향기의 여운을 남깁니다.\n\nBe refreshed with Scent 향기로 전하는 리프레쉬",
-        "titleImage": "../public/images/product/shower/delightBouquet/titleImage.jpg",
+        "titleImage": "/images/product/shower/delightBouquet/titleImage.jpg",
         "review": 205
     },
     {
@@ -396,7 +396,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "가장 빛나는 순간을 위한 포맨트.\n세계적인 조향사들이 그려낸 가장 편안하고 부드러운 향기로 내면의 자연스러움과 고유한 매력의 세계를 보여줍니다.\n\nCOTTON HUG |\n끌어안고 싶은 포근함, 공기 중에 퍼지는 뮤게의 깨끗함과 머스크의 부드러움.\nCOTTON KISS |\n키스를 부르는 섹시함, 은은한 포근함 속 우디와 머스크의 조화.\nCOTTON SUCCESS |\n새로운 시대를 여는 성공, 생자몽의 상쾌함과 코튼머스크의 부드러움.\nCOTTON MEMORY |\n코랄 빛으로 물드는 설렘의 기억, 플로럴무드 속 살결같은 파우더리 향.\nCOTTON BREEZE |\n향기가 실린 바람과 우연의 시작, 그늘 밑 불어오는 산들바람의 향.\nCOTTON DEAR NIGHT |\n온기가 주는 포근한 위로, 핑크페퍼와 로즈의 환기가 담긴 센슈얼한 머스크 향.\nCOTTON DELIGHT BOUQUET |\n생기 가득한 꽃내음이 주는 환희, 로즈와 프리지아 꽃잎이 내뿜는 향기.",
-        "titleImage": "../public/images/product/purfumes/all/purfumeSet/titleImage.png",
+        "titleImage": "/images/product/purfumes/all/purfumeSet/titleImage.png",
         "review": 60765
     },
     {
@@ -412,7 +412,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "8중 히알루론산과 시어버터의 모이스처 레시피 배합으로 바른 듯 안 바른 듯, 실키하고 편안한 마무리감을 선사하는 퍼퓸 바디로션 입니다.",
-        "titleImage": "../public/images/product/lotion/all/titleImage.jpg",
+        "titleImage": "/images/product/lotion/all/titleImage.jpg",
         "review": 3561
     },
     {
@@ -428,7 +428,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "8중 히알루론산과 시어버터의 모이스처 레시피 배합으로 바른 듯 안 바른 듯, 실키하고 편안한 마무리감을 선사하는 퍼퓸 바디로션 입니다.\n\n히아신스의 플로럴 무드 속 살결 같은 파우더리함이 더해진 코튼메모리 퍼퓸로션은 살결을 감싸는 가장 자연스러운 부향 1.5%로, 샤워 후 향수를 입은 듯, 살결에 긴 여운과 풍부한 보습감을 선사합니다.",
-        "titleImage": "../public/images/product/lotion/memory/titleImage.jpg",
+        "titleImage": "/images/product/lotion/memory/titleImage.jpg",
         "review": 953
     },
     {
@@ -444,7 +444,7 @@
         "fragranceMid": "진저 | 네롤리",
         "fragranceBase": "샌달우드 | 패출리 | 코튼 머스크",
         "desc": "8중 히알루론산과 시어버터의 모이스처 레시피 배합으로\n바른 듯 안 바른 듯, 실키하고 편안한 마무리감을 선사하는 퍼퓸 바디로션 입니다\n\n생자몽을 갓 짜낸듯한 상쾌함과 코튼 머스크의 터치가 가미된 샌달우드향의 코튼 썩세스 퍼퓸로션은 살결을 감싸는 가장 자연스러운 부향 1.5%로, 샤워 후 향수를 입은 듯, 살결에 긴 여운과 풍부한 보습감을 선사합니다",
-        "titleImage": "../public/images/product/lotion/success/titleImage.jpg",
+        "titleImage": "/images/product/lotion/success/titleImage.jpg",
         "review": 43
     },
     {
@@ -460,7 +460,7 @@
         "fragranceMid": "장미 | 자스민 | 오렌지꽃",
         "fragranceBase": "패출리 | 시더우드 | 머스크 | 앰버",
         "desc": "8중 히알루론산과 시어버터의 모이스처 레시피 배합으로 바른 듯 안 바른 듯, 실키하고 편안한 마무리감을 선사하는 퍼퓸 바디로션 입니다\n\n허그를 부르는 포근한 향의 코튼허그 퍼퓸로션은 살결을 감싸는 가장 자연스러운 부향 1.5%로, 샤워 후 향수를 입은 듯, 살결에 긴 여운과 풍부한 보습감을 선사합니다",
-        "titleImage": "../public/images/product/lotion/hug/titleImage.png",
+        "titleImage": "/images/product/lotion/hug/titleImage.png",
         "review": 309
     },
     {
@@ -476,7 +476,7 @@
         "fragranceMid": "장미 | 목련 | 뮤게",
         "fragranceBase": "자스민 | 그린 | 머스크",
         "desc": "생기 가득한 꽃내음이 주는 환희\nGlobal Director Perfumer. Christian Provenzano\n\n햇살을 가득 머금고 힘있게 펼쳐진 꽃,\n동그란 꽃망울이 소중히 품고 있던 생기 가득한 꽃내음.\n\n루바브와 은방울꽃의 그리너리한 싱그러움 너머로, 핑크 프리지아와 로즈의 활짝 피어난 꽃잎이 내뿜는 생생한 아름다움을 담은 향기를 선사합니다.",
-        "titleImage": "../public/images/product/purfumes/delightBouquet/titleImage.png",
+        "titleImage": "/images/product/purfumes/delightBouquet/titleImage.png",
         "review": 1789
     },
     {
@@ -492,7 +492,7 @@
         "fragranceMid": "화이트 플로럴 | 코튼",
         "fragranceBase": "머스크 | 우디",
         "desc": "키스를 부르는 섹시한 향기\n\n가벼운 달달함 속 우디의 진중함, 머스크의 부드러움\n\n와인바의 그 어느 술보다도 더 달달한, 와이셔츠에 찍힌 레드립이 연상되는 섹시한 플로럴 머스크의 향\n\n와인 바의 그 어느 술보다도 더 달달한 분위기,\n와이셔츠에 찍힌 레드립이 연상되는 매력적인 섹시함",
-        "titleImage": "../public/images/product/purfumes/kiss/titleImage.jpg",
+        "titleImage": "/images/product/purfumes/kiss/titleImage.jpg",
         "review": 718
     },
     {
@@ -508,7 +508,7 @@
         "fragranceMid": "장미ㅣ자스민ㅣ오렌지꽃",
         "fragranceBase": "패출리ㅣ시더우드ㅣ머스크ㅣ앰버",
         "desc": "향수를 입은 듯 끌어안고 싶은 포근한 향기, 시그니처 퍼퓸 섬유 유연제는 향수를 그대로 담은 듯한 끌어안고 싶은 포근한 향기와 최대 12주까지 지속되는 발향을 담은 프리미엄 섬유 유연제 입니다.\n\n미세 플라스틱까지 생각한 퓨어워터 사용으로 세탁 후 느껴지는 부드러운 촉감과 향수를 입은 듯 은은하게 오래가는 포근함을 느껴보세요",
-        "titleImage": "../public/images/product/fabricSoftener/hug/titleImage.jpg",
+        "titleImage": "/images/product/fabricSoftener/hug/titleImage.jpg",
         "review": 1822
     },
     {
@@ -524,7 +524,7 @@
         "fragranceMid": "장미ㅣ자스민ㅣ오렌지꽃",
         "fragranceBase": "패출리ㅣ시더우드ㅣ머스크ㅣ앰버",
         "desc": "두피를 채우는 향기로운 영양감.\n- 2주 사용 후, 탈락 모발 수 감소 효과\n- 두피 유분, 각질 개선 인체적용시험 완료\n- 식약처 인증 탈모 완화 기능성 샴푸\n",
-        "titleImage": "../public/images/product/shampoo/hug/titleImage.jpg",
+        "titleImage": "/images/product/shampoo/hug/titleImage.jpg",
         "review": 1426
     },
     {
@@ -540,7 +540,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "향기 가득한 찰랑거림 손상모 케어를 위한 자연유래 아르간 오일과 피토케라틴 함유로 부드럽게 찰랑거리는 머릿결과 탈모증상 완화 임상까지 완료한 손상모 케어 탈모 샴푸 입니다. \n튼메모리 향을 그대로 담아 사용후에도 머릿결에 오래도록 남는 설렘의 향기를 경험해보세요.",
-        "titleImage": "../public/images/product/shampoo/memory/titleImage.jpg",
+        "titleImage": "/images/product/shampoo/memory/titleImage.jpg",
         "review": 715
     },
     {
@@ -556,7 +556,7 @@
         "fragranceMid": "장미ㅣ자스민ㅣ오렌지꽃",
         "fragranceBase": "패출리ㅣ시더우드ㅣ머스크ㅣ앰버",
         "desc": "뮤게의 깨끗함과 머스크의 부드러움이 어우러진 풍부한 향기를 담아낸 코튼 허그 퍼퓸 디퓨저는 퍼퓸 등급의 부향률로 마지막 한방울까지 당신의 공간에 은은함을 선사합니다.\n\n매력적인 향기와 감각적인 디자인으로 평범한 일상 속 공간에 끌어안고 싶은 포근함을 채워보세요.",
-        "titleImage": "../public/images/product/diffuser/hug/titleImage.png",
+        "titleImage": "/images/product/diffuser/hug/titleImage.png",
         "review": 2373
     },
     {
@@ -572,7 +572,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "히아신스의 플로럴과 코튼이 어우러진 풍부한 향기를 담아낸 코튼 메모리 퍼퓸 디퓨저는 퍼퓸 등급의 부향률로 마지막 한방울까지 당신의 공간에 은은함을 선사합니다.\n\n매력적인 향기와 감각적인 디자인으로 평범한 일상 속 공간에 설렘의 기억을 채워보세요.",
-        "titleImage": "../public/images/product/diffuser/memory/titleImage.jpg",
+        "titleImage": "/images/product/diffuser/memory/titleImage.jpg",
         "review": 351
     },
     {
@@ -588,7 +588,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "샤워 후 살결에 입혀진 매력적인 향기의 잔재,\n\n오돌토돌 바디 트러블 고민을 덜어줄 포맨트 퍼퓸 샤워 바디스크럽은 거칠었던 피부결에 단 한번의 롤링으로 매끈한 피부결을 선사하며, 살결에 남는 설렘의 향기로 샤워 후 만족감을 극대화 시켜줍니다.\n\n자연유래 3중 스크럽 입자를 함유한 고운 알갱이로 묵은 각질과 피로를 한번에 씻어내보세요.",
-        "titleImage": "../public/images/product/bodyScrub/memory/titleImage.jpg",
+        "titleImage": "/images/product/bodyScrub/memory/titleImage.jpg",
         "review": 255
     },
     {
@@ -604,7 +604,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "향기 가득한 찰랑거림\n\n실리콘 없이 자연유래 아르간오일 10,000ppm과 LPP+PPT 단백질을 함유하여 모발 깊은 속까지 영양을 주는 복구 트리트먼트입니다. 단, 1회 사용만으로도 갈라진 모발의 즉각적인 변화와 머리카락에 입혀진 코튼메모리의 설렘 가득한 향기를 느껴보세요\n\n- 자연유래 아르간 커넬오일 10,000ppm\n- 실리콘 FREE\n- 모발거칠기개선 임상완료\n- 손상모 테라피를 위한 12가지 임상완료",
-        "titleImage": "../public/images/product/treatment/memory/titleImage.jpg",
+        "titleImage": "/images/product/treatment/memory/titleImage.jpg",
         "review": 715
     },
     {
@@ -620,7 +620,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "손에 남는 잔여감 없이 머릿결에 찬란한 윤기만 남기는 포맨트 헤어오일은 손상모 케어에 뛰어난 모로코산 아르간 오일을 함유해 푸석해지고 갈라진 모발을 즉각 케어합니다.\n\n부드러운 머릿결 사이로 흘러나오는 은은한 향기의 여운을 경험해보세요.",
-        "titleImage": "../public/images/product/hairOil/memory/titleImage.jpg",
+        "titleImage": "/images/product/hairOil/memory/titleImage.jpg",
         "review": 1310
     },
     {
@@ -636,7 +636,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "",
-        "titleImage": "../public/images/product/essence/all/plus/titleImage.png",
+        "titleImage": "/images/product/essence/all/plus/titleImage.png",
         "review": 3159
     },
     {
@@ -652,7 +652,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "남자를 위한 데이&나이트\n피부 맞춤 솔루션을 하나로 담은 올인원 에센스\n\n낮에는 생기충전\n밤에는 수분충전\n",
-        "titleImage": "../public/images/product/essence/all/basic/titleImage.png",
+        "titleImage": "/images/product/essence/all/basic/titleImage.png",
         "review": 8753
     },
     {
@@ -668,7 +668,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "뮤게의 깨끗함과 머스크의 부드러움이 어우러진 풍부한 향기를 담아낸 코튼 허그 퍼퓸 디퓨저는 퍼퓸 등급의 부향률로 마지막 한방울까지 당신의 공간에 은은함을 선사합니다.\n매력적인 향기와 감각적인 디자인으로 평범한 일상 속 공간에 끌어안고 싶은 포근함을 채워보세요.",
-        "titleImage": "../public/images/product/diffuser/all/allRound/titleImage.jpg",
+        "titleImage": "/images/product/diffuser/all/allRound/titleImage.jpg",
         "review": 1517
     },
     {
@@ -684,7 +684,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "설렘의 여정이 함께하는 공간 속 포맨트 차량용 디퓨저\n\n향기가 선사하는 찬란한 순간을 형상화한 포맨트 차량용 디퓨저는 예술적인 곡선미로 존재감을 드러냅니다.\n\n포맨트가 제안하는 특별한 선물포장과 5가지 시그니처 향으로 사랑과 설렘의 여정이 함께하는 공간에서 '당신이 가장 빛나는 순간'을 경험해보세요\n\nFor the best moment in the car\n\n코튼 허그 ㅣ깨끗하고 포근한 코튼 향\n허그 미ㅣ우아하면서 파우더리한 향\n로즈 베이ㅣ장미로 가득한 정원의 향\n어웨이큰 미ㅣ싱그러운 허브티 향\n리멤버 미ㅣ사랑스러운 자몽 복숭아 향\n",
-        "titleImage": "../public/images/product/carDiffuser/all/titleImage.jpg",
+        "titleImage": "/images/product/carDiffuser/all/titleImage.jpg",
         "review": 3112
     },
     {
@@ -700,7 +700,7 @@
         "fragranceMid": "",
         "fragranceBase": "",
         "desc": "설렘의 여정이 함께하는 공간 속 향기를 위한 차량용 방향제 리필입니다.\n고급스러운 발향을 선사하는 향기캡슐 소재로 포맨트의 향기를 만나보세요.\n\n코튼 허그 ㅣ깨끗하고 포근한 코튼\n허그 미ㅣ우아하면서 파우더리한 향\n로즈 베이ㅣ장미로 가득한 정원 향\n\n설렘의 여정이 함께하는 공간 속 포맨트 차량용 디퓨저의 리필입니다. 3가지 시그니처 향으로 사랑과 설렘의 여정이 함께하는 공간에서 '당신이 가장 빛나는 순간'을 경험해보세요\n\nFor the best moment in the car.",
-        "titleImage": "../public/images/product/carDiffuser_refill/all/titleImage.jpg",
+        "titleImage": "/images/product/carDiffuser_refill/all/titleImage.jpg",
         "review": 3112
     },
     {
@@ -716,7 +716,7 @@
         "fragranceMid": "장미ㅣ자스민ㅣ오렌지꽃",
         "fragranceBase": "패출리ㅣ시더우드ㅣ머스크ㅣ앰버",
         "desc": "일상 속 지친 손에 선사하는 즉각적인 리프레시,\n보습을 위한 특허성분이 함유된 포맨트 핸드워시는 뮤게의 깨끗함과 머스크의 포근한 향기로 즉각적인 리프레시를 선사합니다.\n\n손을 감싸 안은 듯, 부드러운 모이스처 라이징 소프트 텍스처와 함께 끌어안고 싶은 포근한 일상을 경험해 보세요.",
-        "titleImage": "../public/images/product/handWash/hug/titleImage.png",
+        "titleImage": "/images/product/handWash/hug/titleImage.png",
         "review": 99
     },
     {
@@ -732,7 +732,7 @@
         "fragranceMid": "장미ㅣ자스민ㅣ오렌지꽃",
         "fragranceBase": "패출리ㅣ시더우드ㅣ머스크ㅣ앰버",
         "desc": "바르는 순간, 끌어안고 싶은 포근한 향기의 여운을 남기는 코튼 허그 퍼퓸 핸드크림은 잦은 세정으로 무너진 손을 호호바오일, 비타민 E로 더욱 생기있게 케어합니다. 또한 손톱 구성 성분과 유사한 케라틴 성분이 함유되어있어 지쳐있는 손과 큐티클에 풍부한 영양감을 선사합니다.\n\n부드럽게 감싸오는 기분 좋은 포근함을 담은 코튼 허그의 향으로 작은 힐링의 시간을 가져보세요.",
-        "titleImage": "../public/images/product/handCream/hug/titleImage.png",
+        "titleImage": "/images/product/handCream/hug/titleImage.png",
         "review": 37
     },
     {
@@ -748,7 +748,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "보습을 위한 특허성분이 함유된 포맨트 핸드워시는 바르는 순간, 손을 감싸 안은 듯 부드러운 모이스처라이징 소프트 텍스쳐로 지친손에 힐링감을 선사합니다.\n\n잦은 세정에도 당김없는 마무리감은 물론, 히아신스 플로럴과 따스한 코튼이 어우러진 풍성한 향기로 즉각적인 리프레시를 경험해보세요.",
-        "titleImage": "../public/images/product/handWash/memory/titleImage.jpg",
+        "titleImage": "/images/product/handWash/memory/titleImage.jpg",
         "review": 120
     },
     {
@@ -764,7 +764,7 @@
         "fragranceMid": "자스민 | 히아신스 | 오렌지꽃",
         "fragranceBase": "머스크 | 코튼 | 앰버",
         "desc": "바르는 순간, 색다른 플로럴 향기의 여운을 남기는 코튼 메모리 퍼퓸 핸드크림은 호호바오일, 비타민 E를 함유해 잦은 세정으로 무너진 손을 더욱 생기있게 케어합니다. 또한 손톱 구성 성분과 유사한 케라틴 성분이 함유되어있어 지쳐있는 손과 큐티클에 풍부한 영양감을 선사합니다.\n\n플로럴 무드 속 살결 같은 파우더리함이 더해진 편안한 향으로 작은 힐링의 시간을 가져보세요.",
-        "titleImage": "../public/images/product/handCream/memory/basic/titleImage.jpg",
+        "titleImage": "/images/product/handCream/memory/basic/titleImage.jpg",
         "review": 481
     }
 ]

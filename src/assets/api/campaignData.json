@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "imageUrl": "../public/images/campaign/formentCampaign01.jpg",
+        "imageUrl": "/images/campaign/formentCampaign01.jpg",
         "descTitle": "FOR THE BEST\nMOMENT OF LOVE",
         "desc1": "포맨트의 향기로 전하는 아름다운 사랑의 순간들",
         "desc2": "Signature Perfume",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "imageUrl": "../public/images/campaign/formentCampaign02.jpg",
+        "imageUrl": "/images/campaign/formentCampaign02.jpg",
         "descTitle": "ATTRACTION IN THE UNCONSCIOUS",
         "desc1": "무의식 속 이끌림",
         "desc2": "Velvet Hug",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "imageUrl": "../public/images/campaign/formentCampaign03.jpg",
+        "imageUrl": "/images/campaign/formentCampaign03.jpg",
         "descTitle": "FORMENT X ABSOLUT",
         "desc1": "Creative . Sensual . Original",
         "desc2": "2022 Collaboration",
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "imageUrl": "../public/images/campaign/formentCampaign04.jpg",
+        "imageUrl": "/images/campaign/formentCampaign04.jpg",
         "descTitle": "FORMENT X 강태오",
         "desc1": "강태오의 가장 빛나는 순간",
         "desc2": "Cotton Hug , Cotton Dear Night",
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "imageUrl": "../public/images/campaign/formentCampaign05.jpg",
+        "imageUrl": "/images/campaign/formentCampaign05.jpg",
         "descTitle": "A BREEZE WITH THE SCENT ",
         "desc1": "향기가 실린 바람",
         "desc2": "Cotton Breeze",
@@ -41,7 +41,7 @@
     },
     {
         "id": 6,
-        "imageUrl": "../public/images/campaign/formentCampaign06.jpg",
+        "imageUrl": "/images/campaign/formentCampaign06.jpg",
         "descTitle": "THE LIVELINESS OF\nFRESH FLORALS",
         "desc1": "생기가득한 꽃내음이 주는 환희",
         "desc2": "Cotton Delight Bouquet",
@@ -49,7 +49,7 @@
     },
     {
         "id": 7,
-        "imageUrl": "../public/images/campaign/formentCampaign07.jpg",
+        "imageUrl": "/images/campaign/formentCampaign07.jpg",
         "descTitle": "FORMENT X 위하준",
         "desc1": "오징어 속 그 배우",
         "desc2": "Signature discovery set",
@@ -57,7 +57,7 @@
     },
     {
         "id": 8,
-        "imageUrl": "../public/images/campaign/formentCampaign08.jpg",
+        "imageUrl": "/images/campaign/formentCampaign08.jpg",
         "descTitle": "MEMORIES",
         "desc1": "코랄빛으로 물드는 설렘의 기억",
         "desc2": "Cotton Memory",
@@ -65,7 +65,7 @@
     },
     {
         "id": 9,
-        "imageUrl": "../public/images/campaign/formentCampaign09.jpg",
+        "imageUrl": "/images/campaign/formentCampaign09.jpg",
         "descTitle": "MOMENT OF LOVE",
         "desc1": "향기와 함께 전하는 설렘",
         "desc2": "Cotton Memory",
@@ -73,7 +73,7 @@
     },
     {
         "id": 10,
-        "imageUrl": "../public/images/campaign/formentCampaign10.jpg",
+        "imageUrl": "/images/campaign/formentCampaign10.jpg",
         "descTitle": "HUG BODY AND SOUL",
         "desc1": "안기고 싶은 포근함.",
         "desc2": "Cotton Hug",

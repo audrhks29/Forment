@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "imageUrl": "../public/images/event/formentEvent3.jpg",
+        "imageUrl": "/images/event/formentEvent3.jpg",
         "link": "/product/17"
     },
     {
         "id": 2,
-        "imageUrl": "../public/images/event/formentEvent4.jpg",
+        "imageUrl": "/images/event/formentEvent4.jpg",
         "link": "/product/10"
     }
 ]

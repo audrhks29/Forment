@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <HomeContainer>
             <div className='img_box'>
-                <img src='../public/images/main/2300905_success_pc.jpg' alt="" />
+                <img src="/images/main/2300905_success_pc.jpg" alt="" />
             </div>
             <div className='text_box'>
                 <h3>RENEWAL<br />COTTON SUCCESS</h3>

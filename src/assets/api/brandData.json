@@ -5,7 +5,7 @@
         "magazine": "Esquire",
         "year": 2020,
         "month": "March",
-        "imageUrl": "../public/images/brand/formentBrand_01.jpg",
+        "imageUrl": "/images/brand/formentBrand_01.jpg",
         "link": "https://www.esquirekorea.co.kr/article/45582"
     },
     {
@@ -14,7 +14,7 @@
         "magazine": "Donga",
         "year": 2020,
         "month": "March",
-        "imageUrl": "../public/images/brand/formentBrand_02.jpg",
+        "imageUrl": "/images/brand/formentBrand_02.jpg",
         "link": "https://www.donga.com/news/article/all/20200304/99998629/1"
     },
     {
@@ -23,7 +23,7 @@
         "magazine": "Esquire",
         "year": 2020,
         "month": "October",
-        "imageUrl": "../public/images/brand/formentBrand_03.jpg",
+        "imageUrl": "/images/brand/formentBrand_03.jpg",
         "link": "https://www.esquirekorea.co.kr/article/49543"
     },
     {
@@ -32,7 +32,7 @@
         "magazine": "Allure",
         "year": 2020,
         "month": "January",
-        "imageUrl": "../public/images/brand/formentBrand_04.jpg",
+        "imageUrl": "/images/brand/formentBrand_04.jpg",
         "link": "https://url.kr/2rsteg"
     },
     {
@@ -41,7 +41,7 @@
         "magazine": "Allure",
         "year": 2020,
         "month": "February",
-        "imageUrl": "../public/images/brand/formentBrand_05.jpg",
+        "imageUrl": "/images/brand/formentBrand_05.jpg",
         "link": "https://www.allurekorea.com/2020/02/04/2%ec%9b%94%ec%9d%98-%eb%b7%b0%ed%8b%b0-%ec%8b%a0%ec%83"
     },
     {
@@ -50,7 +50,7 @@
         "magazine": "Allure",
         "year": 2020,
         "month": "March",
-        "imageUrl": "../public/images/brand/formentBrand_06.jpg",
+        "imageUrl": "/images/brand/formentBrand_06.jpg",
         "link": "https://url.kr/at93yc"
     },
     {
@@ -59,7 +59,7 @@
         "magazine": "Allure",
         "year": 2021,
         "month": "February",
-        "imageUrl": "../public/images/brand/formentBrand_07.jpg",
+        "imageUrl": "/images/brand/formentBrand_07.jpg",
         "link": "https://www.instagram.com/p/CKxo08WnZMy/?utm_source=ig_web_copy_link"
     },
     {
@@ -68,7 +68,7 @@
         "magazine": "Cosmopolitan",
         "year": 2021,
         "month": "March",
-        "imageUrl": "../public/images/brand/formentBrand_08.jpg",
+        "imageUrl": "/images/brand/formentBrand_08.jpg",
         "link": "https://www.cosmopolitan.co.kr/article/53338"
     },
     {
@@ -77,7 +77,7 @@
         "magazine": "Esquire",
         "year": 2021,
         "month": "July",
-        "imageUrl": "../public/images/brand/formentBrand_09.jpg",
+        "imageUrl": "/images/brand/formentBrand_09.jpg",
         "link": "https://www.esquirekorea.co.kr/article/56926"
     },
     {
@@ -86,7 +86,7 @@
         "magazine": "Esquire",
         "year": 2021,
         "month": "May",
-        "imageUrl": "../public/images/brand/formentBrand_10.jpg",
+        "imageUrl": "/images/brand/formentBrand_10.jpg",
         "link": "https://esquirekorea.co.kr/article/55342"
     },
     {
@@ -95,7 +95,7 @@
         "magazine": "Cosmopolitan",
         "year": 2021,
         "month": "September",
-        "imageUrl": "../public/images/brand/formentBrand_11.jpg",
+        "imageUrl": "/images/brand/formentBrand_11.jpg",
         "link": "https://www.cosmopolitan.co.kr/article/58280"
     },
     {
@@ -104,7 +104,7 @@
         "magazine": "THESTAR",
         "year": 2021,
         "month": "June",
-        "imageUrl": "../public/images/brand/formentBrand_13.jpg",
+        "imageUrl": "/images/brand/formentBrand_13.jpg",
         "link": "https://www.thestar.kr/board/star/4294"
     },
     {
@@ -113,7 +113,7 @@
         "magazine": "THESTAR",
         "year": 2021,
         "month": "June",
-        "imageUrl": "../public/images/brand/formentBrand_14.jpg",
+        "imageUrl": "/images/brand/formentBrand_14.jpg",
         "link": "https://www.thestar.kr/board/star/4258"
     },
     {
@@ -122,7 +122,7 @@
         "magazine": "Esquire",
         "year": 2022,
         "month": "March",
-        "imageUrl": "../public/images/brand/formentBrand_15.jpg",
+        "imageUrl": "/images/brand/formentBrand_15.jpg",
         "link": "https://esquirekorea.co.kr/article/64739"
     },
     {
@@ -131,7 +131,7 @@
         "magazine": "THESTAR",
         "year": 2022,
         "month": "May",
-        "imageUrl": "../public/images/brand/formentBrand_16.jpg",
+        "imageUrl": "/images/brand/formentBrand_16.jpg",
         "link": "https://www.thestar.kr/board/star/4759"
     },
     {
@@ -140,7 +140,7 @@
         "magazine": "ARENA",
         "year": 2022,
         "month": "August",
-        "imageUrl": "../public/images/brand/formentBrand_18.jpg",
+        "imageUrl": "/images/brand/formentBrand_18.jpg",
         "link": "https://www.smlounge.co.kr/arena/article/51706"
     },
     {
@@ -149,7 +149,7 @@
         "magazine": "THE STAR",
         "year": 2023,
         "month": "January",
-        "imageUrl": "../public/images/brand/formentBrand_19.jpg",
+        "imageUrl": "/images/brand/formentBrand_19.jpg",
         "link": "https://www.thestar.kr/board/star/4942"
     }
 ]
