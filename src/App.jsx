@@ -20,7 +20,6 @@ import Join from './pages/Join.jsx';
 
 //styled component
 import GlobalStyles from './styled/GlobalStyles.js';
-import ContentTest from './pages/contentTest.jsx';
 import useUserStore from './store/user-store.js';
 import NoneMemberOrder from './pages/NoneMemberOrder.jsx';
 import Basket from './pages/Basket.jsx';
