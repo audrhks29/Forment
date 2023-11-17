@@ -2,7 +2,7 @@ import React, { memo, useLayoutEffect } from 'react';
 
 import { NoticeItemContainer, NoticeTable } from '../styled/NoticeStyles';
 
-import Pagination from '../components/pagination';
+import Pagination from '../components/Pagination';
 
 import useFaqStore from '../store/faq-store';
 import usePaginationStore from '../store/pagination-store';

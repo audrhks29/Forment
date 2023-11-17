@@ -8,7 +8,7 @@ import { CategoryContainer } from '../styled/CategoryStyles';
 import { useEffect } from 'react';
 
 const CategoryMenu = memo(() => {
-    const { productData, productCategories, fragranceCategories, selectedCategory } = useProductStore(state => state);
+    const { productCategories, fragranceCategories, selectedCategory } = useProductStore(state => state);
     const { settingSelectedCategory, handleFiltered } = useProductStore(state => state);
     const location = useLocation();
     const pathname = location.pathname;

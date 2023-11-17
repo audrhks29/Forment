@@ -2,8 +2,8 @@ import React, { memo, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
-
 import { JoinContainer } from '../styled/JoinStyles';
+
 import JoinPageCheckBox from './../components/join/CheckBox';
 
 const Join = memo(() => {
