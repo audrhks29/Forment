@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, HashRouter, Route, Routes, useLocation } from 'react-router-dom';
+
 // layout
 import Header from './components/layout/Header.jsx';
 import Footer from './components/layout/Footer.jsx';
@@ -17,16 +18,18 @@ import Faq from './pages/Faq.jsx';
 import Membership from './pages/Membership.jsx';
 import Login from './pages/Login.jsx';
 import Join from './pages/Join.jsx';
-
-//styled component
-import GlobalStyles from './styled/GlobalStyles.js';
-import useUserStore from './store/user-store.js';
 import NoneMemberOrder from './pages/NoneMemberOrder.jsx';
 import Basket from './pages/Basket.jsx';
-import MyPage from './pages/Mypage.jsx';
+import MyPage from './pages/MyPage.jsx';
 import ProductDetail from './pages/ProductDetail.jsx';
 import NoticeDetail from './pages/NoticeDetail.jsx';
 import FaqDetail from './pages/FaqDetail.jsx';
+
+//styled component
+import GlobalStyles from './styled/GlobalStyles.js';
+
+// store
+import useUserStore from './store/user-store.js';
 
 const ScrollToTop = () => {
   const location = useLocation();
