@@ -7,7 +7,7 @@ const Membership = memo(() => {
             <div className='inner'>
                 <h3>Membership</h3>
                 <div className='imgBox'>
-                    <img src="../public/images/membership/membership_01.png" alt="" />
+                    <img src="/images/membership/membership_01.png" alt="" />
                 </div>
             </div>
         </MembershipItemContainer>

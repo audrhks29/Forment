@@ -21,15 +21,15 @@ const Login = memo(() => {
                     <form action="">
                         <div className="social-container">
                             <Link to='' className="kakao">
-                                <img src="../public/images/login/log_sns_kakao.png" alt="" />
+                                <img src="/images/login/log_sns_kakao.png" alt="" />
                                 <span>카카오톡 간편 로그인/회원가입</span>
                             </Link>
                             <Link to='' className="naver">
-                                <img src="../public/images/login/icn_naver.svg" alt="" />
+                                <img src="/images/login/icn_naver.svg" alt="" />
                                 <span>네이버 로그인</span>
                             </Link>
                             <Link to='' className="google">
-                                <img src="../public/images/login/icn_apple.svg" alt="" />
+                                <img src="/images/login/icn_apple.svg" alt="" />
                                 <span>애플 로그인</span>
                             </Link>
                         </div>
@@ -52,7 +52,7 @@ const Login = memo(() => {
                 <div className="overlay-container">
                     <div className="overlay">
                         <div className="overlay-panel">
-                            <img src="../public/images/logo_header_main_white.svg" alt="" />
+                            <img src="/images/logo_header_main_white.svg" alt="" />
                             <Link to="/join">
                                 <button>
                                     회원가입

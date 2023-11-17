@@ -52,15 +52,15 @@ const Join = memo(() => {
                         <h3>회원가입</h3>
                         <div className="social-container">
                             <Link to='' className="kakao">
-                                <img src="../public/images/login/log_sns_kakao.png" alt="" />
+                                <img src="/images/login/log_sns_kakao.png" alt="" />
                                 <span>카카오톡 회원가입</span>
                             </Link>
                             <Link to='' className="naver">
-                                <img src="../public/images/login/icn_naver.svg" alt="" />
+                                <img src="/images/login/icn_naver.svg" alt="" />
                                 <span>네이버 회원가입</span>
                             </Link>
                             <Link to='' className="google">
-                                <img src="../public/images/login/icn_apple.svg" alt="" />
+                                <img src="/images/login/icn_apple.svg" alt="" />
                                 <span>애플 회원가입</span>
                             </Link>
                         </div>

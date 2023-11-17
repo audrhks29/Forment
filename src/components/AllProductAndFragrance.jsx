@@ -1,9 +1,13 @@
 import React, { memo, useLayoutEffect } from 'react';
+
 import useProductStore from '../store/product-store';
+
 import { ProductContainer, SearchContainer } from '../styled/ProductStyles';
+
 import CategoryMenu from '../components/CategoryMenu';
+
 import ProductItems from './productItems';
-import { AiOutlineSearch } from 'react-icons/ai';
+
 const AllProductAndFragrance = memo(() => {
     const { filteredProductData, searchKeywords } = useProductStore(state => state);
     const { fetchData, setInitialCategory, settingSearchKeywords, handleFiltered } = useProductStore(state => state);

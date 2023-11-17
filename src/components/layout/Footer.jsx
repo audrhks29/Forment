@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <FooterContainer>
             <div>
-                <Link to="/"><img src="../public/images/logo_header_main.svg" alt="" /></Link>
+                <Link to="/"><img src="/images/logo_header_main.svg" alt="" /></Link>
                 <p>주식회사 에이피알</p>
                 <p>대표이사 : 김병훈 / 서울특별시 송파구 올림픽로 300, 36층 (신천동, 롯데월드타워)</p>
                 <p>사업자등록번호 220-88-89441 [사업자정보확인]</p>

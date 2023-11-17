@@ -12,7 +12,7 @@ const useAppState = (set, getState) => ({
     searchKeywords: "",
     fetchData: async () => {
         try {
-            const response = await axios.get('https://gist.githubusercontent.com/audrhks29/64aa8b5dfcbeb875d59fcb45add63ea9/raw/0a70cf973e3380194fe6dfd264533ab7999adf1a/productData.json');
+            const response = await axios.get('https://gist.githubusercontent.com/audrhks29/64aa8b5dfcbeb875d59fcb45add63ea9/raw/e0b00ba1865c98b8fde594f9c763cc9742db4446/productData.json');
             set({ productData: response.data });
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -20,25 +20,25 @@ const useAppState = (set, getState) => ({
     },
 
     productCategories: [
-        { id: 1, label: '전체', image: "../public/images/category/allProduct/cate_all.png" },
-        { id: 2, label: '퍼퓸', image: "../public/images/category/allProduct/perfume.png" },
-        { id: 3, label: '바디&헤어', image: "../public/images/category/allProduct/hair.png" },
-        { id: 4, label: '핸드&립', image: "../public/images/category/allProduct/lip.png" },
-        { id: 5, label: '라이프스타일', image: "../public/images/category/allProduct/lifestyle.png" },
-        { id: 6, label: '남성케어', image: "../public/images/category/allProduct/men.png" }
+        { id: 1, label: '전체', image: "/images/category/allProduct/cate_all.png" },
+        { id: 2, label: '퍼퓸', image: "/images/category/allProduct/perfume.png" },
+        { id: 3, label: '바디&헤어', image: "/images/category/allProduct/hair.png" },
+        { id: 4, label: '핸드&립', image: "/images/category/allProduct/lip.png" },
+        { id: 5, label: '라이프스타일', image: "/images/category/allProduct/lifestyle.png" },
+        { id: 6, label: '남성케어', image: "/images/category/allProduct/men.png" }
     ],
 
     fragranceCategories: [
-        { id: 1, label: '전체', image: "../public/images/category/fragrance/frag_all.png" },
-        { id: 2, label: '내추럴', image: "../public/images/category/fragrance/natural.png" },
-        { id: 3, label: '허그', image: "../public/images/category/fragrance/hug.png" },
-        { id: 4, label: '키스', image: "../public/images/category/fragrance/kiss.png" },
-        { id: 5, label: '썩세스', image: "../public/images/category/fragrance/success.png" },
-        { id: 6, label: '메모리', image: "../public/images/category/fragrance/memory.png" },
-        { id: 7, label: '브리즈', image: "../public/images/category/fragrance/breeze.png" },
-        { id: 8, label: '디어나잇', image: "../public/images/category/fragrance/dearnight.png" },
-        { id: 9, label: '딜라잇부케', image: "../public/images/category/fragrance/delightbouquet.png" },
-        { id: 10, label: '벨벳허그', image: "../public/images/category/fragrance/velvethug.png" }
+        { id: 1, label: '전체', image: "/images/category/fragrance/frag_all.png" },
+        { id: 2, label: '내추럴', image: "/images/category/fragrance/natural.png" },
+        { id: 3, label: '허그', image: "/images/category/fragrance/hug.png" },
+        { id: 4, label: '키스', image: "/images/category/fragrance/kiss.png" },
+        { id: 5, label: '썩세스', image: "/images/category/fragrance/success.png" },
+        { id: 6, label: '메모리', image: "/images/category/fragrance/memory.png" },
+        { id: 7, label: '브리즈', image: "/images/category/fragrance/breeze.png" },
+        { id: 8, label: '디어나잇', image: "/images/category/fragrance/dearnight.png" },
+        { id: 9, label: '딜라잇부케', image: "/images/category/fragrance/delightbouquet.png" },
+        { id: 10, label: '벨벳허그', image: "/images/category/fragrance/velvethug.png" }
     ],
 
     setInitialCategory: () => {

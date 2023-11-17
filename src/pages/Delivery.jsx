@@ -14,8 +14,8 @@ const Delivery = memo(() => {
         <DeliveryContainer>
             <div className="inner">
                 <LeftContent>
-                    <img src="../public/images/delivery/regular23_01.jpg" art="" />
-                    <img src="../public/images/delivery/regular23_02.jpg" art="" />
+                    <img src="/images/delivery/regular23_01.jpg" art="" />
+                    <img src="/images/delivery/regular23_02.jpg" art="" />
                     <TxtWrap>
                         <div className='e1'>무료 정기배송</div>
                         <div className='e2'>

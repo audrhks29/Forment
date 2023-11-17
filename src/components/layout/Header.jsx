@@ -20,7 +20,7 @@ const Header = () => {
         <HeaderContainer style={{ height: activeSubMenu || csCenterSubMenu ? "250px" : "auto" }}>
             <MainMenu>
                 <HeaderLogoContainer>
-                    <Link to="/"><img src="../public/images/logo_header_main.svg" alt="" /></Link>
+                    <Link to="/"><img src="/images/logo_header_main.svg" alt="" /></Link>
                 </HeaderLogoContainer>
                 <ul>
                     <li><Link to="/product">전 제품 보기</Link></li>

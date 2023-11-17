@@ -52,22 +52,22 @@ const MyPage = memo(() => {
             <div className='userInfo_right'>
               <ul>
                 <li onClick={() => handleChangeList(1)}>
-                  <img src="../public/images/icon/myPage/myPage_icon1.png" alt="" />
+                  <img src="/images/icon/myPage/myPage_icon1.png" alt="" />
                   <p>주문 & 배송</p>
                   <p>{orderAndDeliveryAmount}개</p>
                 </li>
                 <li>
-                  <img src="../public/images/icon/myPage/myPage_icon2.png" alt="" />
+                  <img src="/images/icon/myPage/myPage_icon2.png" alt="" />
                   <p>리뷰</p>
                   <p>0개</p>
                 </li>
                 <li>
-                  <img src="../public/images/icon/myPage/myPage_icon3.png" alt="" />
+                  <img src="/images/icon/myPage/myPage_icon3.png" alt="" />
                   <p>적립금</p>
                   <p>0포인트</p>
                 </li>
                 <li>
-                  <img src="../public/images/icon/myPage/myPage_icon4.png" alt="" />
+                  <img src="/images/icon/myPage/myPage_icon4.png" alt="" />
                   <p>쿠폰</p>
                   <p>0개</p>
                 </li>

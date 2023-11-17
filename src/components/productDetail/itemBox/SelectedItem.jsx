@@ -24,13 +24,13 @@ const SelectedItem = memo(() => {
                     onClick={() => handleIncreaseAmount(index)}
                     readOnly
                   >
-                    <img src="../public/images/btn_count_up.gif" alt="increase" />
+                    <img src="/images/btn_count_up.gif" alt="increase" />
                   </button>
                   <button
                     onClick={() => handleDecreaseAmount(index)}
                     readOnly
                   >
-                    <img src="../public/images/btn_count_down.gif" alt="decrease" />
+                    <img src="/images/btn_count_down.gif" alt="decrease" />
                   </button>
                 </div>
               </div>
