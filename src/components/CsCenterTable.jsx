@@ -1,7 +1,10 @@
 import React, { memo, useEffect } from 'react';
+
 import { NoticeTable } from '../styled/NoticeStyles';
+
 import useFaqStore from '../store/faq-store';
 import useNoticeStore from '../store/notice-store';
+
 import { useLocation } from 'react-router-dom';
 
 const CsCenterTable = memo(() => {

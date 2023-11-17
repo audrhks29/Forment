@@ -1,7 +1,9 @@
 import React, { memo } from 'react';
-import { ReviewContainer } from '../styled/ProductStyles';
+
 import { DeliveryItemContainer } from '../styled/DeliveryStyles';
+
 import useDeliveryStore from '../store/delivery-store';
+
 import { Link } from 'react-router-dom';
 const DeliveryItems = memo(() => {
     const { deliveryData } = useDeliveryStore(state => state);

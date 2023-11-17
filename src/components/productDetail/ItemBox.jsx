@@ -1,7 +1,10 @@
 import React, { memo, useEffect, useState } from 'react';
+
 import useProductDetailStore from '../../store/productDetail-store';
+
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
-import TextBox from './itemBox/textBox';
+
+import TextBox from './itemBox/TextBox';
 import SelectedOption from './itemBox/SelectedOption';
 import SelectedItem from './itemBox/SelectedItem';
 import AddCartButton from './itemBox/AddCartButton';

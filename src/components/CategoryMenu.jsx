@@ -5,7 +5,6 @@ import { useLocation } from 'react-router-dom';
 import useProductStore from '../store/product-store';
 
 import { CategoryContainer } from '../styled/CategoryStyles';
-import { useEffect } from 'react';
 
 const CategoryMenu = memo(() => {
     const { productCategories, fragranceCategories, selectedCategory } = useProductStore(state => state);
