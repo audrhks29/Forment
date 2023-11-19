@@ -16,7 +16,8 @@
 
 ## 2. Version Update
 ### v1.0.1
-   <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=Netlify&logoColor=black">를 이용한 페이지 배포
+   1. <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=Netlify&logoColor=black">를 이용한 페이지 배포
+   2. 데이터 수정
 
 ### v1.0.0
    1. 포멘트 쇼핑몰 사이트 코딩
