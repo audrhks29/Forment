@@ -138,7 +138,7 @@
          ```
          ### 3. 해결
          ![skeleton](https://github.com/audrhks29/Forment/assets/130128690/7b8713d7-06be-4ec5-8c5d-59139d54a9c5)
-         로딩중에 skeleton 적용으로 레이아웃 밀리지 않는 모습
+         로딩중에 skeleton 적용으로 레이아웃이 밀리지 않는 모습
 
          ![개선후_전제품및프래그런스](https://github.com/audrhks29/Forment/assets/130128690/95149a95-dc54-4912-9440-bce2e7f5afd3)
          CLS점수또한 0.1점 미만으로 개선하였다.
