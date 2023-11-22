@@ -7,7 +7,7 @@ import { ProductContainer, SearchContainer } from '../styled/ProductStyles';
 import CategoryMenu from '../components/CategoryMenu';
 
 import ProductItems from './productItems';
-import Skeleton from './skeleton/ProductSkeleton';
+import ProductSkeleton from './skeleton/ProductSkeleton';
 
 
 const AllProductAndFragrance = memo(() => {
@@ -15,9 +15,12 @@ const AllProductAndFragrance = memo(() => {
     const { fetchData, setInitialCategory, settingSearchKeywords, handleFiltered } = useProductStore(state => state);
 
     useLayoutEffect(() => {
-        fetchData().then(() => {
-            setInitialCategory();
-        })
+        setTimeout(() => {
+            fetchData().then(() => {
+                setInitialCategory();
+            })
+        }, 1000)
+
     }, []);
 
     const handleSearch = (e) => {
@@ -43,7 +46,7 @@ const AllProductAndFragrance = memo(() => {
                 {
                     !isLoading
                         ? <ProductItems />
-                        : <Skeleton />
+                        : <ProductSkeleton />
                 }
             </div>
         </ProductContainer>
