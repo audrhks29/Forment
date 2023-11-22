@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import { settingInner } from './CommonStyles'
-export const BrandItemContainer = styled.div`
+export const BrandContainer = styled.div`
     .inner{
         ${settingInner} 
     }
 `
-export const BrandItem = styled.ul`   
+export const BrandItemContainer = styled.ul`   
     display:flex;
     flex-wrap:wrap;
     li{

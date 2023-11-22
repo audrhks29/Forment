@@ -5,8 +5,8 @@ export const NoticeItemContainer = styled.div`
         ${settingInner} 
     }
 `
-export const NoticeTable = styled.table`
-    width:1400;
+export const NoticeTableContainer = styled.table`
+    width:1400px;
     border:1px solid #ccc;
     font-size:14px;
     color:#555;

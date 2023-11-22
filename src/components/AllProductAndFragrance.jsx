@@ -7,9 +7,11 @@ import { ProductContainer, SearchContainer } from '../styled/ProductStyles';
 import CategoryMenu from '../components/CategoryMenu';
 
 import ProductItems from './productItems';
+import Skeleton from './skeleton/ProductSkeleton';
+
 
 const AllProductAndFragrance = memo(() => {
-    const { filteredProductData, searchKeywords } = useProductStore(state => state);
+    const { filteredProductData, searchKeywords, isLoading } = useProductStore(state => state);
     const { fetchData, setInitialCategory, settingSearchKeywords, handleFiltered } = useProductStore(state => state);
 
     useLayoutEffect(() => {
@@ -18,7 +20,7 @@ const AllProductAndFragrance = memo(() => {
         })
     }, []);
 
-    const handle = (e) => {
+    const handleSearch = (e) => {
         settingSearchKeywords(e)
         handleFiltered()
     }
@@ -28,15 +30,21 @@ const AllProductAndFragrance = memo(() => {
             <div className='inner'>
                 <CategoryMenu />
                 <SearchContainer>
-                    <div className='lengthBox'>총 <strong>{filteredProductData.length}개</strong>의 상품이 있습니다.</div>
+                    <div className='lengthBox'>
+                        총 <strong>{filteredProductData.length}개</strong>의 상품이 있습니다.
+                    </div>
                     <input
                         type="text"
                         value={searchKeywords}
-                        onChange={(e) => handle(e)}
+                        onChange={(e) => handleSearch(e)}
                         placeholder='제품명을 입력하세요'
                     />
                 </SearchContainer>
-                <ProductItems />
+                {
+                    !isLoading
+                        ? <ProductItems />
+                        : <Skeleton />
+                }
             </div>
         </ProductContainer>
     )

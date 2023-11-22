@@ -1,25 +1,30 @@
 import React, { memo, useEffect, useState } from 'react';
+
 import { EditUserInfoContainer } from '../../styled/MyPageStyles';
 import useUserStore from '../../store/user-store';
 
 const EditUserInfo = memo(() => {
+
   const { loginUserData } = useUserStore(state => state)
-  const { userData } = useUserStore(state => state)
   const { handleEditUserInfo } = useUserStore(state => state)
+
   const { user_name, user_id, user_password, user_email, user_birthday, user_gender, grade } = loginUserData
+
   const [userPassword, setUserPassword] = useState(user_password)
   const [userEmail, setUserEmail] = useState(user_email)
   const [userBirthday, setUserBirthday] = useState(user_birthday)
   const [userGenderKorean, setUserGenderKorean] = useState("")
+
   useEffect(() => {
     if (user_gender == "male") setUserGenderKorean("남성")
     else setUserGenderKorean("여성")
   }, [])
+
   const handleEditUserInfoClick = () => {
     handleEditUserInfo(userPassword, userEmail, userBirthday)
+    window.location.reload();
   }
-  console.log(loginUserData);
-  console.log(userData);
+
   return (
     <EditUserInfoContainer>
       <p className="title">회원정보 수정</p>

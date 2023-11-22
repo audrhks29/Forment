@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { settingInner } from './CommonStyles'
 
 export const ProductContainer = styled.div`
@@ -35,7 +35,7 @@ export const ProductItemContainer = styled.div`
             display:block;
             position:relative;
             overflow: hidden;
-            width:335px;
+            width: 335px;
             height: 400px;
             img{
                 position: absolute;
